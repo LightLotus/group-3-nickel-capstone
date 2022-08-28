@@ -1,0 +1,116 @@
+.navlinks-div {
+  display: flex;
+  align-items: center;
+}
+
+.navlinks-ul {
+  display: flex;
+  align-items: center;
+}
+
+.navlinks-li {
+  list-style-type: none;
+}
+
+.navlinks-a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  padding: 0 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navlinks-a::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid transparent;
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: -50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.navlinks-a:hover::after,
+.navlinks-a:active::after,
+.navlinks-a:focus::after {
+  border-bottom: 2px solid #00ddc6;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -50%;
+}
+
+.navlinks-a:hover,
+.navlinks-a:focus,
+.navlinks-a:active {
+  color: #00ddc6;
+}
+
+.cartIcon {
+  color: #000;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+#offcanvasNavbar-expand-md > div.offcanvas-body > div:nth-child(1) > ul > div {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  padding: 0 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#basic-nav-dropdown {
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+
+#basic-nav-dropdown:hover {
+  color: #00ddc6;
+}
+
+#offcanvasNavbar-expand-md
+  > div.offcanvas-body
+  > div:nth-child(1)
+  > ul
+  > div::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid transparent;
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: -15%;
+  transition: all 0.3s ease-in-out;
+}
+
+#offcanvasNavbar-expand-md
+  > div.offcanvas-body
+  > div:nth-child(1)
+  > ul
+  > div:hover::after {
+  border-bottom: 2px solid #00ddc6;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -10%;
+}
+
+#offcanvasNavbar-expand-md
+  > div.offcanvas-body
+  > div:nth-child(1)
+  > ul
+  > div.nav-item.show.dropdown
+  > div
+  > div
+  > div {
+  position: absolute;
+  left: 100%;
+}
+
+@media (max-width: 600px) {
+.nav-links-container {
+  flex-direction: column;
+}
+}
