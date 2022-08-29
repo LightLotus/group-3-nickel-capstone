@@ -9,7 +9,6 @@ import TrainingClasses from "./pages/TrainingClasses";
 import Manners from "./pages/Manners";
 import PrivateLessons from "./pages/PrivateLessons";
 import PuppyKindergarten from "./pages/PuppyKindergarten";
-import Services from "./pages/Services";
 import Homepage from "./pages/Homepage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -18,17 +17,17 @@ function App() {
     <Router>
       <Navlink />
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/ourstory" element={<OurStory />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/trainingclasses" element={<TrainingClasses />} />
-        <Route path="/manners" element={<Manners />} />
-        <Route path="/puppykindergarten" element={<PuppyKindergarten />} />
-        <Route path="/privatelessons" element={<PrivateLessons />} />
-        <Route path="/adoption" element={<Adoption />} />
-        <Route path="/ourproducts" element={<OurProducts />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<Homepage />}>
+          <Route path="/ourstory" element={<OurStory />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/trainingclasses" element={<TrainingClasses />} />
+          <Route path="/manners" element={<Manners />} />
+          <Route path="/puppykindergarten" element={<PuppyKindergarten />} />
+          <Route path="/privatelessons" element={<PrivateLessons />} />
+          <Route path="/adoption" element={<Adoption />} />
+          <Route path="/ourproducts" element={<OurProducts />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
       </Routes>
     </Router>
   );
