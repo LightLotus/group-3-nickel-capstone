@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Navlink />
       <Routes>
-        <Route path="/" element={<Homepage />}>
+        <Route path="/" element={<Homepage />}/>
           <Route path="/ourstory" element={<OurStory />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/trainingclasses" element={<TrainingClasses />} />
@@ -27,7 +27,6 @@ function App() {
           <Route path="/adoption" element={<Adoption />} />
           <Route path="/ourproducts" element={<OurProducts />} />
           <Route path="/contact" element={<Contact />} />
-        </Route>
       </Routes>
     </Router>
   );
