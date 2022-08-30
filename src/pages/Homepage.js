@@ -43,7 +43,7 @@ const Homepage = () => {
             <p className="feature-services-title">Training</p>
             <p className="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et{" "}
+              eiusmod tempor incididunt ut labore et
             </p>
           </div>
           <div className="feature-services-div">
@@ -51,7 +51,7 @@ const Homepage = () => {
             <p className="feature-services-title">Adoption</p>
             <p className="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et{" "}
+              eiusmod tempor incididunt ut labore et
             </p>
           </div>
           <div className="feature-services-div">
@@ -59,7 +59,7 @@ const Homepage = () => {
             <p className="feature-services-title">Our Products</p>
             <p className="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et{" "}
+              eiusmod tempor incididunt ut labore et
             </p>
           </div>
         </div>

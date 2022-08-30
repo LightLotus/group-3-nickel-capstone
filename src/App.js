@@ -9,6 +9,7 @@ import TrainingClasses from "./pages/TrainingClasses";
 import Manners from "./pages/Manners";
 import PrivateLessons from "./pages/PrivateLessons";
 import PuppyKindergarten from "./pages/PuppyKindergarten";
+import Cart from "./pages/Cart";
 import Homepage from "./pages/Homepage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/adoption" element={<Adoption />} />
           <Route path="/ourproducts" element={<OurProducts />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/cart" element={<Cart/>} />
       </Routes>
     </Router>
   );

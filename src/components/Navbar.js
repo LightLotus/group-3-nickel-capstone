@@ -46,10 +46,14 @@ function Navlink() {
                     id="basic-nav-dropdown"
                   >
                     <NavDropdown.Item>
-                      <Link to="/ourstory">Our Story</Link>
+                      <Link className="nav-dropdown" to="/ourstory">
+                        Our Story
+                      </Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <Link to="/faq">FAQs</Link>
+                      <Link className="nav-dropdown" to="/faq">
+                        FAQs
+                      </Link>
                     </NavDropdown.Item>
                   </NavDropdown>
 
@@ -97,11 +101,9 @@ function Navlink() {
                       </a>
                     </li>
                     <span>|</span>
-                    <li className="navlinks-li">
-                      <a className="cartIcon" href="#">
-                        <FontAwesomeIcon icon={faCartShopping} />
-                      </a>
-                    </li>
+                    <Link to="/cart" className="cartIcon">
+                      <FontAwesomeIcon icon={faCartShopping} />
+                    </Link>
                   </ul>
                 </div>
               </Nav>
