@@ -180,106 +180,174 @@ const Homepage = () => {
           <div className="trainer-container">
             <div className="trainer-profile">
               <img
-              className="trainer-img container-fluid p-0"
+                className="trainer-img container-fluid p-0"
                 src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                 alt=""
               />
               <p className="trainer-name">John D. Dohansoon</p>
               <p className="trainer-position">Animal Trainer</p>
               <div className="trainer-social-icons">
-                <FontAwesomeIcon className="social-icons" icon={faSquareFacebook} />
-                <FontAwesomeIcon className="social-icons" icon={faSquareInstagram} />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareFacebook}
+                />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareInstagram}
+                />
               </div>
             </div>
             <div className="trainer-profile">
               <img
-              className="trainer-img container-fluid p-0"
+                className="trainer-img container-fluid p-0"
                 src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                 alt=""
               />
               <p className="trainer-name">John D. Dohansoon</p>
               <p className="trainer-position">Animal Trainer</p>
               <div className="trainer-social-icons">
-                <FontAwesomeIcon className="social-icons" icon={faSquareFacebook} />
-                <FontAwesomeIcon className="social-icons" icon={faSquareInstagram} />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareFacebook}
+                />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareInstagram}
+                />
               </div>
             </div>
             <div className="trainer-profile">
               <img
-              className="trainer-img container-fluid p-0"
+                className="trainer-img container-fluid p-0"
                 src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                 alt=""
               />
               <p className="trainer-name">John D. Dohansoon</p>
               <p className="trainer-position">Animal Trainer</p>
               <div className="trainer-social-icons">
-                <FontAwesomeIcon className="social-icons" icon={faSquareFacebook} />
-                <FontAwesomeIcon className="social-icons" icon={faSquareInstagram} />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareFacebook}
+                />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareInstagram}
+                />
               </div>
             </div>
             <div className="trainer-profile">
               <img
-              className="trainer-img container-fluid p-0"
+                className="trainer-img container-fluid p-0"
                 src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                 alt=""
               />
               <p className="trainer-name">John D. Dohansoon</p>
               <p className="trainer-position">Animal Trainer</p>
               <div className="trainer-social-icons">
-                <FontAwesomeIcon className="social-icons" icon={faSquareFacebook} />
-                <FontAwesomeIcon className="social-icons" icon={faSquareInstagram} />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareFacebook}
+                />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareInstagram}
+                />
               </div>
             </div>
             <div className="trainer-profile">
               <img
-              className="trainer-img container-fluid p-0"
+                className="trainer-img container-fluid p-0"
                 src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                 alt=""
               />
               <p className="trainer-name">John D. Dohansoon</p>
               <p className="trainer-position">Animal Trainer</p>
               <div className="trainer-social-icons">
-                <FontAwesomeIcon className="social-icons" icon={faSquareFacebook} />
-                <FontAwesomeIcon className="social-icons" icon={faSquareInstagram} />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareFacebook}
+                />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareInstagram}
+                />
               </div>
             </div>
             <div className="trainer-profile">
               <img
-              className="trainer-img container-fluid p-0"
+                className="trainer-img container-fluid p-0"
                 src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                 alt=""
               />
               <p className="trainer-name">John D. Dohansoon</p>
               <p className="trainer-position">Animal Trainer</p>
               <div className="trainer-social-icons">
-                <FontAwesomeIcon className="social-icons" icon={faSquareFacebook} />
-                <FontAwesomeIcon className="social-icons" icon={faSquareInstagram} />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareFacebook}
+                />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareInstagram}
+                />
               </div>
             </div>
             <div className="trainer-profile">
               <img
-              className="trainer-img container-fluid p-0"
+                className="trainer-img container-fluid p-0"
                 src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                 alt=""
               />
               <p className="trainer-name">John D. Dohansoon</p>
               <p className="trainer-position">Animal Trainer</p>
               <div className="trainer-social-icons">
-                <FontAwesomeIcon className="social-icons" icon={faSquareFacebook} />
-                <FontAwesomeIcon className="social-icons" icon={faSquareInstagram} />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareFacebook}
+                />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareInstagram}
+                />
               </div>
             </div>
             <div className="trainer-profile">
               <img
-              className="trainer-img container-fluid p-0"
+                className="trainer-img container-fluid p-0"
                 src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
                 alt=""
               />
               <p className="trainer-name">John D. Dohansoon</p>
               <p className="trainer-position">Animal Trainer</p>
               <div className="trainer-social-icons">
-                <FontAwesomeIcon className="social-icons" icon={faSquareFacebook} />
-                <FontAwesomeIcon className="social-icons" icon={faSquareInstagram} />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareFacebook}
+                />
+                <FontAwesomeIcon
+                  className="social-icons"
+                  icon={faSquareInstagram}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="customer-reviews-section">
+          <div className="subtitle">
+            What Our Customers <span className="span-color">Are Saying</span>
+          </div>
+          <div className="carousel-reviews">
+            <div className="customer-reviews">
+              <div className="customer-reviews-item">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p classNam>
+                  <strong>Customer Name</strong>
+                </p>
               </div>
             </div>
           </div>
