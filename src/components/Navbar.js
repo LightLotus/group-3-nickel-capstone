@@ -12,7 +12,11 @@ import "../css/Navbar.css";
 function Navlink() {
   return (
     <>
-      <Navbar bg="light" expand="md" className="mb-3 py-3 sticky-top">
+      <Navbar
+        bg="light"
+        expand="md"
+        className="mb-3 py-2 sticky-top border-bottom"
+      >
         <Container>
           <Navbar.Brand>
             <Link to="/">
@@ -32,7 +36,7 @@ function Navlink() {
               <Nav className="nav-links-container justify-content-end flex-grow-1 pe-3">
                 <ul className="navlinks-ul">
                   <li className="navlinks-li">
-                    <Link className="navlinks-a"  to="/">
+                    <Link className="navlinks-a" to="/">
                       Homepage
                     </Link>
                   </li>

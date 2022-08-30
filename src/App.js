@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Navlink />
       <Routes>
-        <Route path="/" element={<Homepage />}/>
+        <Route path="/" index element={<Homepage />}/>
           <Route path="/ourstory" element={<OurStory />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/trainingclasses" element={<TrainingClasses />} />
