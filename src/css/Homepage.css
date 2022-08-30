@@ -142,7 +142,6 @@ h1 {
 }
 
 .trainer-section {
-  height: 100vh;
   margin: 10rem 0;
   text-align: center;
 }
@@ -169,6 +168,7 @@ h1 {
   cursor: pointer;
 }
 
-.social-icons:hover {
-  color: #00ddc6;
+.customer-reviews-item {
+  border: 2px solid #00ddc6;
+  padding: 1rem;
 }
