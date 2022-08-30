@@ -166,6 +166,11 @@ h1 {
   display: inline-block;
   margin: 0 0.5rem;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons:hover {
+  color: #00ddc6;
 }
 
 .customer-reviews-item {
