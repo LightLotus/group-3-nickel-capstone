@@ -15,7 +15,18 @@ h1{
     margin-top: 4rem;
     margin-bottom: 5rem;
 }
-.image1{
-    width: 100%;
-    height: 100%;
+.img-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+}
+
+
+
+.coreValues{
+   
+    padding: 10px;
+   
+    
+    
 }

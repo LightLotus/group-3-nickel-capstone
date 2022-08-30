@@ -8,7 +8,8 @@ import {
   MDBCardBody,
   MDBCardImage,
   MDBRow,
-  MDBCol
+  MDBCol,
+  MDBCardGroup
 } from 'mdb-react-ui-kit';
 
 
@@ -76,37 +77,59 @@ const OurStory = () => {
 
     <Container>
     <h1>Core Values</h1>
-    <MDBCard style={{ maxWidth: '100%' , maxHeight:'100%',}}>
-
-    </MDBCard>
-          <MDBCardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-            </MDBCardText>
-            <MDBCardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-            </MDBCardText>
-
+   
     </Container>
+
+    <Container>
+    <MDBCardGroup className="coreValues">
+      <MDBCard>
+        <MDBCardImage  className="img-cirle" src='https://mdbootstrap.com/img/new/standard/city/041.webp' alt='...' position='top' />
+        <MDBCardBody>
+         
+          <MDBCardText>
+            This is a wider card with supporting text below as a natural lead-in to additional content. This
+            
+          </MDBCardText>
+          <MDBCardText>
+          </MDBCardText>
+        </MDBCardBody>
+      </MDBCard>
+
+      <MDBCard>
+        <MDBCardImage className="img-cirle" src='https://mdbootstrap.com/img/new/standard/city/042.webp' alt='...' position='top' />
+        <MDBCardBody>
+          
+          <MDBCardText>
+            This is a wider card with supporting text below as a natural lead-in to additional content.
+          </MDBCardText>
+          <MDBCardText>
+          
+          </MDBCardText>
+        </MDBCardBody>
+      </MDBCard>
+
+      <MDBCard>
+        <MDBCardImage className="img-cirle" src='https://mdbootstrap.com/img/new/standard/city/043.webp' alt='...' position='top' />
+        <MDBCardBody>
+        
+          <MDBCardText>
+            This is a wider card with supporting text below as a natural lead-in to additional content.           
+          </MDBCardText>
+          <MDBCardText>
+           
+          </MDBCardText>
+        </MDBCardBody>
+      </MDBCard>
+    </MDBCardGroup>
+    </Container>
+
 
   </>
 
 
      
 
-
- 
-
-     
-
   );
-};
-
-const OurStorySection2 = () => {
-  return <div><h1>testing</h1></div>;
 };
 
 

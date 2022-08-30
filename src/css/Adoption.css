@@ -1,0 +1,21 @@
+#video{
+    margin-left: 10rem;
+}
+
+.button-addopt{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 100px;
+    margin-left: 30rem;
+    margin-bottom: 5rem;
+    background-color:#00DDC6 ;
+    border: 0ch;
+  
+}
+
+.adopt{
+    text-align: center;
+    color: #00DDC6;
+    justify-content: center;
+}
