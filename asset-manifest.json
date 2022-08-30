@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7cb0fa6.css",
+    "main.js": "/static/js/main.5c41f8fc.js",
+    "static/media/charming-pets-logo.svg": "/static/media/charming-pets-logo.65562a443bd1cd9570e0cd2edff9f51a.svg",
+    "static/media/adoption-icon.svg": "/static/media/adoption-icon.03b2a0c52aa9991c0b33a6f67787e0f7.svg",
+    "index.html": "/index.html",
+    "static/media/training-icon.svg": "/static/media/training-icon.9ba591b605edec35a4c81d58854f109e.svg",
+    "static/media/production-icon.svg": "/static/media/production-icon.081cf251723c2dca141929f37dd66ddd.svg",
+    "main.b7cb0fa6.css.map": "/static/css/main.b7cb0fa6.css.map",
+    "main.5c41f8fc.js.map": "/static/js/main.5c41f8fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7cb0fa6.css",
+    "static/js/main.5c41f8fc.js"
+  ]
+}
