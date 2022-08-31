@@ -10,6 +10,9 @@ import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 
 function Navlink() {
+  const TrainingClasses = () => {
+    return <Link to="/trainingclasses">Training Classes</Link>;
+  };
   return (
     <>
       <Navbar
@@ -60,7 +63,7 @@ function Navlink() {
                   <NavDropdown title="Services" id="basic-nav-dropdown">
                     <NavDropdown
                       className="dropright"
-                      title="Training Classes"
+                      title={TrainingClasses()}
                       id="basic-nav-dropdown"
                     >
                       <NavDropdown.Item>
@@ -103,6 +106,7 @@ function Navlink() {
                     <span>|</span>
                     <Link to="/cart" className="cartIcon">
                       <FontAwesomeIcon icon={faCartShopping} />
+                      <span className="cartIcon-qty">0</span>
                     </Link>
                   </ul>
                 </div>
