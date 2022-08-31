@@ -1,0 +1,27 @@
+.customer-reviews-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  text-align: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.customer-reviews {
+  border: 2px solid #00ddc6;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.carousel-button {
+  background-color: #00ddc6;
+  height: 3rem;
+  width: 3rem;
+  transform: translateY(200%);
+}
+
+.customer-reviews-details {
+  margin: 0;
+  text-align: left;
+}

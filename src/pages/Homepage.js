@@ -7,6 +7,7 @@ import productionIcon from "../images/production-icon.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
+import CarouselReviews from "../components/CarouselReviews";
 import "../css/Homepage.css";
 
 const Homepage = () => {
@@ -332,89 +333,7 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className="customer-reviews-section">
-          <div className="subtitle">
-            What Our Customers <span className="span-color">Are Saying</span>
-          </div>
-          <div className="carousel-reviews">
-            <div className="customer-reviews">
-              <div
-                id="carouselExampleControlsNoTouching"
-                class="carousel slide"
-                data-bs-touch="false"
-              >
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <div className="customer-reviews-item">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                      </p>
-                      <p>
-                        <strong>Customer Name</strong>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="customer-reviews-item">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                      </p>
-                      <p>
-                        <strong>Customer Name</strong>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="customer-reviews-item">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                      </p>
-                      <p>
-                        <strong>Customer Name</strong>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  className="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleControlsNoTouching"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  className="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleControlsNoTouching"
-                  data-bs-slide="next"
-                >
-                  <span
-                    className="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span className="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CarouselReviews />
       </Container>
     </>
   );
