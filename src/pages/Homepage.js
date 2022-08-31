@@ -19,7 +19,7 @@ const Homepage = () => {
             <h1>
               Welcome to <span className="span-color">Charming Pets</span>
             </h1>
-            <p>
+            <p className="hero-text-p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
             </p>
@@ -333,7 +333,9 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <CarouselReviews />
+        <div className="carousel-reviews">
+          <CarouselReviews />
+        </div>
       </Container>
     </>
   );
