@@ -65,22 +65,19 @@
 }
 
 .cartIcon-qty {
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
   position: absolute;
   font-size: 1rem;
-  /* color: #fff; */
-  z-index: 999;
-}
-
-.cartIcon-qty::after {
-  content:"";
-  display: block;
-  width: 1rem;
-  height: 1rem;
+  color: #fff;
   background-color: #F42D46;
+  text-align: center;
+  z-index: 999;
+  top: 0;
+  right: -50%;
   border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-  left: -100%;
+  line-height: 1;
 }
 
 #offcanvasNavbar-expand-md > div.offcanvas-body > div:nth-child(1) > ul > div {
