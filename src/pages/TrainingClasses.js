@@ -1,5 +1,105 @@
+import Container from "react-bootstrap/Container";
+import "../css/Manners.css";
+import React from "react";
+import {
+  MDBCard,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardBody,
+  MDBCardImage,
+  MDBRow,
+  MDBCol,
+  MDBCardGroup,
+  MDBBtn,
+} from "mdb-react-ui-kit";
+
 const TrainingClasses = () => {
-  return <div>TrainingClasses</div>;
+  return (
+    <>
+      <Container>
+        <h1>Approach to Training</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </Container>
+
+      <Container>
+        <MDBCardGroup className="coreValues rounded ">
+          <MDBCard className="border-0 p-2 ">
+            <MDBCardImage
+              className="rounded-5"
+              src="https://static8.depositphotos.com/1004529/988/i/600/depositphotos_9887128-stock-photo-sharpei-dog.jpg"
+              alt="..."
+              position="top"
+            />
+            <MDBCardBody>
+              <h4>Manners</h4>
+              <MDBCardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </MDBCardText>
+              <MDBCardText>
+                <MDBBtn href="#" className="buttones">
+                  Go somewhere
+                </MDBBtn>
+              </MDBCardText>
+            </MDBCardBody>
+          </MDBCard>
+
+          <MDBCard className="border-0 p-2 ">
+            <MDBCardImage
+              className="rounded-5"
+              src="https://districtdogs.com/wp-content/uploads/2019/10/DistrictDogs-117-1024x683.jpg"
+              alt="..."
+              position="top"
+            />
+            <MDBCardBody>
+              <h4>Puppy Kindergarten</h4>
+              <MDBCardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </MDBCardText>
+              <MDBCardText>
+                <MDBBtn href="#" className="buttones">
+                  Go somewhere
+                </MDBBtn>
+              </MDBCardText>
+            </MDBCardBody>
+          </MDBCard>
+
+          <MDBCard className="border-0 p-2 ">
+            <MDBCardImage
+              className="rounded-5"
+              src="https://wagurtaildogtraining.com/wp-content/uploads/2018/04/shutterstock_281482349.jpg"
+              alt="..."
+              position="top"
+            />
+            <MDBCardBody>
+              <h4>Private Lessons</h4>
+              <MDBCardText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </MDBCardText>
+              <MDBCardText>
+                <MDBBtn href="#" className="buttones">
+                  Go somewhere
+                </MDBBtn>
+              </MDBCardText>
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCardGroup>
+      </Container>
+    </>
+  );
 };
 
 export default TrainingClasses;

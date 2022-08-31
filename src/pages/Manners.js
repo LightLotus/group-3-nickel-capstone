@@ -1,78 +1,99 @@
 import Container from "react-bootstrap/Container";
-import "../css/Manners.css";
-import React from 'react';
-import {
-  MDBCard,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardBody,
-  MDBCardImage,
-  MDBRow,
-  MDBCol,
-  MDBCardGroup,
-  MDBBtn
-} from 'mdb-react-ui-kit';
-
+import Table from "react-bootstrap/Table";
+import "../css/PuppyKindergarten.css";
 
 const Manners = () => {
   return (
+    <>
+      <Container className="master-Class">
+        <p>MANNERS CLASS</p>
+      </Container>
+      <Container>
+        <h4>Enrollments for August 25, 2022 - October 24, 2022</h4>
+      </Container>
+      <Container>
+        <Table striped bordered hover>
+          <thead>
+            <tr>
+              <th>Dates</th>
+              <th>Time</th>
+              <th>Days</th>
+              <th>Trainer</th>
+              <th>Available Slot</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jul 13 2022 - Oct 26 2022</td>
+              <td>8:10 PM - 9:00 PM</td>
+              <td>Wed</td>
+              <td>Nica</td>
+              <td>10/10</td>
+              <td className="text-danger">full</td>
+            </tr>
+            <tr>
+              <td>Jul 13 2022 - Oct 26 2022</td>
+              <td>8:10 PM - 9:00 PM</td>
+              <td>Wed</td>
+              <td>Nica</td>
+              <td>10/10</td>
+              <td className="text-danger">full</td>
+            </tr>
+            <tr>
+              <td>Jul 13 2022 - Oct 26 2022</td>
+              <td>8:10 PM - 9:00 PM</td>
+              <td>Wed</td>
+              <td>Kevin</td>
+              <td>8/10</td>
+              <td>
+                <a href="#">Enroll</a>
+              </td>
+            </tr>
+          </tbody>
+        </Table>
 
-<>
-<Container>
-    <h1>Approach to Training</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-   
-    </Container>
-        
-    <Container>
+        <h5 className="text-start mb-5 mt-5">
+          <b>Frequently Asked Questions</b>
+        </h5>
+        <h6 className="text-start mb-3">
+          <b>What do I need to start a class?</b>
+        </h6>
+        <p className="text-start">
+          Please attend the mandatory orientation prior to starting class. Your
+          dog needs to be current on all vaccines or titers. When you register
+          with us, you will be required to read the liability waiver and check
+          the box which requires your dog to be fully vaccinated. Please send us
+          your dog's most recent shot records ahead of time. Dogs 6 months and
+          older must be up to date on Parvo, Distemper, Bordetella and Rabies.
+        </p>
 
-    <MDBCardGroup className="coreValues rounded ">
-      <MDBCard className="border-0 p-2 ">
-        <MDBCardImage  className="rounded-5" src='https://static8.depositphotos.com/1004529/988/i/600/depositphotos_9887128-stock-photo-sharpei-dog.jpg' alt='...' position='top' />
-        <MDBCardBody >
-         <h4>Manners</h4>
-          <MDBCardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </MDBCardText>
-          <MDBCardText>
-          <MDBBtn href='#' className="buttones">Go somewhere</MDBBtn>
-          </MDBCardText>
-         
-        </MDBCardBody>
-      </MDBCard>
+        <h6 className="mt-5 mb-3">
+          <b>What do I need to start a class?</b>
+        </h6>
 
-      <MDBCard className="border-0 p-2 ">
-        <MDBCardImage className="rounded-5" src='https://districtdogs.com/wp-content/uploads/2019/10/DistrictDogs-117-1024x683.jpg' alt='...' position='top' />
-        <MDBCardBody>
-        <h4>Puppy Kindergarten</h4>
-          <MDBCardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </MDBCardText>
-          <MDBCardText>
-          <MDBBtn href='#' className="buttones" >Go somewhere</MDBBtn>
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
+        <p className="text-start">
+          Please attend the mandatory orientation prior to starting class. Your
+          dog needs to be current on all vaccines or titers. When you register
+          with us, you will be required to read the liability waiver and check
+          the box which requires your dog to be fully vaccinated. Please send us
+          your dog's most recent shot records ahead of time. Dogs 6 months and
+          older must be up to date on Parvo, Distemper, Bordetella and Rabies.
+        </p>
 
-      <MDBCard className="border-0 p-2 ">
-        <MDBCardImage className="rounded-5" src='https://wagurtaildogtraining.com/wp-content/uploads/2018/04/shutterstock_281482349.jpg' alt='...' position='top' />
-        <MDBCardBody>
-        <h4>Private Lessons</h4>
-          <MDBCardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.           
-          </MDBCardText>
-          <MDBCardText>
-          <MDBBtn href='#' className="buttones">Go somewhere</MDBBtn>
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCardGroup>
-
-    </Container>
+        <h6 className="text-start mt-5 mb-3">
+          <b>What do I need to start a class?</b>
+        </h6>
+        <p className="text-start">
+          Please attend the mandatory orientation prior to starting class. Your
+          dog needs to be current on all vaccines or titers. When you register
+          with us, you will be required to read the liability waiver and check
+          the box which requires your dog to be fully vaccinated. Please send us
+          your dog's most recent shot records ahead of time. Dogs 6 months and
+          older must be up to date on Parvo, Distemper, Bordetella and Rabies.
+        </p>
+      </Container>
     </>
-
   );
 };
-
 
 export default Manners;
