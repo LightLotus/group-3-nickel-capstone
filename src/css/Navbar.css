@@ -20,9 +20,14 @@
   transition: all 0.3s ease-in-out;
 }
 
+.dropright {
+  text-decoration: none;
+}
+
 .nav-dropdown {
   width: 100%;
   display: block;
+  text-decoration: none;
 }
 
 .navlinks-a::after {
@@ -71,7 +76,7 @@
   position: absolute;
   font-size: 1rem;
   color: #fff;
-  background-color: #F42D46;
+  background-color: #f42d46;
   text-align: center;
   z-index: 999;
   top: 0;

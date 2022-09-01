@@ -8,7 +8,7 @@ import "../css/PuppyKindergarten.css";
 const PuppyKindergarten = () => {
   return (
 <>
-   <Container className="master-Class"><p>MANNERS CLASS</p></Container>
+   <Container className="master-Class"><p>PUPPY KINDERGARTEN CLASS</p></Container>
     <Container><h4>Enrollments for August 25, 2022 - October 24, 2022</h4></Container>
     <Container>
     <Table striped bordered hover>
