@@ -22,8 +22,8 @@ const OurProducts = () => {
           </Card.Text>
           <Card.Text>₱89</Card.Text>
           <Card.Text>In stock, 67 units</Card.Text>
-          <MDBBtn className='Button-product'>Buy Now</MDBBtn>
-          <MDBBtn className='Button-product'>Add to Cart</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Buy Now</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Add to Cart</MDBBtn>
   
         </Card.Body>
         <Card.Footer>
@@ -39,8 +39,8 @@ const OurProducts = () => {
           </Card.Text>
           <Card.Text>₱89</Card.Text>
           <Card.Text>In stock, 67 units</Card.Text>
-          <MDBBtn className='Button-product'>Buy Now</MDBBtn>
-          <MDBBtn className='Button-product'>Add to Cart</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Buy Now</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Add to Cart</MDBBtn>
         </Card.Body>
         <Card.Footer>
          
@@ -55,8 +55,8 @@ const OurProducts = () => {
           </Card.Text>
           <Card.Text>₱89</Card.Text>
           <Card.Text>In stock, 67 units</Card.Text>
-          <MDBBtn className='Button-product'>Buy Now</MDBBtn>
-          <MDBBtn className='Button-product'>Add to Cart</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Buy Now</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Add to Cart</MDBBtn>
         </Card.Body>
         <Card.Footer>
          
@@ -76,8 +76,8 @@ const OurProducts = () => {
           </Card.Text>
           <Card.Text>₱89</Card.Text>
           <Card.Text>In stock, 67 units</Card.Text>
-          <MDBBtn className='Button-product'>Buy Now</MDBBtn>
-          <MDBBtn className='Button-product'>Add to Cart</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Buy Now</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Add to Cart</MDBBtn>
   
         </Card.Body>
         <Card.Footer>
@@ -93,8 +93,8 @@ const OurProducts = () => {
           </Card.Text>
           <Card.Text>₱89</Card.Text>
           <Card.Text>In stock, 67 units</Card.Text>
-          <MDBBtn className='Button-product'>Buy Now</MDBBtn>
-          <MDBBtn className='Button-product'>Add to Cart</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Buy Now</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Add to Cart</MDBBtn>
         </Card.Body>
         <Card.Footer>
          
@@ -109,8 +109,8 @@ const OurProducts = () => {
           </Card.Text>
           <Card.Text>₱89</Card.Text>
           <Card.Text>In stock, 67 units</Card.Text>
-          <MDBBtn className='Button-product'>Buy Now</MDBBtn>
-          <MDBBtn className='Button-product'>Add to Cart</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Buy Now</MDBBtn>
+          <MDBBtn href="#" className="Button-product">Add to Cart</MDBBtn>
         </Card.Body>
         <Card.Footer>
          
