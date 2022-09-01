@@ -11,6 +11,8 @@ import Manners from "./pages/Manners";
 import PrivateLessons from "./pages/PrivateLessons";
 import PuppyKindergarten from "./pages/PuppyKindergarten";
 import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import Homepage from "./pages/Homepage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -30,6 +32,8 @@ function App() {
         <Route path="/ourproducts" element={<OurProducts />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </Router>

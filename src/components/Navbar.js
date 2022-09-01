@@ -11,7 +11,7 @@ import "../css/Navbar.css";
 
 function Navlink() {
   const TrainingClasses = () => {
-    return <Link to="/trainingclasses">Training Classes</Link>;
+    return <Link className="dropright" to="/trainingclasses">Training Classes</Link>;
   };
   return (
     <>
@@ -67,20 +67,20 @@ function Navlink() {
                       id="basic-nav-dropdown"
                     >
                       <NavDropdown.Item>
-                        <Link to="/manners">Manners</Link>
+                        <Link className="nav-dropdown" to="/manners">Manners</Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/puppykindergarten">Puppy Kindergarten</Link>
+                        <Link className="nav-dropdown" to="/puppykindergarten">Puppy Kindergarten</Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/privatelessons">Private Lessons</Link>
+                        <Link className="nav-dropdown" to="/privatelessons">Private Lessons</Link>
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown.Item>
-                      <Link to="/adoption">Adoption</Link>
+                      <Link className="nav-dropdown" to="/adoption">Adoption</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <Link to="/ourproducts">Our Products</Link>
+                      <Link className="nav-dropdown" to="/ourproducts">Our Products</Link>
                     </NavDropdown.Item>
                   </NavDropdown>
                   <li className="navlinks-li">
@@ -94,14 +94,14 @@ function Navlink() {
                 <div className="navlinks-div">
                   <ul className="navlinks-ul">
                     <li className="navlinks-li">
-                      <a className="navlinks-a" href="#">
+                      <Link className="navlinks-a" to="/login">
                         Login
-                      </a>
+                      </Link>
                     </li>
                     <li className="navlinks-li">
-                      <a className="navlinks-a" href="#">
+                      <Link className="navlinks-a" to="/register">
                         Sign Up
-                      </a>
+                      </Link>
                     </li>
                     <span>|</span>
                     <Link to="/cart" className="cartIcon">

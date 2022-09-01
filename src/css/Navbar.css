@@ -22,12 +22,14 @@
 
 .dropright {
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .nav-dropdown {
   width: 100%;
   display: block;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .navlinks-a::after {
