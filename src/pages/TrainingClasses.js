@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/Container";
-import "../css/Manners.css";
+import "../css/TrainingClasses.css";
 import React from "react";
 import {
   MDBCard,
@@ -17,7 +17,7 @@ const TrainingClasses = () => {
   return (
     <>
       <Container>
-        <h1>Approach to Training</h1>
+        <h1 className="text-center mt-5">Approach to Training</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -45,7 +45,7 @@ const TrainingClasses = () => {
               </MDBCardText>
               <MDBCardText>
                 <MDBBtn href="#" className="buttones">
-                  Go somewhere
+                Enroll Now
                 </MDBBtn>
               </MDBCardText>
             </MDBCardBody>
@@ -68,7 +68,7 @@ const TrainingClasses = () => {
               </MDBCardText>
               <MDBCardText>
                 <MDBBtn href="#" className="buttones">
-                  Go somewhere
+                Enroll Now
                 </MDBBtn>
               </MDBCardText>
             </MDBCardBody>
@@ -91,7 +91,7 @@ const TrainingClasses = () => {
               </MDBCardText>
               <MDBCardText>
                 <MDBBtn href="#" className="buttones">
-                  Go somewhere
+                Enroll Now
                 </MDBBtn>
               </MDBCardText>
             </MDBCardBody>

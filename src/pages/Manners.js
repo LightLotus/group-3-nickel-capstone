@@ -5,11 +5,11 @@ import "../css/PuppyKindergarten.css";
 const Manners = () => {
   return (
     <>
-      <Container className="master-Class">
+      <Container className="master-Class text-center">
         <p>MANNERS CLASS</p>
       </Container>
       <Container>
-        <h4>Enrollments for August 25, 2022 - October 24, 2022</h4>
+        <h4 className="text-center">Enrollments for August 25, 2022 - October 24, 2022</h4>
       </Container>
       <Container>
         <Table striped bordered hover>
