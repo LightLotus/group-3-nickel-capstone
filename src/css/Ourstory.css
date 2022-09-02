@@ -39,7 +39,6 @@ h1{
 }
 
 .ourStoryImage{
-    border-radius: 50%;
+    border-radius: 50%!important;
    
-    
 }

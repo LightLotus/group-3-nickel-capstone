@@ -26,7 +26,7 @@ const OurStory = () => {
 <>
 
     <Container className="p-4">
-        <h1>ABOUT US</h1>
+        <h1 className="text-center">ABOUT US</h1>
     <MDBCard style={{ maxWidth: '100%' , maxHeight:'50%', border:'0'}}>
       <MDBRow className='g-3'>
         <MDBCol md='6'>
@@ -80,7 +80,7 @@ const OurStory = () => {
     </Container>
 
     <Container>
-    <h1>Core Values</h1>
+    <h1 className="text-center">Core Values</h1>
    
     </Container>
 
