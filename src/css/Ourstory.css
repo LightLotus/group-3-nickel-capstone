@@ -30,3 +30,16 @@ h1{
     
     
 }
+.Border-story{
+    border-color: #00DDC6!important;
+    border-width: 2px!important;
+    padding: 3rem;
+    margin-top: 5rem;
+
+}
+
+.ourStoryImage{
+    border-radius: 50%;
+   
+    
+}

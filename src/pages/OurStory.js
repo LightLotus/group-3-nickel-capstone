@@ -11,6 +11,10 @@ import {
   MDBCol,
   MDBCardGroup
 } from 'mdb-react-ui-kit';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 
 
 
@@ -21,7 +25,7 @@ const OurStory = () => {
 
 <>
 
-    <Container>
+    <Container className="p-4">
         <h1>ABOUT US</h1>
     <MDBCard style={{ maxWidth: '100%' , maxHeight:'50%', border:'0'}}>
       <MDBRow className='g-3'>
@@ -80,47 +84,56 @@ const OurStory = () => {
    
     </Container>
 
-    <Container>
-    <MDBCardGroup className="coreValues">
-      <MDBCard>
-        <MDBCardImage  className="img-cirle" src='https://mdbootstrap.com/img/new/standard/city/041.webp' alt='...' position='top' />
-        <MDBCardBody>
+    <Container className=" Border-story border ">
+    <Row>
+        <Col xs className="text-center"> 
+        <MDBCardImage className='ourStoryImage mb-3' src='https://cdn.sci.news/images/enlarge6/image_7527e-Dog-Ownership.jpg' alt='Dog' fluid />
+        <MDBCardText>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+       </MDBCardText> 
+        </Col>
+
+        <Col xs={{ order: 12 }}className="text-center"> 
+        <MDBCardImage className='ourStoryImage mb-3' src='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/guy-and-his-dog-golden-retriever-city-park-royalty-free-image-1609928545.' alt='Dog' fluid />
+        <MDBCardText>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+       </MDBCardText>   
+       </Col>
+
+        <Col xs={{ order: 1 }}className="text-center">
+        <MDBCardImage className='ourStoryImage mb-3' src='https://westernanimalclinic.ca/wp-content/uploads/2017/12/AdobeStock_96365900-1024x683.jpeg' alt='Dog' fluid />
+        <MDBCardText>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+       </MDBCardText> 
+         </Col>
+         </Row>
+          {/* New row */}
+         <Row className="mt-5">
+        <Col xs className="text-center"> 
+        <MDBCardImage className='ourStoryImage mb-3' src='https://people.com/thmb/O7UZ7FKp7AHosbxE4B8J3wL7ZPE=/2000x1333/filters:fill(auto,1)/talking-to-pet-5d349cb2bb69468dbce48688e170ce52.jpg' alt='Dog' fluid />
+        <MDBCardText>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+       </MDBCardText> 
+        </Col>
+
+        <Col xs={{ order: 12 }}className="text-center"> 
+        <MDBCardImage className='ourStoryImage mb-3' src='https://lovetv.co/wp-content/uploads/2017/06/bigstock-Portrait-of-an-happy-couple-pl-90903890.jpg' alt='Dog' fluid />
+        <MDBCardText>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+       </MDBCardText>   
+       </Col>
+
+        <Col xs={{ order: 1 }}className="text-center">
+        <MDBCardImage className='ourStoryImage mb-3' src='https://peacefulpetsaquamation.com/wp-content/uploads/2017/05/Featured-Image.jpg' alt='Dog' fluid />
+        <MDBCardText>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+       </MDBCardText> 
+         </Col>
+         </Row>
          
-          <MDBCardText>
-            This is a wider card with supporting text below as a natural lead-in to additional content. This
-            
-          </MDBCardText>
-          <MDBCardText>
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
 
-      <MDBCard>
-        <MDBCardImage className="img-cirle" src='https://mdbootstrap.com/img/new/standard/city/042.webp' alt='...' position='top' />
-        <MDBCardBody>
-          
-          <MDBCardText>
-            This is a wider card with supporting text below as a natural lead-in to additional content.
-          </MDBCardText>
-          <MDBCardText>
-          
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
 
-      <MDBCard>
-        <MDBCardImage className="img-cirle" src='https://mdbootstrap.com/img/new/standard/city/043.webp' alt='...' position='top' />
-        <MDBCardBody>
-        
-          <MDBCardText>
-            This is a wider card with supporting text below as a natural lead-in to additional content.           
-          </MDBCardText>
-          <MDBCardText>
-           
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
-    </MDBCardGroup>
+      
     </Container>
 
 
