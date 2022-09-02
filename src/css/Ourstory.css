@@ -23,22 +23,20 @@ h1{
 
 
 
-.coreValues{
-   
-    padding: 10px;
-   
-    
-    
-}
+
 .Border-story{
-    border-color: #00DDC6!important;
-    border-width: 2px!important;
-    padding: 3rem;
-    margin-top: 5rem;
+    border-color: #00DDC6!important;  
+    padding: 10px!important;
+    
 
 }
 
 .ourStoryImage{
     border-radius: 50%!important;
    
+}
+.border-box {
+    padding: 5rem;
+    border-color: #00DDC6!important;
+    border-width: 2px!important;
 }

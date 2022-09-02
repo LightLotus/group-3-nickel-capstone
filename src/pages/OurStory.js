@@ -23,9 +23,9 @@ import Col from 'react-bootstrap/Col';
 const OurStory = () => {
   return (
 
-<>
 
-    <Container className="p-4">
+    <div className='p-2'>
+    <Container>
         <h1 className="text-center">ABOUT US</h1>
     <MDBCard style={{ maxWidth: '100%' , maxHeight:'50%', border:'0'}}>
       <MDBRow className='g-3'>
@@ -79,13 +79,13 @@ const OurStory = () => {
     </MDBCard>
     </Container>
 
-    <Container>
+    <Container >
     <h1 className="text-center">Core Values</h1>
-   
+    
     </Container>
-
-    <Container className=" Border-story border ">
-    <Row>
+  
+    <Container className="border-box border" >
+    <Row className="Border-story"> 
         <Col xs className="text-center"> 
         <MDBCardImage className='ourStoryImage mb-3' src='https://cdn.sci.news/images/enlarge6/image_7527e-Dog-Ownership.jpg' alt='Dog' fluid />
         <MDBCardText>
@@ -137,7 +137,7 @@ const OurStory = () => {
     </Container>
 
 
-  </>
+  </div>
 
 
      
