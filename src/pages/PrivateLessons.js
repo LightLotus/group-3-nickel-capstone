@@ -14,7 +14,7 @@ const PrivateLessons = () => {
     <p><b>Booking Policy</b></p>
     <p>We require payment for your appointment at the time of booking. Cancellations need to be made at least twenty-four hours before your scheduled appointment, by phone or e-mail, in order not to incur a cancellation fee. 
       Cancellations and/or reschedules made with less than twenty-four hours’ notice and no-shows will be charged the full price of the appointment.</p>
-    <p><span className="text-danger">Please also send us your dog's most recent shot records ahead of time. </span>Dogs 6 months and older must be up to date on Parvo, Distemper, Bordetella and Rabies.</p>
+    <p><span className="text-danger">Please also send us your dog's most recent shot records ahead of time. </span>Dogs 6 months and older must be up to date on <b>Parvo, Distemper, Bordetella and Rabies.</b></p>
     <br></br>
     <p><b>Aggression</b></p>
     <p>We do not work with aggressive dogs and they are not allowed in the facility for liability reasons. 
