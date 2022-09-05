@@ -6,7 +6,7 @@
   left: 354px;
   top: 200px; */
   margin: auto;
-  width: 70%;
+  width: 60%;
   font-family: 'Poppins';
   font-style: normal;
   line-height: 24px;
@@ -35,3 +35,5 @@
   .accordion-body {
     background-color: #F5F5DC;
   } 
+
+ 

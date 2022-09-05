@@ -7,7 +7,7 @@ const FAQ = () => {
     <div className='header text-center'><p><b>FAQs</b></p></div>
       <Accordion className="faq" defaultActiveKey="0" flush>
         <Accordion.Item eventKey="0">
-          <Accordion.Header>Accordion Item #1</Accordion.Header>
+          <Accordion.Header className='mb-3'>Accordion Item #1</Accordion.Header>
           <Accordion.Body className="accordion-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -19,7 +19,7 @@ const FAQ = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>Accordion Item #2</Accordion.Header>
+          <Accordion.Header className='mb-3'>Accordion Item #2</Accordion.Header>
           <Accordion.Body className="accordion-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -31,7 +31,7 @@ const FAQ = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
-          <Accordion.Header>Accordion Item #3</Accordion.Header>
+          <Accordion.Header className='mb-3'>Accordion Item #3</Accordion.Header>
           <Accordion.Body className="accordion-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -43,7 +43,7 @@ const FAQ = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="4">
-          <Accordion.Header>Accordion Item #3</Accordion.Header>
+          <Accordion.Header className='mb-3'>Accordion Item #3</Accordion.Header>
           <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -55,7 +55,7 @@ const FAQ = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="5">
-          <Accordion.Header>Accordion Item #4</Accordion.Header>
+          <Accordion.Header className='mb-3'>Accordion Item #4</Accordion.Header>
           <Accordion.Body className="accordion-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
