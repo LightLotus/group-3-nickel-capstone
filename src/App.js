@@ -14,8 +14,13 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Homepage from "./pages/Homepage";
+<<<<<<< HEAD
+import Checkout from "./pages/Checkout";
+=======
 import AdoptionPetDetails from "./pages/AdoptionPetDetails";
+>>>>>>> 98b579ab025a8c269de2df30f5fdaac795d19941
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -36,6 +41,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
       <Footer />
     </Router>

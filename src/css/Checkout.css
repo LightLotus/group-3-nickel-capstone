@@ -1,0 +1,20 @@
+.checkout{
+    font-size: 26px;
+    font-weight:500;
+    margin-bottom: 3rem;
+}
+
+.check-outborder1{
+    border-color:#00DDC6!important; 
+    border-radius: 5px; 
+    margin-right: 10px;
+ 
+}
+
+.check-outborder2{
+    border-color:#00DDC6!important; 
+    border-radius:5px; 
+    margin-left: 10px;
+
+}
+
