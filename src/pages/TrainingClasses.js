@@ -37,7 +37,7 @@ const TrainingClasses = () => {
               position="top"
             />
             <MDBCardBody>
-              <h4>Manners</h4>
+              <h4 className="text-center">Manners</h4>
               <MDBCardText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -60,7 +60,7 @@ const TrainingClasses = () => {
               position="top"
             />
             <MDBCardBody>
-              <h4>Puppy Kindergarten</h4>
+              <h4 className="text-center">Puppy Kindergarten</h4>
               <MDBCardText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -83,7 +83,7 @@ const TrainingClasses = () => {
               position="top"
             />
             <MDBCardBody>
-              <h4>Private Lessons</h4>
+              <h4 className="text-center">Private Lessons</h4>
               <MDBCardText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

@@ -3,6 +3,9 @@ import Container from "react-bootstrap/Container";
 import {MDBBtn} from 'mdb-react-ui-kit';
 import "../css/Adoption.css";
 import React from 'react';
+
+
+
 import {
   MDBCard,
   MDBCardImage,
