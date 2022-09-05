@@ -14,6 +14,7 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Homepage from "./pages/Homepage";
+import AdoptionPetDetails from "./pages/AdoptionPetDetails";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/puppykindergarten" element={<PuppyKindergarten />} />
         <Route path="/privatelessons" element={<PrivateLessons />} />
         <Route path="/adoption" element={<Adoption />} />
+        <Route path="/adoptionpetdetails" element={<AdoptionPetDetails />} />
         <Route path="/ourproducts" element={<OurProducts />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />

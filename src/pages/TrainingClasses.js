@@ -12,6 +12,7 @@ import {
   MDBCardGroup,
   MDBBtn,
 } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 
 const TrainingClasses = () => {
   return (
@@ -44,9 +45,9 @@ const TrainingClasses = () => {
                 nisi ut aliquip ex ea commodo consequat.
               </MDBCardText>
               <MDBCardText>
-                <MDBBtn href="#" className="buttones">
-                Enroll Now
-                </MDBBtn>
+                <Link to="/manners">
+                  <MDBBtn className="buttones">Enroll Now</MDBBtn>
+                </Link>
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
@@ -67,9 +68,9 @@ const TrainingClasses = () => {
                 nisi ut aliquip ex ea commodo consequat.
               </MDBCardText>
               <MDBCardText>
-                <MDBBtn href="#" className="buttones">
-                Enroll Now
-                </MDBBtn>
+                <Link to="/puppykindergarten">
+                  <MDBBtn className="buttones">Enroll Now</MDBBtn>
+                </Link>
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
@@ -90,9 +91,9 @@ const TrainingClasses = () => {
                 nisi ut aliquip ex ea commodo consequat.
               </MDBCardText>
               <MDBCardText>
-                <MDBBtn href="#" className="buttones">
-                Enroll Now
-                </MDBBtn>
+                <Link to="/privatelesson">
+                  <MDBBtn className="buttones">Enroll Now</MDBBtn>
+                </Link>
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
