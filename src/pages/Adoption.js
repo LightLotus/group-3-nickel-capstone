@@ -3,9 +3,6 @@ import Container from "react-bootstrap/Container";
 import {MDBBtn} from 'mdb-react-ui-kit';
 import "../css/Adoption.css";
 import React from 'react';
-
-
-
 import {
   MDBCard,
   MDBCardImage,
@@ -17,22 +14,22 @@ import {
   MDBCol
 } from 'mdb-react-ui-kit';
 
+
 const Adoption = () => {
   return (
     <Container>
-      
       <div style={{ width: '100%', height:'auto' }}>
-      <div className="video-container">
+      <div className="video-container ">
       <Ratio aspectRatio="16x9">
-    
-        <embed type="image/svg+xml" src="https://assets.mixkit.co/videos/preview/mixkit-dog-sitting-on-log-1550-large.mp4" fluid/>
-     
+      <embed type="image/svg+xml" src="https://assets.mixkit.co/videos/preview/mixkit-dog-sitting-on-log-1550-large.mp4" fluid/>
       </Ratio>
       </div>
     </div>
+
     <div className='mt-5 mb-3'>
     <h5><b>Adopt from Best Friends Animal Sanctuary</b></h5>
     </div>
+    
     <p className='text-start'>When you adopt a furry (or feathered) friend from the Sanctuary, you’re not only changing that pet’s life, you’re helping to Save Them All.</p>
     <p className='text-start'>Not ready to adopt yet? Help care these rescued animals with your donation.</p>
     <div class="col-md-12 text-center">

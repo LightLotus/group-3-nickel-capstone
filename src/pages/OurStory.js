@@ -16,10 +16,6 @@ import Col from 'react-bootstrap/Col';
 
 
 
-
-
-
-
 const OurStory = () => {
   return (
 

@@ -37,7 +37,7 @@ const Cart = () => {
       <tr>
         <td>Pedigree Dentastix Dog Treats Puppy 56g (7 Sticks) For 4-12 months</td>
         <td><img src="/image.plus-minus.svg" alt="image" /></td>
-        <td>PHP 79.00</td>
+        <td>₱ 79.00</td>
         
       </tr>
       <tr>
@@ -55,7 +55,7 @@ const Cart = () => {
     <Col md={5} className="Cart-box border">
     <Row>
       <Col className='text-start'>Total</Col>
-      <Col className='text-end'>PHP 79.00</Col>
+      <Col className='text-end'>₱ 79.00</Col>
     </Row>
       <p id='p-tax'>Tax included. Shipping calculated at checkout</p>
       <MDBBtn href="#" className="Checkout">Checkout</MDBBtn>
