@@ -1,0 +1,94 @@
+.footer {
+  background-color: #f5f5dc;
+  margin-top: 5rem;
+ 
+ 
+}
+
+.footer-container-wrapper {
+  padding: 2rem 0;
+  
+  
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ 
+}
+
+.footer-social-icons {
+  font-size: 2.5rem;
+  transition: 0.3s;
+  
+}
+
+.footer-social-icons:hover {
+  color: #00ddc6;
+}
+
+.footer-social-icons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 1rem 0;
+}
+
+.newsletter-p {
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
+}
+
+#root > footer > div > div > div > div.footer-third-col > form > button {
+  display: block;
+}
+
+.newsletter-input {
+  padding: 0.6rem 1.2rem;
+  border: transparent;
+  border-radius: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form {
+  margin: 1rem 0;
+}
+
+.useful-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.useful-links-p {
+  text-align: left;
+}
+
+.useful-links-ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 2;
+  padding: 0;
+}
+
+.useful-links-li {
+  list-style-type: none;
+}
+
+.useful-links-items {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.useful-links-items:hover,
+.useful-links-items:focus,
+.useful-links-items:active {
+  color: #00ddc6;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}

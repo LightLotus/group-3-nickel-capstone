@@ -10,9 +10,16 @@ import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 
 function Navlink() {
+  const TrainingClasses = () => {
+    return <Link className="dropright" to="/trainingclasses">Training Classes</Link>;
+  };
   return (
     <>
-      <Navbar bg="light" expand="md" className="mb-3 py-3 sticky-top">
+      <Navbar
+        bg="light"
+        expand="md"
+        className="mb-3 py-2 sticky-top border-bottom"
+      >
         <Container>
           <Navbar.Brand>
             <Link to="/">
@@ -32,7 +39,7 @@ function Navlink() {
               <Nav className="nav-links-container justify-content-end flex-grow-1 pe-3">
                 <ul className="navlinks-ul">
                   <li className="navlinks-li">
-                    <Link className="navlinks-a"  to="/">
+                    <Link className="navlinks-a" to="/">
                       Homepage
                     </Link>
                   </li>
@@ -42,34 +49,38 @@ function Navlink() {
                     id="basic-nav-dropdown"
                   >
                     <NavDropdown.Item>
-                      <Link to="/ourstory">Our Story</Link>
+                      <Link className="nav-dropdown" to="/ourstory">
+                        Our Story
+                      </Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <Link to="/faq">FAQs</Link>
+                      <Link className="nav-dropdown" to="/faq">
+                        FAQs
+                      </Link>
                     </NavDropdown.Item>
                   </NavDropdown>
 
                   <NavDropdown title="Services" id="basic-nav-dropdown">
                     <NavDropdown
                       className="dropright"
-                      title="Training Classes"
+                      title={TrainingClasses()}
                       id="basic-nav-dropdown"
                     >
                       <NavDropdown.Item>
-                        <Link to="/manners">Manners</Link>
+                        <Link className="nav-dropdown" to="/manners">Manners</Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/puppykindergarten">Puppy Kindergarten</Link>
+                        <Link className="nav-dropdown" to="/puppykindergarten">Puppy Kindergarten</Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/privatelessons">Private Lessons</Link>
+                        <Link className="nav-dropdown" to="/privatelessons">Private Lessons</Link>
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown.Item>
-                      <Link to="/adoption">Adoption</Link>
+                      <Link className="nav-dropdown" to="/adoption">Adoption</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <Link to="/ourproducts">Our Products</Link>
+                      <Link className="nav-dropdown" to="/ourproducts">Our Products</Link>
                     </NavDropdown.Item>
                   </NavDropdown>
                   <li className="navlinks-li">
@@ -83,21 +94,20 @@ function Navlink() {
                 <div className="navlinks-div">
                   <ul className="navlinks-ul">
                     <li className="navlinks-li">
-                      <a className="navlinks-a" href="#">
+                      <Link className="navlinks-a" to="/login">
                         Login
-                      </a>
+                      </Link>
                     </li>
                     <li className="navlinks-li">
-                      <a className="navlinks-a" href="#">
+                      <Link className="navlinks-a" to="/register">
                         Sign Up
-                      </a>
+                      </Link>
                     </li>
                     <span>|</span>
-                    <li className="navlinks-li">
-                      <a className="cartIcon" href="#">
-                        <FontAwesomeIcon icon={faCartShopping} />
-                      </a>
-                    </li>
+                    <Link to="/cart" className="cartIcon">
+                      <FontAwesomeIcon icon={faCartShopping} />
+                      <span className="cartIcon-qty">0</span>
+                    </Link>
                   </ul>
                 </div>
               </Nav>
