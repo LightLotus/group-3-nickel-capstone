@@ -20,7 +20,7 @@ const OurStory = () => {
   return (
 
 
-    <div className='p-2'>
+    <div className='aboutus p-2'>
     <Container>
         <h1 className="text-center">ABOUT US</h1>
     <MDBCard style={{ maxWidth: '100%' , maxHeight:'50%', border:'0'}}>
