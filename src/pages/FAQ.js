@@ -4,7 +4,7 @@ import "../css/FAQ.css";
 const FAQ = () => {
   return (
     <>
-    <div className='text-center'><h1><b>FAQs</b></h1></div>
+    <div className='header text-center'><p><b>FAQs</b></p></div>
       <Accordion className="faq" defaultActiveKey="0" flush>
         <Accordion.Item eventKey="0">
           <Accordion.Header>Accordion Item #1</Accordion.Header>

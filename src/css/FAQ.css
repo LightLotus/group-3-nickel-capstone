@@ -1,16 +1,23 @@
 .faq{
-    /* Rectangle 10 */
-  position: absolute;
+    
+  /* position: absolute;
   width: 732px;
   height: 106px;
   left: 354px;
-  top: 200px;
+  top: 200px; */
+  margin: auto;
+  width: 80%;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+  }
+
+  .header {
+    font-weight: bold;
+    font-size: 2.5rem;
   }
   
   .accordion-button {
@@ -28,4 +35,4 @@
 
   .accordion-body {
     background-color: #F5F5DC;
-  }
+  } 
