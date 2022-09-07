@@ -24,7 +24,7 @@ const OurStory = () => {
     <Container>
         <h1 className="text-center">ABOUT US</h1>
     <MDBCard style={{ maxWidth: '100%' , maxHeight:'50%', border:'0'}}>
-      <MDBRow className='g-3'>
+      <MDBRow className='g-5'>
         <MDBCol md='6'>
           <MDBCardImage className='image1' src='https://api.time.com/wp-content/uploads/2015/04/dog-child.jpg' alt='Dog' fluid />
         </MDBCol>
