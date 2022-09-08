@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Table from "react-bootstrap/Table";
 import "../css/PuppyKindergarten.css";
+import ViewManners from "../components/ViewMannersUser";
 
 const Manners = () => {
   return (
@@ -9,49 +10,12 @@ const Manners = () => {
         <p>MANNERS CLASS</p>
       </Container>
       <Container>
-        <h4 className="text-center">Enrollments for August 25, 2022 - October 24, 2022</h4>
+        <h4 className="text-center">
+          Enrollments for August 25, 2022 - October 24, 2022
+        </h4>
       </Container>
       <Container>
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>Dates</th>
-              <th>Time</th>
-              <th>Days</th>
-              <th>Trainer</th>
-              <th>Available Slot</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Jul 13 2022 - Oct 26 2022</td>
-              <td>8:10 PM - 9:00 PM</td>
-              <td>Wed</td>
-              <td>Nica</td>
-              <td>10/10</td>
-              <td className="text-danger">full</td>
-            </tr>
-            <tr>
-              <td>Jul 13 2022 - Oct 26 2022</td>
-              <td>8:10 PM - 9:00 PM</td>
-              <td>Wed</td>
-              <td>Nica</td>
-              <td>10/10</td>
-              <td className="text-danger">full</td>
-            </tr>
-            <tr>
-              <td>Jul 13 2022 - Oct 26 2022</td>
-              <td>8:10 PM - 9:00 PM</td>
-              <td>Wed</td>
-              <td>Kevin</td>
-              <td>8/10</td>
-              <td>
-                <a href="#">Enroll</a>
-              </td>
-            </tr>
-          </tbody>
-        </Table>
-
+        <ViewManners />
         <h5 className="text-start mb-5 mt-5">
           <b>Frequently Asked Questions</b>
         </h5>
