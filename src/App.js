@@ -22,8 +22,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
+     
       <Navlink />
       <Routes>
+
         <Route path="/" index element={<Homepage />} />
         <Route path="/ourstory" element={<OurStory />} />
         <Route path="/faq" element={<FAQ />} />

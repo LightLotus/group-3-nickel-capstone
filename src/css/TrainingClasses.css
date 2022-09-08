@@ -1,3 +1,7 @@
+*{
+  font-family: 'Poppins';
+}
+
 .buttones{
     background-color: #00DDC6;
     display: inline-block;
@@ -17,3 +21,7 @@
       color: #00ddc6;
     }
   
+    .text-center{
+      color: #00ddc6;
+      
+    }
