@@ -47,9 +47,11 @@ const TrainingClasses = () => {
               we build on your basic foundation to add distractions, leave treats behind,
               and introduce some tricks to keep it interesting! 
               <br></br>
+          
               This class is designed to 
               take your dog’s behavior above and beyond to make sure he can keep his brain 
               in any situation. If you want to get into therapy work, dog sports, or just want
+              <br></br>
               your best friend to go out and about with you, Advanced Manners is the place to be!
               </MDBCardText>
               <MDBCardText>
