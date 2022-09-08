@@ -24,7 +24,7 @@ const OurStory = () => {
     <Container>
         <h1 className="text-center">About Us</h1>
     <MDBCard style={{ maxWidth: '100%' , maxHeight:'50%', border:'0'}}>
-      <MDBRow className='g-5'>
+      <MDBRow className=''>
         <MDBCol md='6'>
           <MDBCardImage className='image1' src='https://api.time.com/wp-content/uploads/2015/04/dog-child.jpg' alt='Dog' fluid />
         </MDBCol>
@@ -32,13 +32,14 @@ const OurStory = () => {
           <MDBCardBody>
             <MDBCardTitle className="about-us"style={{textAlign: "center"}}><b>Our Story</b></MDBCardTitle>
             <MDBCardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            Charmiing Pets is the largest specialty pet retailer of services and solutions for the lifetime needs of pets. 
+            At Charming Pets, we love pets, and we believe pets make us better people. Every day with every connection.
+            
             </MDBCardText>
             <MDBCardText>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            Charmiing Pets operates approximately 100 pet stores Worldwide,
+            The retailer provides a broad range of competitively priced pet food and products,
+            as well as services such as dog training, pet grooming, pet boarding, Charming Pets Day Camp™ and pet adoption.  
             </MDBCardText>
   
           </MDBCardBody>

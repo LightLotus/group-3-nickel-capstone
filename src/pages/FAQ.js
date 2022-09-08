@@ -4,10 +4,10 @@ import "../css/FAQ.css";
 const FAQ = () => {
   return (
     <>
-    <div className='header text-center'><p><b>FAQs</b></p></div>
+    <div className='header text-center mt-5 mb-5'><p><b>FAQs</b></p></div>
       <Accordion className="faq" defaultActiveKey="0" flush>
         <Accordion.Item eventKey="0">
-          <Accordion.Header className='mb-3'>Should I take a puppy class or a manners class?</Accordion.Header>
+          <Accordion.Header className='mb-3 shadow'>Should I take a puppy class or a manners class?</Accordion.Header>
           <Accordion.Body className="accordion-body mb-2">
           If your puppy is four months or younger on the class start date,
           you should enroll into Puppy Kindergarten.  If your puppy is over
@@ -45,7 +45,7 @@ const FAQ = () => {
         </Accordion.Item>
         <Accordion.Item eventKey="5">
           <Accordion.Header className='mb-3'>Do you work with aggressive dogs?</Accordion.Header>
-          <Accordion.Body className="accordion-body">
+          <Accordion.Body className="accordion-body mb-2 ">
           No, aggressive dogs are not allowed in the facility for liability reasons. 
           Please contact a behaviorist to help with aggression. 
           We do work with frustrated greeters and fearful dogs in private lessons only. 

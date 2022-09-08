@@ -21,7 +21,7 @@
 
 .Welcome{
   background-color: #00DDC6;
-  color: white;
+  color: white!important;
   padding: 60px;
   margin-top: 3rem;
   margin-bottom: 3rem;
