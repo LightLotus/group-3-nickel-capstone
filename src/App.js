@@ -16,6 +16,7 @@ import Register from "./pages/Register";
 import Homepage from "./pages/Homepage";
 import Checkout from "./pages/Checkout";
 import AdoptionPetDetails from "./pages/AdoptionPetDetails";
+import MannersAdmin from "./components/MannersAdmin";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/mannersadmin" element={<MannersAdmin/>} />
       </Routes>
       <Footer />
     </Router>
