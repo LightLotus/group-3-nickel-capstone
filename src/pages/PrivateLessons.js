@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import "../css/PrivateLesson.css";
 
+
 const PrivateLessons = () => {
   return (
   <>

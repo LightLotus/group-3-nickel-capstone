@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Table from 'react-bootstrap/Table';
 import "../css/PuppyKindergarten.css";
+import { Link } from "react-router-dom";
 
 
 
