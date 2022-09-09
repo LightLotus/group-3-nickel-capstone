@@ -36,7 +36,7 @@ const OurStory = () => {
             <MDBCardText>
             Kevin’s career started out as a Computer Engineer, but in 2010 his passion for training animals 
             became a dream come true as he ventured into the dog training world. In 2013, Kevin decided
-            to open her own training center “Charming Pets”, a positive reinforcement-based training center
+            to open his own training center “Charming Pets”, a positive reinforcement-based training center
             that focused on the human side of dog training.<br></br> <br></br>In January of 2017, Kevin and his staff moved to their
             current location and rebranded to “Charming Pets”. Kevin is a true believer that “Dreams do come true” 
             when you are dedicated and keep looking forward!      

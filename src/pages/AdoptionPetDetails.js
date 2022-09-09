@@ -2,6 +2,8 @@ import { Link } from "react-router-dom"
 import "../css/AdoptionPetdetails.css";
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import { useEffect } from "react";
+
 import {
   MDBCard,
   MDBCardTitle,
@@ -12,7 +14,12 @@ import {
   MDBCol
 } from 'mdb-react-ui-kit';
 
+
+
 const AdoptionPetDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Container>
 
@@ -38,11 +45,10 @@ const AdoptionPetDetails = () => {
             </MDBCardText>
             
             <MDBCardText className="petdetails">
-          
-            <div>Breed: Askal</div>
-            <div>Estimated Birthday: July 3, 1986</div>
-            <div>Color: Black</div>
-            <div>Sex: Male</div>
+              <div>Breed: Askal</div>
+              <div>Estimated Birthday: July 3, 1986</div>
+              <div>Color: Black</div>
+              <div>Sex: Male</div>
             </MDBCardText>
 
           </MDBCardBody>

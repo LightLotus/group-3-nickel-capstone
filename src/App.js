@@ -14,7 +14,7 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Homepage from "./pages/Homepage";
-import DashboardViewProfile from "./pages/DashboardViewProfile";
+import Dashboard from "./pages/Dashboard";
 import Checkout from "./pages/Checkout";
 import AdoptionPetDetails from "./pages/AdoptionPetDetails";
 import MannersAdmin from "./components/MannersAdmin";
@@ -44,7 +44,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/mannersadmin" element={<MannersAdmin/>} />
-        <Route path="/DashboardViewProfile" element={<DashboardViewProfile/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
       </Routes>
       <Footer />
     </Router>

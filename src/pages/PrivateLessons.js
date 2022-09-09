@@ -1,9 +1,15 @@
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import "../css/PrivateLesson.css";
+import { useEffect } from "react";
 
 
 const PrivateLessons = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)    
+  }, [])
+
   return (
   <>
   <div className='header text-center'><p><b>Private Lessons</b></p></div><br></br>

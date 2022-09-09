@@ -1,4 +1,5 @@
 import "../css/Contact.css";
+import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
@@ -6,6 +7,11 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)    
+  }, [])
+  
   return (
     <>
       <Container>

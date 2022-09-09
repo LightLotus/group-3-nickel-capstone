@@ -2,7 +2,8 @@ import Container from 'react-bootstrap/Container';
 import "../css/DashBoardProfile.css";
 
 
-const Cart = () => {
+
+const Dashboard = () => {
     return (
   
   <Container><h1>My Account Dashboard</h1>
@@ -22,17 +23,10 @@ const Cart = () => {
   
   </Container>
   
-  
-  
-
-    
-       
-  
      
-  
-  
+
     );
   };
   
-  export default Cart;
+export default Dashboard;
   

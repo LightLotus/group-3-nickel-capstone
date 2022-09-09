@@ -1,9 +1,13 @@
 import Container from "react-bootstrap/Container";
-import Table from "react-bootstrap/Table";
 import "../css/PuppyKindergarten.css";
 import ViewManners from "../components/ViewMannersUser";
+import { useEffect } from "react";
 
 const Manners = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <Container className="master-Class text-center">
