@@ -13,6 +13,8 @@ import {
 } from 'mdb-react-ui-kit';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import kevinpics from '../images/kevin2.png';
+import dogchild from '../images/dog-child.png';
 
 
 
@@ -26,22 +28,19 @@ const OurStory = () => {
     <MDBCard style={{ maxWidth: '100%' , maxHeight:'50%', border:'0'}}>
       <MDBRow className=''>
         <MDBCol md='6'>
-          <MDBCardImage className='image1' src='https://api.time.com/wp-content/uploads/2015/04/dog-child.jpg' alt='Dog' fluid />
+       <MDBCardImage className="kevin-image"src={kevinpics} alt='Dog'fluid/>
         </MDBCol>
         <MDBCol md='6' >
           <MDBCardBody>
             <MDBCardTitle className="about-us"style={{textAlign: "center"}}><b>Our Story</b></MDBCardTitle>
             <MDBCardText>
-            Charmiing Pets is the largest specialty pet retailer of services and solutions for the lifetime needs of pets. 
-            At Charming Pets, we love pets, and we believe pets make us better people. Every day with every connection.
-            
-            </MDBCardText>
-            <MDBCardText>
-            Charmiing Pets operates approximately 100 pet stores Worldwide,
-            The retailer provides a broad range of competitively priced pet food and products,
-            as well as services such as dog training, pet grooming, pet boarding, Charming Pets Day Camp™ and pet adoption.  
-            </MDBCardText>
-  
+            Kevin’s career started out as a Computer Engineer, but in 2010 his passion for training animals 
+            became a dream come true as he ventured into the dog training world. In 2013, Kevin decided
+            to open her own training center “Charming Pets”, a positive reinforcement-based training center
+            that focused on the human side of dog training.<br></br> <br></br>In January of 2017, Kevin and his staff moved to their
+            current location and rebranded to “Charming Pets”. Kevin is a true believer that “Dreams do come true” 
+            when you are dedicated and keep looking forward!      
+            </MDBCardText>  
           </MDBCardBody>
         </MDBCol>
       </MDBRow>
@@ -58,19 +57,20 @@ const OurStory = () => {
           <MDBCardBody>
             <MDBCardTitle className="about-us" style={{textAlign: "center"}}><b>Our Advocacy</b></MDBCardTitle>
             <MDBCardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            Charmiing Pets is the largest specialty pet retailer of services and solutions for the lifetime needs of pets. 
+            At Charming Pets, we love pets, and we believe pets make us better people. Every day with every connection.
             
             </MDBCardText>
             <MDBCardText>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            Charmiing Pets operates approximately 100 pet stores Worldwide,
+            The retailer provides a broad range of competitively priced pet food and products,
+            as well as services such as dog training, pet grooming, pet boarding, Charming Pets Day Camp™ and pet adoption.  
             </MDBCardText>
   
           </MDBCardBody>
         </MDBCol>
         <MDBCol md='6'>
-          <MDBCardImage src='https://images.squarespace-cdn.com/content/v1/544baed0e4b0f81e05e9ce4d/1595363936789-3J5YT2Q4R7QDONWV43BH/Naming+Your+Dog?format=1500w' alt='Dog' fluid />
+          <MDBCardImage className="kevin-image " src={dogchild} alt='Dog' fluid />
         </MDBCol>
       </MDBRow>
     </MDBCard>
