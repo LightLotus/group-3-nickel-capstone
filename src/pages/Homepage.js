@@ -20,8 +20,8 @@ const Homepage = () => {
               Welcome to <span className="span-color">Charming Pets</span>
             </h1>
             <p className="hero-text-p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
+            We believe every person, human and animal 
+            should be able to fulfill their potential.
             </p>
             <Link className="button-link-style" to="/trainingclasses">
               Enroll Now!
@@ -33,34 +33,36 @@ const Homepage = () => {
           What Can <span className="span-color">We Do</span>
         </h3>
         <p className="feature-services-container-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et.
+        At Charming Pets, we train using positive reinforcement, 
+        often called "clicker training." There are many ways to train a pet, 
+        but we believe this method is the easiest, kindest, and most reliable way to train.
+        We focus on teaching your pets what we want them to do, not what we don't.
+        This science-based approach is used worldwide by animal trainers in all disciplines,
+        such as training zoo animals to allow medical care or training chickens in order to better train pets. 
         </p>
         <div className="feature-services-container">
           <div className="feature-services-div">
             <img className="feature-services-img" src={trainingIcon} alt="" />
             <p className="feature-services-title">Training</p>
             <p className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
+            5 months up 6-weeks. introductory class that teaches basic
+             manners with impulse control, relationship building and more.
             </p>
           </div>
           <div className="feature-services-div">
             <img className="feature-services-img" src={adoptionIcon} alt="" />
             <p className="feature-services-title">Adoption</p>
             <p className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
+            Whether you adopt online or at a PetSmart store near you, 
+            you’re helping change the life of a pet in need.
             </p>
           </div>
           <div className="feature-services-div">
             <img className="feature-services-img" src={productionIcon} alt="" />
             <p className="feature-services-title">Our Products</p>
             <p className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
+            In addition to training, Lucky Dog Training Center also includes a 
+            retail store full of only the best dog products and a few for dog people, too!
             </p>
           </div>
         </div>

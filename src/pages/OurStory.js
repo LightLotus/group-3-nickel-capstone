@@ -57,16 +57,11 @@ const OurStory = () => {
           <MDBCardBody>
             <MDBCardTitle className="about-us" style={{textAlign: "center"}}><b>Our Advocacy</b></MDBCardTitle>
             <MDBCardText>
-            Charming Pets is the largest specialty pet retailer of services and solutions for the lifetime needs of pets. 
-            At Charming Pets, we love pets, and we believe pets make us better people. Every day with every connection.
-            
+            Our focus is on building an inclusive way of being with animals that promotes a healthier lifestyle.
+             Hence, we advocate for a shift in paradigm that uses an animal-centered approach that views them as partners,
+             leaders and co-habitants on this planet. 
+             We advocate by actively questioning the validity of human-centered systems currently used to define and care for animal persons. Additionally, we advocate for shifts not only in behavior, but in our language and terms that represents a more conscientious, social justice view when caring for animal persons.
             </MDBCardText>
-            <MDBCardText>
-            Charming Pets operates approximately 100 pet stores Worldwide,
-            The retailer provides a broad range of competitively priced pet food and products,
-            as well as services such as dog training, pet grooming, pet boarding, Charming Pets Day Camp™ and pet adoption.  
-            </MDBCardText>
-  
           </MDBCardBody>
         </MDBCol>
         <MDBCol md='6'>
@@ -77,7 +72,7 @@ const OurStory = () => {
     </Container>
 
   
-    <h1 className="text-center">Core Values</h1>
+    <h1 className="core-values text-center">Core Values</h1>
     
  
   

@@ -7,7 +7,7 @@ const FAQ = () => {
     <div className='header text-center mt-5 mb-5'><p><b>FAQs</b></p></div>
       <Accordion className="faq" defaultActiveKey="0" flush>
         <Accordion.Item eventKey="0">
-          <Accordion.Header className='mb-3 shadow'>Should I take a puppy class or a manners class?</Accordion.Header>
+          <Accordion.Header className='btn-head mb-3 shadow'>Should I take a puppy class or a manners class?</Accordion.Header>
           <Accordion.Body className="accordion-body mb-2 shadow"><small>
           If your puppy is four months or younger on the class start date,
           you should enroll into Puppy Kindergarten.  If your puppy is over
