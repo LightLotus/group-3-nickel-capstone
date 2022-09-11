@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import {MDBBtn} from 'mdb-react-ui-kit';
 import "../css/Adoption.css";
 import React from 'react';
+import { useEffect } from "react";
 import {
   MDBCard,
   MDBCardImage,
@@ -15,6 +16,11 @@ import {
 } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 const Adoption = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <Container>
       <div style={{ width: 1100, height: "auto" }}>

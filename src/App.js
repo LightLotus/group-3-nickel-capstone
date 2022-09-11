@@ -14,6 +14,7 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Homepage from "./pages/Homepage";
+import Dashboard from "./pages/Dashboard";
 import Checkout from "./pages/Checkout";
 import AdoptionPetDetails from "./pages/AdoptionPetDetails";
 import MannersAdmin from "./components/MannersAdmin";
@@ -47,6 +48,7 @@ function App() {
           element={<EditMannerSched />}
         />
         <Route path="manners/mannerenroll/:id" element={<MannerEnroll />} />
+        <Route path="/dashboard" element={<Dashboard/>} />
       </Routes>
       <Footer />
     </Router>

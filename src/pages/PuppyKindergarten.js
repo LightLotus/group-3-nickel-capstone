@@ -2,11 +2,15 @@ import Container from "react-bootstrap/Container";
 import Table from 'react-bootstrap/Table';
 import "../css/PuppyKindergarten.css";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 
 
 const PuppyKindergarten = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
 <>
    <Container className="master-Class text-center"><p>PUPPY KINDERGARTEN CLASS</p></Container>
