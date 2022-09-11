@@ -21,6 +21,7 @@ import MannersAdmin from "./components/MannersAdmin";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import EditMannerSched from "./components/EditMannerSched";
 import MannerEnroll from "./pages/MannerEnroll";
+import ViewMannersEnrollees from "./components/ViewMannersEnrollees";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           element={<EditMannerSched />}
         />
         <Route path="manners/mannerenroll/:id" element={<MannerEnroll />} />
+        <Route path="mannersadmin/view-enrollees/:id" element={<ViewMannersEnrollees/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
       </Routes>
       <Footer />
