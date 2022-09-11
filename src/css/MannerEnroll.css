@@ -1,0 +1,54 @@
+.mannerenroll-header {
+  line-height: 2;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #00ddc6;
+  font-size: 1.5rem;
+}
+
+.mannerenroll-subtitle {
+  color: #000;
+  font-weight: 400;
+}
+
+.mannerenroll-input {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.mannerenroll-form {
+  background-color: #00ddc6;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 30vw;
+}
+
+.mannerenroll-button {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+.mannerenroll-button:hover{
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+
+.mannerenroll-ins {
+    text-align: center;
+}
+
+.mannerenroll-back {
+    display: block;
+    text-align: center;
+    width: 20%;
+    margin: 1rem auto;
+}

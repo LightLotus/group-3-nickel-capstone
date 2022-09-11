@@ -43,11 +43,13 @@ function ViewManners() {
       return (
         <tr key={index}>
           <td>{item.date}</td>
-          <td>{item.time}</td>
-          <td>{item.day}</td>
+          <td>{item.timestart}</td>
+          <td>{item.timeend}</td>
           <td>{item.trainer}</td>
           <td>{item.availslot}</td>
-          <td>{item.status}</td>
+          <td>
+            <Link to={`mannerenroll/${item.id}`}>{item.status}</Link>
+          </td>
           {/* <td>
             <Link
               to={`edit-student/${item.id}`}
@@ -79,8 +81,8 @@ function ViewManners() {
               <thead>
                 <tr>
                   <th>Dates</th>
-                  <th>Times</th>
-                  <th>Days</th>
+                  <th>Time Start</th>
+                  <th>Time End</th>
                   <th>Trainer</th>
                   <th>Available Slot</th>
                   <th>Status</th>

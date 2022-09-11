@@ -13,6 +13,7 @@ function Navlink() {
   const TrainingClasses = () => {
     return <Link className="dropright" to="/trainingclasses">Training Classes</Link>;
   };
+  
   return (
     <>
       <Navbar
