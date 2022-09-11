@@ -55,7 +55,7 @@ function EditMannerSched() {
           setError([]);
           history.push("/mannersadmin");
         } else if (res.data.status === 422) {
-          swal("All fields are mandetory", "", "error");
+          swal("All fields are mandatory", "", "error");
           setError(res.data.validationErrors);
         } else if (res.data.status === 404) {
           swal("Error", res.data.message, "error");
@@ -147,7 +147,7 @@ function EditMannerSched() {
               Status:
             </label>
             <input
-              type="string"
+              type="text"
               name="status"
               onChange={handleInput}
               value={mannersInput.status}

@@ -70,7 +70,7 @@ const ViewMannersEnrollees = () => {
           <td>{item.address}</td>
           <td>
             <Link
-              to={`edit-mannersched/${item.id}`}
+              to={`/edit-enrollees/${item.id}`}
               className="btn btn-success btn-sm"
             >
               <FontAwesomeIcon icon={faPencil} />

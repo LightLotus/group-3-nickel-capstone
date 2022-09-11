@@ -22,6 +22,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import EditMannerSched from "./components/EditMannerSched";
 import MannerEnroll from "./pages/MannerEnroll";
 import ViewMannersEnrollees from "./components/ViewMannersEnrollees";
+import EditMannersEnrollees from "./pages/EditMannersEnrollees";
 
 function App() {
   return (
@@ -48,9 +49,16 @@ function App() {
           path="/mannersadmin/edit-mannersched/:id"
           element={<EditMannerSched />}
         />
-        <Route path="manners/mannerenroll/:id" element={<MannerEnroll />} />
-        <Route path="mannersadmin/view-enrollees/:id" element={<ViewMannersEnrollees/>} />
-        <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/manners/mannerenroll/:id" element={<MannerEnroll />} />
+        <Route
+          path="/mannersadmin/view-enrollees/:id"
+          element={<ViewMannersEnrollees />}
+        />
+        <Route
+          path="/edit-enrollees/:id"
+          element={<EditMannersEnrollees />}
+        />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
       <Footer />
     </Router>
