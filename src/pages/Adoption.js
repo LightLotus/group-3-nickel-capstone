@@ -78,7 +78,7 @@ const Adoption = () => {
         <MDBCol>
           <MDBCard className="h-100">
             <MDBCardImage
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPh8BpiUbI3Z0pSnWkl7DKDO3TPkUZSLJqKXxx96YC6DZ4Z1UuHEV76Uw3NOpOs7QAe9k&usqp=CAU"
+              src="https://www.rd.com/wp-content/uploads/2017/11/05-amazon-9-Powerful-Ways-to-Give-to-Charity-Without-Breaking-the-Bank_527124532-Pongsatorn-Singnoy.jpg"
               alt="..."
               position="top"
             />
@@ -181,7 +181,7 @@ const Adoption = () => {
         <MDBCol>
           <MDBCard className="h-100">
             <MDBCardImage
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLY7n2gIlixE6F_-jz3YsUxpphwRAcVAKZWWzA969iXIGpKXASzg010f5KdfRsHazoE0k&usqp=CAU"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuQfx6quEFHMuztGsYk9gNRdv3E6HSxFiM6MIKSyy2yZBKjWdfO4XuCnhmZbAJADC9SQ0&usqp=CAU"
               alt="..."
               position="top"
             />
@@ -259,7 +259,7 @@ const Adoption = () => {
         <MDBCol>
           <MDBCard className="h-100">
             <MDBCardImage
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOc0EocSNU28QvuXmMme8IvfmCtQ0x-a08NApnJK27e6eM5X9Q2ZQOcD4-VscSguR_xsk&usqp=CAU"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxhHO9lXNea0ysUtswkot7F5qq5JxokUePxmBoYW52aOyG0VYt9wAlB1v7dV0yL_-u9vI&usqp=CAU"
               alt="..."
               position="top"
             />

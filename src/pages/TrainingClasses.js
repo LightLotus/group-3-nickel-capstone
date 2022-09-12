@@ -13,8 +13,15 @@ import {
   MDBBtn,
 } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const TrainingClasses = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)    
+  }, [])
+
+
   return (
     <>
       <Container>
@@ -41,18 +48,19 @@ const TrainingClasses = () => {
               position="top"
             />
             <MDBCardBody>
-              <h4 className="text-center">Manners</h4>
+              <h4 className="text-center"><b>Manners</b></h4>
               <MDBCardText>
+              <small>
               Ready to take your dog’s training to the next level? In Advanced Manners,
               we build on your basic foundation to add distractions, leave treats behind,
-              and introduce some tricks to keep it interesting! 
+              and introduce some tricks to keep it interesting!
               <br></br>
-          
               This class is designed to 
               take your dog’s behavior above and beyond to make sure he can keep his brain 
               in any situation. If you want to get into therapy work, dog sports, or just want
-              <br></br>
+              
               your best friend to go out and about with you, Advanced Manners is the place to be!
+              </small>
               </MDBCardText>
               <MDBCardText>
                 <Link to="/manners">
@@ -70,17 +78,21 @@ const TrainingClasses = () => {
               position="top"
             />
             <MDBCardBody>
-              <h4 className="text-center">Puppy Kindergarten</h4>
+              <h4 className="text-center"><b>Puppy Kindergarten</b></h4>
               <MDBCardText>
+              <small>
               If you recently added a new puppy to your family, you're in the right place!
               Puppy Kindergarten is the perfect place to start for puppies between 8 weeks
-              and 16 weeks. <br></br>
+              and 16 weeks. 
+        
               <br></br>
               This 5 week class will cover everything from crate games and potty
-              training to foundation behaviors like name, touch, sit, and more! We'll also address 
+              training to foundation behaviors like name, touch, sit, and more! 
+               We'll also address 
+               <br></br>
               unwanted behaviors like chewing, jumping, and pulling on the leash. Last but not least,
               we'll help you socialize your puppy to strange noises.
-
+              </small>
               </MDBCardText>
               <MDBCardText>
                 <Link to="/puppykindergarten">
@@ -98,15 +110,16 @@ const TrainingClasses = () => {
               position="top"
             />
             <MDBCardBody>
-              <h4 className="text-center">Private Lessons</h4>
+              <h4 className="text-center"><b>Private Lessons</b></h4>
               <MDBCardText>
+              <small>
               Some dogs need more individualized instruction than we can provide in a group class,
               and that's okay! Whether your dog is reactive around other dogs, has specific behavioral
               issues you need to address, or you just can't find a group class that fits your schedule, 
               private lessons are a great option. These one-on-one sessions allow you to work with a trainer
               at length to discuss and address the needs of your dog. Please check out our FAQ for help on what
               to bring and more details on what we can cover.
-
+              </small>
               </MDBCardText>
               <MDBCardText>
                 <Link to="/privatelessons">

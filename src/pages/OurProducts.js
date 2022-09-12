@@ -3,10 +3,17 @@ import Container from "react-bootstrap/Container";
 import CardGroup from 'react-bootstrap/CardGroup';
 import {MDBBtn} from 'mdb-react-ui-kit';
 import "../css/Ourproducts.css";
+import { useEffect } from "react";
 
 
 
 const OurProducts = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+
   return (
 
   <Container>

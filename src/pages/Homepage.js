@@ -42,7 +42,10 @@ const Homepage = () => {
         </p>
         <div className="feature-services-container">
           <div className="feature-services-div">
-            <img className="feature-services-img" src={trainingIcon} alt="" />
+          <Link 
+                to="/trainingclasses">
+                <img className="feature-services-img" src={trainingIcon} alt="" />   
+          </Link>
             <p className="feature-services-title">Training</p>
             <p className="description">
             5 months up 6-weeks. introductory class that teaches basic
@@ -50,18 +53,24 @@ const Homepage = () => {
             </p>
           </div>
           <div className="feature-services-div">
+          <Link 
+                to="/adoption">
             <img className="feature-services-img" src={adoptionIcon} alt="" />
+          </Link>
             <p className="feature-services-title">Adoption</p>
             <p className="description">
-            Whether you adopt online or at a PetSmart store near you, 
+            Whether you adopt online or at Charming Pets near you, 
             you’re helping change the life of a pet in need.
             </p>
           </div>
           <div className="feature-services-div">
+          <Link 
+                to="/ourproducts">
             <img className="feature-services-img" src={productionIcon} alt="" />
+          </Link>
             <p className="feature-services-title">Our Products</p>
             <p className="description">
-            In addition to training, Lucky Dog Training Center also includes a 
+            In addition to training, Charming Pets Training Center also includes a 
             retail store full of only the best dog products and a few for dog people, too!
             </p>
           </div>
@@ -78,7 +87,7 @@ const Homepage = () => {
             <Link to="/adoption" class="adoption-details">
               <img
                 className="adoption-details-img container-fluid"
-                src="https://images.unsplash.com/photo-1602832309326-e1bd02f48a99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RyYXklMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+                src="https://www.rd.com/wp-content/uploads/2017/11/05-amazon-9-Powerful-Ways-to-Give-to-Charity-Without-Breaking-the-Bank_527124532-Pongsatorn-Singnoy.jpg"
                 alt=""
               />
               <div className="adoption-details-texts">
@@ -100,7 +109,7 @@ const Homepage = () => {
             <Link to="/adoption" class="adoption-details">
               <img
                 className="adoption-details-img container-fluid"
-                src="https://images.unsplash.com/photo-1602832309326-e1bd02f48a99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RyYXklMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+                src="https://www.cesarsway.com/wp-content/uploads/2015/06/why-dogs-end-up-in-shelter--1024x683.jpg"
                 alt=""
               />
               <div className="adoption-details-texts">
@@ -111,7 +120,7 @@ const Homepage = () => {
             <Link to="/adoption" class="adoption-details">
               <img
                 className="adoption-details-img container-fluid"
-                src="https://images.unsplash.com/photo-1602832309326-e1bd02f48a99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RyYXklMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnShbDdwPHIsUbFL6yHUDwZbzON9d-AO9tTytkRlgmoHd5x1JAxNx_EjGWEJmro3LmJMk&usqp=CAU"
                 alt=""
               />
               <div className="adoption-details-texts">
