@@ -8,6 +8,7 @@ const Manners = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+  
   return (
     <>
       <Container className="master-Class text-center">
