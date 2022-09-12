@@ -131,7 +131,7 @@ function AddMannerSched() {
             Status:
           </label>
           <input
-            type="string"
+            type="text"
             name="status"
             onChange={handleInput}
             value={mannersInput.status}

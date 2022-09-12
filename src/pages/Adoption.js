@@ -1,33 +1,68 @@
-import Ratio from 'react-bootstrap/Ratio';
+import Ratio from "react-bootstrap/Ratio";
 import Container from "react-bootstrap/Container";
-import {MDBBtn} from 'mdb-react-ui-kit';
+import { MDBBtn } from "mdb-react-ui-kit";
 import "../css/Adoption.css";
-import React from 'react';
-import { useEffect } from "react";
-import {
-  MDBCard,
-  MDBCardImage,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardFooter,
-  MDBRow,
-  MDBCol
-} from 'mdb-react-ui-kit';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import "../css/Adoption.css";
+import { Link } from "react-router-dom";
+
 const Adoption = () => {
-  
+  const [loading, setLoading] = useState(true);
+  const [adoppets, setAdoppets] = useState([]);
+
+  // code to display adoption animals
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    axios.get(`http://127.0.0.1:8000/api/adoption`).then((res) => {
+      if (res.status === 200) {
+        console.log(res.data.adoption);
+        setAdoppets(res.data.adoption);
+        setLoading(false);
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  if (loading) {
+    return <h4>Loading Pets...</h4>;
+  } else {
+    var adoption_HTMLTABLE = "";
+    adoption_HTMLTABLE = adoppets.map((pet, index) => {
+      return (
+        <div className="adoption-items" key={index}>
+          <img
+            src={pet.imgsrc}
+            className="card-img-top adoption-img"
+            alt="..."
+          />
+          <div className="card-body mt-3">
+            <h5 className="card-title">
+              <strong>{pet.petname}</strong>
+            </h5>
+            <p className="card-text">{pet.description}</p>
+            <Link to="/adoption-details" className="button-link-style">
+              {`Adopt ${pet.petname}`}
+            </Link>
+          </div>
+        </div>
+      );
+    });
+  }
 
   return (
     <Container>
-      <div style={{ width: 1100, height: "auto" }}>
+      <h1>
+        <span className="text-dark">Welcome to </span>Charming Pets Adoption
+      </h1>
+      <div className="mx-auto" style={{ width: 800, height: "auto" }}>
         <Ratio aspectRatio="16x9">
           <embed
             type="image/svg+xml"
-            src="https://assets.mixkit.co/videos/preview/mixkit-dog-sitting-on-log-1550-large.mp4"
+            src="https://player.vimeo.com/video/179738694?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1"
             fluid
           />
         </Ratio>
@@ -49,7 +84,9 @@ const Adoption = () => {
         Donate
       </MDBBtn>
 
-      <MDBRow className="row-cols-1 row-cols-md-3 g-4">
+      <div className="adoption-container">{adoption_HTMLTABLE}</div>
+
+      {/* <MDBRow className="row-cols-1 row-cols-md-3 g-4">
         <MDBCol>
           <MDBCard className="h-100">
             <MDBCardImage
@@ -281,7 +318,7 @@ const Adoption = () => {
             </MDBCardFooter>
           </MDBCard>
         </MDBCol>
-      </MDBRow>
+      </MDBRow> */}
     </Container>
   );
 };

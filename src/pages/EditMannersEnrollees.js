@@ -63,7 +63,7 @@ const EditMannersEnrollees = () => {
 
   return (
     <Container>
-      <Link to="/mannersadmin/view-enrollees" className="fs-5 mb-4 d-block">
+      <Link to="/mannersadmin/view-enrollees/:d" className="fs-5 mb-4 d-block">
         <FontAwesomeIcon icon={faArrowAltCircleLeft}></FontAwesomeIcon>
         Back
       </Link>

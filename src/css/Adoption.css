@@ -1,8 +1,5 @@
-
-
-
-.button-addopt{
-  background-color: #00DDC6;
+.button-addopt {
+  background-color: #00ddc6;
   text-decoration: none;
   background-color: #00ddc6;
   border: 1px solid transparent;
@@ -13,34 +10,67 @@
   font-weight: bold;
   margin-bottom: 5rem;
   margin-top: 3rem;
-
-  
 }
 
 .button-addopt:hover {
-    background-color: #fff;
-    border: 1px solid #00ddc6;
-    color: #00ddc6;
-  }
+  background-color: #fff;
+  border: 1px solid #00ddc6;
+  color: #00ddc6;
+}
 
-  .video-container{
-    position: relative;
-    padding-bottom: calc(var(--aspect-ratio, .5625) * 100%);
-    height: 0;
-    width: 100%;
-    
-    
+.video-container {
+  position: relative;
+  padding-bottom: calc(var(--aspect-ratio, 0.5625) * 100%);
+  height: 0;
+  width: 100%;
+}
 
-  
-  }
-  .video-container iframe {
+.video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  
-  }
-  
+}
 
+.adoption-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+}
 
+.adoption-img {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+}
+
+.add-adoption-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.add-adoption-div {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.add-adoption-label {
+  display: inline-block;
+  text-align: right;
+  width: 100px;
+}
+
+.add-adoption-input {
+  width: 30vw;
+}
+
+.add-adoption-btn {
+  width: 10rem;
+}
+
+.add-adoption-btn {
+  margin: 0 auto;
+  width: 30vw;
+}

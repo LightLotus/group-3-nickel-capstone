@@ -23,6 +23,9 @@ import EditMannerSched from "./components/EditMannerSched";
 import MannerEnroll from "./pages/MannerEnroll";
 import ViewMannersEnrollees from "./components/ViewMannersEnrollees";
 import EditMannersEnrollees from "./pages/EditMannersEnrollees";
+import Adoptionadmin from "./pages/Adoptionadmin";
+import AddAdoption from "./pages/AddAdoption";
+import Editadminadoption from "./pages/Editadminadoption";
 
 function App() {
   return (
@@ -54,11 +57,11 @@ function App() {
           path="/mannersadmin/view-enrollees/:id"
           element={<ViewMannersEnrollees />}
         />
-        <Route
-          path="/edit-enrollees/:id"
-          element={<EditMannersEnrollees />}
-        />
+        <Route path="/edit-enrollees/:id" element={<EditMannersEnrollees />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/adoptionadmin" element={<Adoptionadmin />} />
+        <Route path="/adoptionadminadd" element={<AddAdoption />} />
+        <Route path="/editadminadoption/:id" element={<Editadminadoption />} />
       </Routes>
       <Footer />
     </Router>
