@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import swal from "sweetalert";
 import Table from "react-bootstrap/Table";
 import AddMannerSched from "./AddMannerSched";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faPencil } from "@fortawesome/free-solid-svg-icons";
 
 function MannersAdmin() {
   const [loading, setLoading] = useState(true);
@@ -22,17 +25,32 @@ function MannersAdmin() {
     e.preventDefault();
 
     const thisClicked = e.currentTarget;
-    thisClicked.innerText = "Deleting";
-
-    axios.delete(`/api/delete-student/${id}`).then((res) => {
-      if (res.data.status === 200) {
-        swal("Deleted!", res.data.message, "success");
-        thisClicked.closest("tr").remove();
-      } else if (res.data.status === 404) {
-        swal("Error", res.data.message, "error");
-        thisClicked.innerText = "Delete";
-      }
-    });
+    if ((thisClicked.innerText = "Deleting")) {
+      swal({
+        title: "Are you sure?",
+        text: "Once deleted, you will not be able to recover this class schedule!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      }).then((willDelete) => {
+        if (willDelete) {
+          axios
+            .delete(`http://127.0.0.1:8000/api/delete-manner/${id}`)
+            .then((res) => {
+              if (res.data.status === 200) {
+                swal("Deleted!", res.data.message, "success");
+                thisClicked.closest("tr").remove();
+              } else if (res.data.status === 404) {
+                swal("Error", res.data.message, "error");
+                thisClicked.innerText = "Delete";
+              }
+            });
+        } else {
+          swal("The class schedule is safe!");
+          thisClicked.innerText = "Delete";
+        }
+      });
+    }
   };
 
   if (loading) {
@@ -44,28 +62,35 @@ function MannersAdmin() {
       return (
         <tr key={index}>
           <td>{item.date}</td>
-          <td>{item.time}</td>
-          <td>{item.day}</td>
+          <td>{item.timestart}</td>
+          <td>{item.timeend}</td>
           <td>{item.trainer}</td>
           <td>{item.availslot}</td>
           <td>{item.status}</td>
-          {/* <td>
+          <td>
             <Link
-              to={`edit-student/${item.id}`}
+              to={`edit-mannersched/${item.id}`}
               className="btn btn-success btn-sm"
             >
-              Edit
+              <FontAwesomeIcon icon={faPencil} />
             </Link>
           </td>
           <td>
-            <button
-              type="button"
+            <Link
+              to={`view-enrollees/${item.id}`}
+              className="btn btn-success btn-sm"
+            >
+              View Enrollees
+            </Link>
+          </td>
+          <td>
+            <span
               onClick={(e) => deleteStudent(e, item.id)}
               className="btn btn-danger btn-sm"
             >
-              Delete
-            </button>
-          </td> */}
+              <FontAwesomeIcon icon={faTrash} />
+            </span>
+          </td>
         </tr>
       );
     });
@@ -76,13 +101,17 @@ function MannersAdmin() {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
+            <p className="fs-2 text-center my-3">
+              <strong>Class Schedule Admin Dashboard</strong>
+            </p>
             <AddMannerSched />
+            <hr />
             <Table striped bordered hover>
               <thead>
                 <tr>
                   <th>Dates</th>
-                  <th>Times</th>
-                  <th>Days</th>
+                  <th>Time Start</th>
+                  <th>Time End</th>
                   <th>Trainer</th>
                   <th>Available Slot</th>
                   <th>Status</th>
