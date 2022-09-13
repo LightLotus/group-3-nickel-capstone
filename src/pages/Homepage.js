@@ -82,7 +82,7 @@ const Homepage = () => {
             </p>
           </div>
         </div>
-        <div className="adoption-container">
+        <div>
           <h3 className="subtitle">
             Cats & Dogs who wants to
             <span className="span-color"> go home with You</span>
