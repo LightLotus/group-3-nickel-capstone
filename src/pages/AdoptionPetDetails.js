@@ -1,65 +1,93 @@
-import { Link } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import axios from "axios";
+import { useParams } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 import "../css/AdoptionPetdetails.css";
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import { useEffect } from "react";
-
-import {
-  MDBCard,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardBody,
-  MDBCardImage,
-  MDBRow,
-  MDBCol
-} from 'mdb-react-ui-kit';
-
-
 
 const AdoptionPetDetails = () => {
+  const [adoppets, setAdoppets] = useState("");
+  const params = useParams();
+
+  const petDetails = () => {
+    const adoption_id = params.id;
+    axios
+      .get(`http://127.0.0.1:8000/api/editadoption/${adoption_id}`)
+      .then((res) => {
+        if (res.status === 200) {
+          const details = res.data.adoption;
+          console.log(details);
+          setAdoppets(details);
+        }
+      })
+      .catch((error) => console.log(`Error: ${error}`));
+  };
+
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    petDetails();
+  }, []);
+
   return (
     <Container>
-
-<MDBCard className="Adopt-card border-0"style={{ maxWidth: '100%' }}>
-      <MDBRow className='g-0'>
-        <MDBCol md='6'>
-          <MDBCardImage src='https://files.globalgiving.org/pfil/15755/pict_large.jpg?m=1384977298000' alt='...' fluid />
-        </MDBCol>
-        <MDBCol md='6'>
-          
-        
-          <MDBCardBody >
-          <div className="d-flex flex-row mb-3">
-        <div className="px-0">Status: available</div>
-        <div className="px-4">Status: available</div>
-        <div className="px-3">Status: taken</div>
+      <Link to="/adoption" className="fs-5 mb-4 d-block">
+        <FontAwesomeIcon icon={faArrowAltCircleLeft}></FontAwesomeIcon>
+        Back
+      </Link>
+      <h3 className="text-center my-5">
+        <strong>Adoption Pet Details</strong>
+      </h3>
+      <div className="row">
+        <div className="col-md-6">
+          <img
+            src={adoppets.imgsrc}
+            className="adoptiondetails-img container-fluid"
+            alt=""
+          />
         </div>
-            <MDBCardTitle><h2>Blacky</h2></MDBCardTitle>
-            <MDBCardText>
-            Blacky is a beautiful lady that enjoys the company of other dogs. 
-            She can still be shy around people but is very calm and will gladly 
-            accept treats!. 
-            </MDBCardText>
-            
-            <MDBCardText className="petdetails">
-              <div>Breed: Askal</div>
-              <div>Estimated Birthday: July 3, 1986</div>
-              <div>Color: Black</div>
-              <div>Sex: Male</div>
-            </MDBCardText>
-
-          </MDBCardBody>
-        </MDBCol>
-      </MDBRow>
-    </MDBCard>
-
-    <Link to="/adoption" className="adopt-button button-link-style">Adopt Blacky</Link>
-      
+        <div className="col-md-6">
+          <h2>
+            <strong>{adoppets.petname}</strong>
+          </h2>
+          <p className="adopt-status">{adoppets.status}</p>
+          <p>
+            <span>
+              <strong>Description: </strong>
+            </span>
+            {adoppets.description}
+          </p>
+          <p>
+            <span>
+              <strong>Animal Type: </strong>
+            </span>
+            {adoppets.animaltype}
+          </p>
+          <p>
+            <span>
+              <strong>Estimated Birthday: </strong>
+            </span>
+            {adoppets.estbirthday}
+          </p>
+          <p>
+            <span>
+              <strong>Color: </strong>
+            </span>
+            {adoppets.color}
+          </p>
+          <p>
+            <span>
+              <strong>Sex: </strong>
+            </span>
+            {adoppets.sex}
+          </p>
+          <Link to="" className="button-link-style">
+            Adopt {adoppets.petname}
+          </Link>
+        </div>
+      </div>
     </Container>
   );
-}
+};
 
-export default AdoptionPetDetails
+export default AdoptionPetDetails;

@@ -62,6 +62,7 @@ function App() {
         <Route path="/adoptionadmin" element={<Adoptionadmin />} />
         <Route path="/adoptionadminadd" element={<AddAdoption />} />
         <Route path="/editadminadoption/:id" element={<Editadminadoption />} />
+        <Route path="/adoption-details/:id" element={<AdoptionPetDetails />} />
       </Routes>
       <Footer />
     </Router>

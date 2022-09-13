@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
-import axios from "axios";
 import { Table } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
 import { Container } from "react-bootstrap";
+import axios from "axios";
 
 const Adoptionadmin = () => {
   const [loading, setLoading] = useState(true);
@@ -16,7 +16,6 @@ const Adoptionadmin = () => {
   useEffect(() => {
     axios.get(`http://127.0.0.1:8000/api/adoption`).then((res) => {
       if (res.status === 200) {
-        console.log(res.data.adoption);
         setAdoppets(res.data.adoption);
         setLoading(false);
       }
@@ -93,6 +92,7 @@ const Adoptionadmin = () => {
       );
     });
   }
+  
   return (
     <Container>
       <h1>
