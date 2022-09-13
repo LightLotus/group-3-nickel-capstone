@@ -33,12 +33,6 @@
   height: 100%;
 }
 
-.adoption-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 4rem;
-}
-
 .adoption-img {
   width: 100%;
   height: 30%;
