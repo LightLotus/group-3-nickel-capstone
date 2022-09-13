@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 import "../css/AdoptionPetdetails.css";
+import swal from "sweetalert";
 
 const AdoptionPetDetails = () => {
   const [adoppets, setAdoppets] = useState("");
@@ -28,6 +29,170 @@ const AdoptionPetDetails = () => {
   useEffect(() => {
     petDetails();
   }, []);
+
+  const AddCustomer = () => {
+    const [customerInput, setCustomer] = useState({
+      firstname: "",
+      lastname: "",
+      contactnumber: "",
+      email: "",
+      address: "",
+      error_list: [],
+    });
+
+    const handleInput = (e) => {
+      e.preventDefault();
+      e.persist();
+      setCustomer({ ...customerInput, [e.target.name]: e.target.value });
+    };
+
+    const saveCustomer = (e) => {
+      const data = {
+        firstname: customerInput.firstname,
+        lastname: customerInput.lastname,
+        contactnumber: customerInput.contactnumber,
+        email: customerInput.email,
+        address: customerInput.address,
+      };
+
+      axios.post(`http://127.0.0.1:8000/api/addcustomer`, data).then((res) => {
+        if (res.data.status === 200) {
+          swal("Success!", res.data.message, "success");
+          setCustomer({
+            firstname: "",
+            lastname: "",
+            contactnumber: "",
+            email: "",
+            address: "",
+          });
+        } else if (res.data.status === 422) {
+          setCustomer({ ...customerInput, error_list: res.data.validate_err });
+        }
+      });
+    };
+
+    return (
+      //modal for user
+      <>
+        {/* // Button trigger modal */}
+        <button
+          type="button"
+          class="button-link-style"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Adopt {adoppets.petname}
+        </button>
+        {/* // Modal */}
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Please provide the following details and we will contact you
+                  shortly
+                </h5>
+              </div>
+              <div class="modal-body">
+                <form>
+                  {/* first name */}
+                  <input
+                    className="customer-details-input"
+                    type="text"
+                    placeholder="First Name"
+                    name="firstname"
+                    onChange={handleInput}
+                    value={customerInput.firstname}
+                  />
+                  <span className="text-danger">
+                    {customerInput.error_list.firstname}
+                  </span>
+
+                  {/* last name */}
+                  <input
+                    className="customer-details-input"
+                    type="text"
+                    placeholder="Last Name"
+                    name="lastname"
+                    onChange={handleInput}
+                    value={customerInput.lastname}
+                  />
+                  <span className="text-danger">
+                    {customerInput.error_list.lastname}
+                  </span>
+
+                  {/* contact number */}
+                  <input
+                    className="customer-details-input"
+                    type="text"
+                    placeholder="Contact Number"
+                    name="contactnumber"
+                    onChange={handleInput}
+                    value={customerInput.contactnumber}
+                  />
+                  <span className="text-danger">
+                    {customerInput.error_list.contactnumber}
+                  </span>
+
+                  {/* email */}
+                  <input
+                    className="customer-details-input"
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    onChange={handleInput}
+                    value={customerInput.email}
+                  />
+                  <span className="text-danger">
+                    {customerInput.error_list.email}
+                  </span>
+
+                  {/* address */}
+                  <input
+                    className="customer-details-input"
+                    type="text"
+                    placeholder="Address"
+                    name="address"
+                    onChange={handleInput}
+                    value={customerInput.address}
+                  />
+                  <span className="text-danger">
+                    {customerInput.error_list.address}
+                  </span>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onClick={saveCustomer}
+                >
+                  Confirm
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  };
+
+  //display pet details and enter modal inpuy fields for user
 
   return (
     <Container>
@@ -81,9 +246,7 @@ const AdoptionPetDetails = () => {
             </span>
             {adoppets.sex}
           </p>
-          <Link to="" className="button-link-style">
-            Adopt {adoppets.petname}
-          </Link>
+          <AddCustomer className="button-link-style" />
         </div>
       </div>
     </Container>
