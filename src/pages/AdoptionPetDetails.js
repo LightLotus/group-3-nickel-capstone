@@ -37,6 +37,8 @@ const AdoptionPetDetails = () => {
       contactnumber: "",
       email: "",
       address: "",
+      dateinterview: "",
+      timeinterview: "",
       error_list: [],
     });
 
@@ -53,6 +55,8 @@ const AdoptionPetDetails = () => {
         contactnumber: customerInput.contactnumber,
         email: customerInput.email,
         address: customerInput.address,
+        dateinterview: customerInput.dateinterview,
+        timeinterview: customerInput.timeinterview,
       };
 
       axios.post(`http://127.0.0.1:8000/api/addcustomer`, data).then((res) => {
@@ -64,6 +68,8 @@ const AdoptionPetDetails = () => {
             contactnumber: "",
             email: "",
             address: "",
+            dateinterview: "",
+            timeinterview: "",
           });
         } else if (res.data.status === 422) {
           setCustomer({ ...customerInput, error_list: res.data.validate_err });
@@ -97,8 +103,8 @@ const AdoptionPetDetails = () => {
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">
-                  Please provide the following details and we will contact you
-                  shortly
+                  Thank you for choosing to adopt. Please provide the following
+                  details and we will send you an email for zoom interview.
                 </h5>
               </div>
               <div class="modal-body">
@@ -167,6 +173,36 @@ const AdoptionPetDetails = () => {
                   <span className="text-danger">
                     {customerInput.error_list.address}
                   </span>
+
+                  {/* date interview */}
+                  <div>
+                    <label htmlFor="">Requested Date for Zoom Interview</label>
+                    <input
+                      className="customer-details-input"
+                      type="date"
+                      name="dateinterview"
+                      onChange={handleInput}
+                      value={customerInput.dateinterview}
+                    />
+                    <span className="text-danger">
+                      {customerInput.error_list.dateinterview}
+                    </span>
+                  </div>
+
+                  {/* time interview */}
+                  <div>
+                    <label htmlFor="">Requested Time for Zoom Interview</label>
+                    <input
+                      className="customer-details-input"
+                      type="time"
+                      name="timeinterview"
+                      onChange={handleInput}
+                      value={customerInput.timeinterview}
+                    />
+                    <span className="text-danger">
+                      {customerInput.error_list.timeinterview}
+                    </span>
+                  </div>
                 </form>
               </div>
               <div class="modal-footer">
