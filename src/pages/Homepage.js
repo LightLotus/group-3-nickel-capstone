@@ -90,7 +90,7 @@ const Homepage = () => {
           <Link id="adoption-cta" className="button-link-style" to="/adoption">
             View More
           </Link>
-          <div className="adoption-details-wrapper">
+          {/* <div className="adoption-details-wrapper">
             <Link to="/adoption" class="adoption-details">
               <img
                 className="adoption-details-img container-fluid"
@@ -135,7 +135,7 @@ const Homepage = () => {
                 <p>Age: 1 year old</p>
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="gallery-section">
           <h3 class="subtitle">Gallery</h3>
