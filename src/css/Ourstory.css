@@ -1,68 +1,58 @@
-*{
-    font-family: 'Poppins';
-    line-height: 1.8rem;
-    
+* {
+  font-family: "Poppins";
+  line-height: 1.8rem;
 }
 .aboutus {
-
-    font-style: normal;
-    line-height: 24px;
-    color: #000000;
+  font-style: normal;
+  line-height: 24px;
+  color: #000000;
 }
 
-h1{
-    font-size: 26px;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-
+h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-#section2{
-    color: aquamarine!important;
+#section2 {
+  color: aquamarine !important;
 }
 
-
-.img-circle{
-    width: 10px;
-    height: 10px;
-    border-radius: 100px;
+.img-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  object-fit: cover;
 }
 
-
-
-
-.Border-story{
-    border-color: #00DDC6!important;  
-    padding: 10px!important;
-    
-
+.Border-story {
+  border-color: #00ddc6 !important;
+  padding: 10px !important;
 }
 
-.ourStoryImage{
-    border-radius: 50%!important;
-   
+.ourStoryImage {
+  border-radius: 50% !important;
 }
 .border-box {
-    padding: 5rem;
-    border-color: #00DDC6!important;
-    border-width: 2px!important;
-    border-radius: 1%;
-
+  padding: 5rem;
+  border-color: #00ddc6 !important;
+  border-width: 2px !important;
+  border-radius: 1%;
 }
 
-.about-us{
-    color: #00DDC6;
+.about-us {
+  color: #00ddc6;
 }
 
-.kevin-image{
-    border-radius: 5px;
- 
+.kevin-image {
+  border-radius: 5px;
+  object-fit: cover;
 }
-.card2{
-    margin-top: 5rem;
+.card2 {
+  margin-top: 5rem;
 }
 
-.core-values{
-    margin-top: 5rem;
+.core-values {
+  margin-top: 5rem;
 }

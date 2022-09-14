@@ -23,7 +23,7 @@ const Homepage = () => {
       <Container>
         <div className="hero-container mt-5">
           <div className="hero-text-container">
-            <h1>
+            <h1 className="text-dark">
               Welcome to <span className="span-color">Charming Pets</span>
             </h1>
             <p className="hero-text-p">
