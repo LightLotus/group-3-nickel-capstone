@@ -83,10 +83,12 @@ const Adoption = () => {
         Not ready to adopt yet? Help care these rescued animals with your
         donation.
       </p>
-      <MDBBtn href="#" className="button-addopt ">
+      <button href="#" className="button-addopt ">
         Donate
-      </MDBBtn>
-
+      </button>
+      <h3 className="text-center">
+        <strong>Meet Our Fur Babies</strong>
+      </h3>
       <div className="adoption-container">{adoption_HTMLTABLE}</div>
 
       {/* <MDBRow className="row-cols-1 row-cols-md-3 g-4">
