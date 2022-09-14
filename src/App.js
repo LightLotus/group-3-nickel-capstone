@@ -26,6 +26,7 @@ import EditMannersEnrollees from "./pages/EditMannersEnrollees";
 import Adoptionadmin from "./pages/Adoptionadmin";
 import AddAdoption from "./pages/AddAdoption";
 import Editadminadoption from "./pages/Editadminadoption";
+import Viewadoptapplicant from "./pages/Viewadoptapplicant";
 
 function App() {
   return (
@@ -63,6 +64,10 @@ function App() {
         <Route path="/adoptionadminadd" element={<AddAdoption />} />
         <Route path="/editadminadoption/:id" element={<Editadminadoption />} />
         <Route path="/adoption-details/:id" element={<AdoptionPetDetails />} />
+        <Route
+          path="/viewadoptionapplicant/:id"
+          element={<Viewadoptapplicant />}
+        />
       </Routes>
       <Footer />
     </Router>
