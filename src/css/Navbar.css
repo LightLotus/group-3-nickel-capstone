@@ -1,3 +1,4 @@
+
 .navlinks-div {
   display: flex;
   align-items: center;
@@ -143,8 +144,18 @@
   left: 100%;
 }
 
-@media (max-width: 600px) {
-  .nav-links-container {
-    flex-direction: column;
+@media (max-width:480px) {
+   .navlinks-ul  {
+    flex-direction: column; 
+    padding: 1.5rem;
+    color: #f42d46;
+   align-items: baseline;
+   margin-left:-20px;
+   
   }
+.cartIcon{
+  display: none;
+}
+
+
 }

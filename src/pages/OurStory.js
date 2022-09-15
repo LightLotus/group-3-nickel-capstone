@@ -16,8 +16,15 @@ import Col from "react-bootstrap/Col";
 // import kevinpics from '../images/kevin2.png';
 import dogchild from "../images/dog-child.png";
 import "../css/Ourstory.css";
+import { useEffect } from "react";
+
 
 const OurStory = () => {
+
+ useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="aboutus p-2">
       <Container>

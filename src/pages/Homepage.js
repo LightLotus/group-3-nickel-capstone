@@ -10,12 +10,18 @@ import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 import CarouselReviews from "../components/CarouselReviews";
 import "../css/Homepage.css";
 import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Homepage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  useEffect(() => {
+  AOS.init({duration:2000});
+  }, []);
 
 
   return (
@@ -62,7 +68,7 @@ const Homepage = () => {
           <div className="feature-services-div">
           <Link 
                 to="/adoption">
-            <img className="feature-services-img" src={adoptionIcon} alt="" />
+            <img className="feature-services-img zoom" src={adoptionIcon} alt="" />
           </Link>
             <p className="feature-services-title">Adoption</p>
             <p className="description">
@@ -140,55 +146,56 @@ const Homepage = () => {
         <div className="gallery-section">
           <h3 class="subtitle">Gallery</h3>
           <div className="gallery-container">
+           
             <img
               className="featured-col gallery-img"
               src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGV0JTIwY2FyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
-              alt=""
+              alt="" data-aos="fade-up"
             />
             <img
               className="gallery-img featured-row"
               src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBldCUyMGNhcmV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
-              alt=""
+              alt="" data-aos="fade-right"
             />
             <img
               className="gallery-img featured-row"
               src="https://images.unsplash.com/photo-1597590566487-17e08c9102a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-              alt=""
+              alt=""data-aos="fade-left"
             />
             <img
               className="gallery-img"
               src="https://images.unsplash.com/photo-1581753418434-51c11169a3c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nJTIwdHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
-              alt=""
+              alt=""data-aos="fade-right"
             />
             <img
               className="gallery-img"
               src="https://images.unsplash.com/photo-1531531534025-0b78da954d21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZG9nJTIwdHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
-              alt=""
+              alt=""  data-aos="fade-up"
             />
             <img
               className="gallery-img featured-row"
               src="https://images.unsplash.com/photo-1591324535489-9c78376631dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-              alt=""
+              alt=""data-aos="fade-left"
             />
             <img
               className="gallery-img featured-row"
               src="https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGV0JTIwc2Nob29sfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-              alt=""
+              alt="" data-aos="fade-up"
             />
             <img
               className="gallery-img"
               src="https://images.unsplash.com/photo-1544378382-5ea6d7768876?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGRvZyUyMHRyYWluaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-              alt=""
+              alt="" data-aos="fade-right"
             />
             <img
               className="gallery-img"
               src="https://images.unsplash.com/photo-1541882430670-a57064b3f448?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGRvZyUyMHRyYWluaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-              alt=""
+              alt="" data-aos="fade-up"
             />
             <img
               className="featured-col gallery-img"
               src="https://images.unsplash.com/photo-1535812859-6bfd2f132e78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGRvZyUyMHRyYWluaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-              alt=""
+              alt="" data-aos="fade-up"
             />
           </div>
         </div>
@@ -199,7 +206,7 @@ const Homepage = () => {
           <div className="trainer-container">
             <div className="trainer-profile">
               <img
-                className="trainer-img container-fluid p-0"
+                className="trainer-img container-fluid p-0 "
                 src="https://s0.hfdstatic.com/sites/the_hartford/pubimgs/1444709093966.jpg?v=2021-02-19_124202848"
                 alt=""
               />
