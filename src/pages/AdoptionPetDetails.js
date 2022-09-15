@@ -9,6 +9,11 @@ import "../css/AdoptionPetdetails.css";
 import swal from "sweetalert";
 
 const AdoptionPetDetails = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const [adoppets, setAdoppets] = useState("");
   const params = useParams();
 

@@ -15,16 +15,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // import kevinpics from '../images/kevin2.png';
 import dogchild from "../images/dog-child.png";
-import "../css/Ourstory.css";
 import { useEffect } from "react";
-
+import "../css/Ourstory.css";
 
 const OurStory = () => {
-
- useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="aboutus p-2">
       <Container>
@@ -51,14 +48,13 @@ const OurStory = () => {
                   We started out as a small organization volunteering in street
                   feeding and advocates of animal welfare. But in 2010 our
                   passion for training animals became a dream come true as we
-                  ventured into the dog training world. In 2013, we decided
-                  to open a training center “Charming Pets”, a positive
+                  ventured into the dog training world. In 2013, we decided to
+                  open a training center “Charming Pets”, a positive
                   reinforcement-based training center that focused on the human
                   side of dog training.<br></br> <br></br>In January of 2017,
-                  our staff moved to their current location and
-                  rebranded to “Charming Pets”. We are a true believer that
-                  “Dreams do come true” when you are dedicated and keep looking
-                  forward!
+                  our staff moved to their current location and rebranded to
+                  “Charming Pets”. We are a true believer that “Dreams do come
+                  true” when you are dedicated and keep looking forward!
                 </MDBCardText>
               </MDBCardBody>
             </MDBCol>
