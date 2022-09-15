@@ -21,12 +21,11 @@ const AddAdoption = () => {
   });
 
   const handleInput = (e) => {
-    e.preventDefault();
-    e.persist();
     setAdoption({ ...adoptionInput, [e.target.name]: e.target.value });
   };
 
   const saveAdoption = (e) => {
+    e.preventDefault();
     const data = {
       petname: adoptionInput.petname,
       status: adoptionInput.status,

@@ -21,6 +21,7 @@ function AddMannerSched() {
   };
 
   const saveManner = (e) => {
+    e.preventDefault();
     const data = {
       date: mannersInput.date,
       timestart: mannersInput.timestart,
@@ -33,6 +34,7 @@ function AddMannerSched() {
     axios.post(`http://127.0.0.1:8000/api/addmanners`, data).then((res) => {
       if (res.data.status === 200) {
         swal("Success!", res.data.message, "success");
+        e.preventDefault();
         setManners({
           date: "",
           timestart: "",

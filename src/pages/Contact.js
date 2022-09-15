@@ -1,17 +1,63 @@
 import "../css/Contact.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import swal from "sweetalert";
 
 const Contact = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (event) => {
+    console.log("handleSubmit ran");
+
+    // 👇️ clear all input values in the form
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setMessage("");
+  };
 
   useEffect(() => {
-    window.scrollTo(0, 0)    
-  }, [])
-  
+    window.scrollTo(0, 0);
+  }, []);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_0b6kq8v",
+        "template_9inue9u",
+        form.current,
+        "HUAvnsfNyG_z4pUd9"
+      )
+      .then(
+        (result) => {
+          if (result.text === "OK") {
+            console.log(result.text);
+            swal(
+              "Successfully sent!",
+              "Please wait for a response within 8-24hrs",
+              "success"
+            );
+            handleSubmit();
+          }
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
       <Container>
@@ -25,24 +71,42 @@ const Contact = () => {
         <div className="contact-us-grid">
           <div className="contact-us-form">
             <p className="form-details-p">How Can We Help?</p>
-            <form action="#">
+            <form ref={form} onSubmit={sendEmail}>
               <div class="form-details">
                 <label className="form-details-label" id="name">
-                  Name (Required)
+                  First Name (Required)
                 </label>
                 <input
+                  onChange={(event) => setFirstName(event.target.value)}
+                  value={firstName}
                   className="form-details-input"
                   type="text"
-                  name="name"
+                  name="firstname"
+                  id="fName"
+                  required
+                />
+              </div>
+              <div class="form-details">
+                <label className="form-details-label" id="name">
+                  Last Name (Required)
+                </label>
+                <input
+                  value={lastName}
+                  onChange={(event) => setLastName(event.target.value)}
+                  className="form-details-input"
+                  type="text"
+                  name="lastname"
                   id="fName"
                   required
                 />
               </div>
               <div class="form-details">
                 <label className="form-details-label" id="email">
-                  First Name (Required)
+                  Email (Required)
                 </label>
                 <input
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
                   className="form-details-input"
                   type="email"
                   name="email"
@@ -59,7 +123,6 @@ const Contact = () => {
                   type="text"
                   name="subject"
                   id="subject"
-                  required
                 />
               </div>
               <div class="form-details">
@@ -72,15 +135,19 @@ const Contact = () => {
                 </label>
 
                 <textarea
+                  value={message}
+                  onChange={(event) => setMessage(event.target.value)}
                   className="form-details-textarea"
                   name="message"
                   id="message"
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
               </div>
               <button
                 type="submit"
+                value="send"
                 className="form-details-button button-link-style"
               >
                 Send

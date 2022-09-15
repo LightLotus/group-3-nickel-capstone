@@ -27,8 +27,12 @@ import Adoptionadmin from "./pages/Adoptionadmin";
 import AddAdoption from "./pages/AddAdoption";
 import Editadminadoption from "./pages/Editadminadoption";
 import Viewadoptapplicant from "./pages/Viewadoptapplicant";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Router>
       <Navlink />

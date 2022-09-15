@@ -1,7 +1,10 @@
 import Accordion from 'react-bootstrap/Accordion';
 import "../css/FAQ.css";
-
+import { useEffect } from 'react';
 const FAQ = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <>
     <div className='header text-center mt-5 mb-5'><p><b>FAQs</b></p></div>
