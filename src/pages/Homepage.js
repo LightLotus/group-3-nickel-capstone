@@ -28,7 +28,7 @@ const Homepage = () => {
     <>
       <Container>
         <div className="hero-container mt-5">
-          <div className="hero-text-container">
+          <div className="hero-text-container" data-aos="fade-left">
             <h1 className="text-dark">
               Welcome to <span className="span-color">Charming Pets</span>
             </h1>
@@ -96,7 +96,7 @@ const Homepage = () => {
           <Link id="adoption-cta" className="button-link-style" to="/adoption">
             View More
           </Link>
-          {/* <div className="adoption-details-wrapper">
+           <div className="adoption-details-wrapper">
             <Link to="/adoption" class="adoption-details">
               <img
                 className="adoption-details-img container-fluid"
@@ -141,7 +141,7 @@ const Homepage = () => {
                 <p>Age: 1 year old</p>
               </div>
             </Link>
-          </div> */}
+          </div> 
         </div>
         <div className="gallery-section">
           <h3 class="subtitle">Gallery</h3>
@@ -190,7 +190,7 @@ const Homepage = () => {
             <img
               className="gallery-img"
               src="https://images.unsplash.com/photo-1541882430670-a57064b3f448?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGRvZyUyMHRyYWluaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-              alt="" data-aos="fade-up"
+              alt="" data-aos="fade-up-left"
             />
             <img
               className="featured-col gallery-img"
