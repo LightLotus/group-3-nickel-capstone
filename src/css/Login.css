@@ -23,6 +23,7 @@
       margin-top: 1rem;
       height: 3rem;
       border-radius: 1rem;
+      padding: 20px;
   }
   
   #login-button {
@@ -40,3 +41,22 @@
       font-weight: bold;
   }
   
+  @media (max-width:480px) {
+    .login-wrapper {
+    display:contents; 
+    
+}
+.login-container{
+    padding: 2rem;
+    margin-top:3rem;
+    background-color: #00DDC6;
+    border-radius:2rem;
+    margin-left:2rem;
+    margin-right:2rem;
+    height: 20%!important;
+        
+
+   
+}
+
+  }

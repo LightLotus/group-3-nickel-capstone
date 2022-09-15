@@ -58,3 +58,9 @@
 .contact-us-address-p {
     text-align: unset;
 }
+
+@media  (max-width:480px) {
+.contact-us-grid{
+  display: inline;
+}
+}

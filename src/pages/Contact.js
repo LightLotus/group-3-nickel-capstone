@@ -154,6 +154,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
+          
           <div className="contact-us-address">
             <div className="contact-us-items">
               <FontAwesomeIcon className="contact-us-icons" icon={faAt} />

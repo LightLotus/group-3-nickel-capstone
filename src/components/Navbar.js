@@ -9,6 +9,7 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 
+
 function Navlink() {
   const TrainingClasses = () => {
     return <Link className="dropright" to="/trainingclasses">Training Classes</Link>;
@@ -19,12 +20,12 @@ function Navlink() {
       <Navbar
         bg="light"
         expand="md"
-        className="mb-3 py-2 sticky-top border-bottom"
+        className="navbar mb-3 py-2 sticky-top border-bottom "
       >
-        <Container>
+        <Container className="container-fluid">
           <Navbar.Brand>
             <Link to="/">
-              <img src={logoImg} alt="" />
+              <img className="logo" src={logoImg} alt="" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
@@ -92,7 +93,7 @@ function Navlink() {
                 </ul>
               </Nav>
               <Nav className="nav-links-container justify-content-end flex-grow-1 pe-3">
-                <div className="navlinks-div">
+                <div className="navlinks-ul">
                   <ul className="navlinks-ul">
                     <li className="navlinks-li">
                       <Link className="navlinks-a" to="/login">

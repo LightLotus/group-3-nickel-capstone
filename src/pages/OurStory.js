@@ -17,6 +17,8 @@ import Col from "react-bootstrap/Col";
 import dogchild from "../images/dog-child.png";
 import { useEffect } from "react";
 import "../css/Ourstory.css";
+import { useEffect } from "react";
+
 
 const OurStory = () => {
   useEffect(() => {
