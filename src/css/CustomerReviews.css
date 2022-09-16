@@ -25,3 +25,17 @@
   margin: 0;
   text-align: left;
 }
+
+.adoption-container-homepage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  margin: 6rem 0;
+}
+
+.adoption-img-carousel {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  display: block;
+}

@@ -24,7 +24,6 @@ const AdoptionPetDetails = () => {
       .then((res) => {
         if (res.status === 200) {
           const details = res.data.adoption;
-          console.log(details);
           setAdoppets(details);
         }
       })

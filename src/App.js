@@ -32,6 +32,8 @@ import { useEffect } from "react";
 import MainAdmin from "./pages/MainAdmin";
 import PuppyAdmin from "./pages/PuppyAdmin";
 import EditPuppySched from "./components/EditPuppySched";
+import ViewPuppyEnrollees from "./components/ViewPuppyEnrollees";
+import EditPuppyEnrollees from "./pages/EditPuppyEnrollees";
 
 function App() {
   useEffect(() => {
@@ -78,8 +80,19 @@ function App() {
         />
         <Route path="/puppykindergarten/:id" element={<PuppyEnroll />} />
         <Route path="/mainadmin" element={<MainAdmin />} />
-        <Route path="/puppyadmin" element={<PuppyAdmin/>}/>
-        <Route path="/puppyadmin/edit-puppysched/:id" element={<EditPuppySched/>} />
+        <Route path="/puppyadmin" element={<PuppyAdmin />} />
+        <Route
+          path="/puppyadmin/edit-puppysched/:id"
+          element={<EditPuppySched />}
+        />
+        <Route
+          path="/puppyadmin/view-enrollees/:id"
+          element={<ViewPuppyEnrollees />}
+        />
+        <Route
+          path="/edit-puppyenrollees/:id"
+          element={<EditPuppyEnrollees />}
+        />
       </Routes>
       <Footer />
     </Router>

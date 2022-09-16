@@ -16,7 +16,6 @@ const Adoption = () => {
   useEffect(() => {
     axios.get(`http://127.0.0.1:8000/api/adoption`).then((res) => {
       if (res.status === 200) {
-        console.log(res.data.adoption);
         setAdoppets(res.data.adoption);
         setLoading(false);
       }
@@ -84,7 +83,7 @@ const Adoption = () => {
         donation.
       </p>
       <button href="#" className="button-addopt ">
-        Donate
+        Donate through PayPal
       </button>
       <h3 className="text-center">
         <strong>Meet Our Fur Babies</strong>

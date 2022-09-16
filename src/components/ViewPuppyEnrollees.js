@@ -9,12 +9,12 @@ import axios from "axios";
 import swal from "sweetalert";
 import Table from "react-bootstrap/Table";
 
-const ViewMannersEnrollees = () => {
+const ViewPuppyEnrollees = () => {
   const [loading, setLoading] = useState(true);
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/api/mannerenroll`).then((res) => {
+    axios.get(`http://127.0.0.1:8000/api/puppyenroll`).then((res) => {
       if (res.status === 200) {
         setStudents(res.data.mannerenroll);
         setLoading(false);
@@ -36,7 +36,7 @@ const ViewMannersEnrollees = () => {
       }).then((willDelete) => {
         if (willDelete) {
           axios
-            .delete(`http://127.0.0.1:8000/api/deletemannerenroll/${id}`)
+            .delete(`http://127.0.0.1:8000/api/deletepuppyenroll/${id}`)
             .then((res) => {
               if (res.data.status === 200) {
                 swal("Deleted!", res.data.message, "success");
@@ -70,7 +70,7 @@ const ViewMannersEnrollees = () => {
           <td>{item.address}</td>
           <td>
             <Link
-              to={`/edit-enrollees/${item.id}`}
+              to={`/edit-puppyenrollees/${item.id}`}
               className="btn btn-success btn-sm"
             >
               <FontAwesomeIcon icon={faPencil} />
@@ -91,8 +91,8 @@ const ViewMannersEnrollees = () => {
 
   return (
     <Container>
-      <p className="text-dark text-center fs-3">List of Adult Dog Enrollees</p>
-      <Link to="/mannersadmin" className="fs-5 mb-4 d-block">
+      <p className="text-dark text-center fs-3">List of Puppy Enrollees</p>
+      <Link to="/puppyadmin" className="fs-5 mb-4 d-block">
         <FontAwesomeIcon icon={faArrowAltCircleLeft}></FontAwesomeIcon>
         Back
       </Link>
@@ -113,4 +113,4 @@ const ViewMannersEnrollees = () => {
   );
 };
 
-export default ViewMannersEnrollees;
+export default ViewPuppyEnrollees;

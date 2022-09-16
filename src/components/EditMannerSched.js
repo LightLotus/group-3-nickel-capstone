@@ -71,7 +71,13 @@ function EditMannerSched() {
   return (
     <>
       <Container>
-
+        <h3 className="text-center">
+          <strong>Update Adult Manner Class Schedule</strong>
+        </h3>
+        <Link to="/mannersadmin" className="fs-5 mb-4 d-block">
+          <FontAwesomeIcon icon={faArrowAltCircleLeft}></FontAwesomeIcon>
+          Back
+        </Link>
         <form className="add-manner-class-form">
           <div className="add-manners-div">
             {" "}
