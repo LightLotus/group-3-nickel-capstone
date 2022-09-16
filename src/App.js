@@ -27,7 +27,11 @@ import Adoptionadmin from "./pages/Adoptionadmin";
 import AddAdoption from "./pages/AddAdoption";
 import Editadminadoption from "./pages/Editadminadoption";
 import Viewadoptapplicant from "./pages/Viewadoptapplicant";
+import PuppyEnroll from "./pages/PuppyEnroll";
 import { useEffect } from "react";
+import MainAdmin from "./pages/MainAdmin";
+import PuppyAdmin from "./pages/PuppyAdmin";
+import EditPuppySched from "./components/EditPuppySched";
 
 function App() {
   useEffect(() => {
@@ -72,6 +76,10 @@ function App() {
           path="/viewadoptionapplicant/:id"
           element={<Viewadoptapplicant />}
         />
+        <Route path="/puppykindergarten/:id" element={<PuppyEnroll />} />
+        <Route path="/mainadmin" element={<MainAdmin />} />
+        <Route path="/puppyadmin" element={<PuppyAdmin/>}/>
+        <Route path="/puppyadmin/edit-puppysched/:id" element={<EditPuppySched/>} />
       </Routes>
       <Footer />
     </Router>

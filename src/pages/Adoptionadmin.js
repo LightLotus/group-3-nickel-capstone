@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import { Table } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
 import { Container } from "react-bootstrap";
@@ -107,6 +108,10 @@ const Adoptionadmin = () => {
       <h1>
         <span className="text-dark">Pet Adoption</span> Admin Dashboard
       </h1>
+      <Link to="/mainadmin" className="fs-5 mb-4 d-block">
+        <FontAwesomeIcon icon={faArrowAltCircleLeft}></FontAwesomeIcon>
+        Back
+      </Link>
       <Link className="button-link-style mb-3" to="/adoptionadminadd">
         Add Pet
       </Link>

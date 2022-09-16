@@ -1,0 +1,27 @@
+/* #31E1F7 */
+
+.admin-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.admin-links {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  background-color: #fd5d5d;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 4rem 2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.admin-links:hover {
+  background-color: transparent;
+  border: 4px solid #00ddc6;
+  color: #00ddc6;
+  padding: calc(4rem - 2px);
+}

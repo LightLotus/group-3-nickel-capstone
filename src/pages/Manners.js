@@ -12,7 +12,7 @@ const Manners = () => {
   return (
     <>
       <Container className="master-Class text-center">
-        <p>MANNERS CLASS</p>
+        <p>MANNERS CLASS TRAINING FOR ADULT DOGS (1 YRS OLD AND ABOVE)</p>
       </Container>
       <Container>
         <h4 className="text-center">
