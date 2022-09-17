@@ -16,25 +16,19 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 const TrainingClasses = () => {
-
   useEffect(() => {
-    window.scrollTo(0, 0)    
-  }, [])
-
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
       <Container>
-        <h1 className="text-center mt-5">Approach to Training</h1>
+        <h1 className="text-center mt-5">Training Classes Category</h1>
         <p>
-        Let’s face it, dogs these days are part of the family. 
-        But as much as we treat them like furry humans, they need some help to act like it!
-        In Basic Manners, we cover the essentials that your dog needs to be a well-behaved
-        member of your family. You’ll learn things like not jumping up, coming when called,
-        and walking nicely on a leash, as well as your standard sit, down, and stay!
-        We also work on impulse control, the “place” behavior, and sitting at the door, 
-        all of which discourage naughty behavior like stealing food, darting out the door, 
-        and begging/counter surfing.
+          Let’s face it, dogs these days are part of the family. But as much as
+          we treat them like furry humans, they need some help to act like it!
+          We cover the essentials that your dog needs to be a well-behaved
+          member of your family.
         </p>
       </Container>
 
@@ -42,25 +36,21 @@ const TrainingClasses = () => {
         <MDBCardGroup className="coreValues rounded ">
           <MDBCard className="border-0 p-2 ">
             <MDBCardImage
-              className="rounded-5"
-              src="https://static8.depositphotos.com/1004529/988/i/600/depositphotos_9887128-stock-photo-sharpei-dog.jpg"
+              className="training-class-img rounded-5 "
+              src="https://images.unsplash.com/photo-1541882430670-a57064b3f448?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGRvZyUyMHRyYWluaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
               alt="..."
               position="top"
             />
             <MDBCardBody>
-              <h4 className="text-center"><b>Manners</b></h4>
+              <h4 className="text-center">
+                <b>Adult Manner Training</b>
+              </h4>
               <MDBCardText>
-              <small>
-              Ready to take your dog’s training to the next level? In Advanced Manners,
-              we build on your basic foundation to add distractions, leave treats behind,
-              and introduce some tricks to keep it interesting!
-              <br></br>
-              This class is designed to 
-              take your dog’s behavior above and beyond to make sure he can keep his brain 
-              in any situation. If you want to get into therapy work, dog sports, or just want
-              
-              your best friend to go out and about with you, Advanced Manners is the place to be!
-              </small>
+                This class is designed to discipline and change your dog’s
+                behavior to make sure he can keep his brain in any situation. If
+                you want to get into therapy work, dog sports, or just want your
+                best friend to go out and about with you, this class is a
+                perfect choice!
               </MDBCardText>
               <MDBCardText>
                 <Link to="/manners">
@@ -72,27 +62,20 @@ const TrainingClasses = () => {
 
           <MDBCard className="border-0 p-2 ">
             <MDBCardImage
-              className="rounded-5"
-              src="https://districtdogs.com/wp-content/uploads/2019/10/DistrictDogs-117-1024x683.jpg"
+              className="training-class-img rounded-5 "
+              src="https://images.unsplash.com/photo-1629957655360-5eeccf5253a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHB1cHB5JTIwdHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
               alt="..."
               position="top"
             />
             <MDBCardBody>
-              <h4 className="text-center"><b>Puppy Kindergarten</b></h4>
+              <h4 className="text-center">
+                <b>Puppy Kindergarten</b>
+              </h4>
               <MDBCardText>
-              <small>
-              If you recently added a new puppy to your family, you're in the right place!
-              Puppy Kindergarten is the perfect place to start for puppies between 8 weeks
-              and 16 weeks. 
-        
-              <br></br>
-              This 5 week class will cover everything from crate games and potty
-              training to foundation behaviors like name, touch, sit, and more! 
-               We'll also address 
-               <br></br>
-              unwanted behaviors like chewing, jumping, and pulling on the leash. Last but not least,
-              we'll help you socialize your puppy to strange noises.
-              </small>
+                If you recently added a new puppy to your family, you're in the
+                right place! Puppy Kindergarten is the perfect place to start
+                for puppies under 1 year of age. We address unwanted behaviors like
+                chewing, jumping, and pulling on the leash.
               </MDBCardText>
               <MDBCardText>
                 <Link to="/puppykindergarten">
@@ -104,22 +87,20 @@ const TrainingClasses = () => {
 
           <MDBCard className="border-0 p-2 ">
             <MDBCardImage
-              className="rounded-5"
-              src="https://wagurtaildogtraining.com/wp-content/uploads/2018/04/shutterstock_281482349.jpg"
+              className="training-class-img rounded-5 "
+              src="https://images.unsplash.com/photo-1601758174609-3a789c37dfa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHB1cHB5JTIwdHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
               alt="..."
               position="top"
             />
             <MDBCardBody>
-              <h4 className="text-center"><b>Private Lessons</b></h4>
+              <h4 className="text-center">
+                <b>Private Lessons</b>
+              </h4>
               <MDBCardText>
-              <small>
-              Some dogs need more individualized instruction than we can provide in a group class,
-              and that's okay! Whether your dog is reactive around other dogs, has specific behavioral
-              issues you need to address, or you just can't find a group class that fits your schedule, 
-              private lessons are a great option. These one-on-one sessions allow you to work with a trainer
-              at length to discuss and address the needs of your dog. Please check out our FAQ for help on what
-              to bring and more details on what we can cover.
-              </small>
+                Some dogs need more individualized instruction than we can
+                provide in a group class, and that's okay! Whether your dog is
+                reactive around other dogs, has specific behavioral issues you
+                need to address, private lessons are a great option.
               </MDBCardText>
               <MDBCardText>
                 <Link to="/privatelessons">

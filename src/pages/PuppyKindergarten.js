@@ -2,6 +2,9 @@ import Container from "react-bootstrap/Container";
 import "../css/PuppyKindergarten.css";
 import { useEffect } from "react";
 import ViewPuppyClass from "../components/ViewPuppyClass";
+import { Link } from "react-router-dom";
+import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const PuppyKindergarten = () => {
   useEffect(() => {
@@ -9,10 +12,12 @@ const PuppyKindergarten = () => {
   }, []);
   return (
     <>
-      <Container className="master-Class text-center">
-        <p>PUPPY KINDERGARTEN CLASS</p>
-      </Container>
-      <Container>
+      <Container className="master-Class">
+        <Link to="/trainingclasses" className="fs-5 mb-4 d-inline-block">
+          <FontAwesomeIcon icon={faArrowAltCircleLeft}></FontAwesomeIcon>
+          Back
+        </Link>
+        <p className="text-center">PUPPY KINDERGARTEN CLASS</p>
         <h4 className="text-center">
           Enrollments for August 25, 2022 - October 24, 2022
         </h4>
