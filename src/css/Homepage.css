@@ -162,6 +162,7 @@ h1 {
   object-position: top;
 }
 
+
 #root > div > div.trainer-section > div > div > p.trainer-name {
   margin: 0;
 }
@@ -171,7 +172,6 @@ h1 {
   display: inline-block;
   margin: 0 0.5rem;
   cursor: pointer;
-  color: #000;
   transition: 0.3s;
 }
 
@@ -183,9 +183,77 @@ h1 {
   margin-bottom: 6rem;
 }
 
-.feature-services-img:hover {
-  -ms-transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+.feature-services-img:hover{
+  -ms-transform: scale(1.3); 
+  -webkit-transform: scale(1.3); 
+  transform: scale(1.3); 
   transition-duration: 1s;
+}
+
+
+@media (max-width:480px)
+
+
+{
+
+.hero-container{
+display: block;
+justify-content: center;
+margin-bottom: 2 rem;
+
+}
+
+.CarouselSlider{
+display: block;
+margin-top: 3rem;
+margin-bottom: 3rem!important;
+ 
+
+}
+.subtitle ,.span-color{
+  margin-top: 8rem;
+}
+  
+.feature-services-container-description{
+  text-align: justify;
+}
+
+.feature-services-container {
+  display: inline-block;
+
+}
+.feature-services-div{
+ margin-left: 5rem;
+}
+.description{
+margin: 0 -5rem 2rem;
+padding: 1rem;
+text-align: center;
+margin-bottom: 3rem;
+  
+}
+
+.gallery-container{
+display:block;
+  }
+.gallery-img{
+  margin-bottom: 1rem;
+}
+.trainer-container{
+  display: block;
+}
+.trainer-social-icons{
+  margin-bottom: 1rem;
+}
+.customer-reviews-container{
+  display: block;
+
+}
+.customer-reviews{
+  margin-bottom: 1rem;
+
+}
+.customer-reviews-details{
+  text-align: center;
+}
 }
