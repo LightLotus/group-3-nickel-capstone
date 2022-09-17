@@ -173,6 +173,7 @@ h1 {
   margin: 0 0.5rem;
   cursor: pointer;
   transition: 0.3s;
+  color: #000;
 }
 
 .social-icons:hover {
