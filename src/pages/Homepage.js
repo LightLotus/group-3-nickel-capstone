@@ -27,20 +27,23 @@ const Homepage = () => {
     <>
       <Container>
         <div className="hero-container mt-5">
-          <div className="hero-text-container" data-aos="fade-left">
-            <h1 className="text-dark">
+          <div className="hero-text-container" >
+            <h1 className="text-dark"data-aos="fade-left">
               Welcome to <span className="span-color">Charming Pets</span>
             </h1>
-            <p className="hero-text-p">
+            <p className="hero-text-p" data-aos="fade-up">
               We believe every person, human and animal should be able to
               fulfill their potential.
             </p>
-            <Link className="button-link-style" to="/trainingclasses">
+            <Link className="button-link-style"data-aos="fade-right" to="/trainingclasses">
               Enroll Now!
             </Link>
           </div>
+          <div className="CarouselSlider">
           <CarouselSlider />
+          </div>   
         </div>
+
         <h3 className="subtitle">
           What Can <span className="span-color">We Do</span>
         </h3>
@@ -64,6 +67,7 @@ const Homepage = () => {
               with impulse control, relationship building and more.
             </p>
           </div>
+
           <div className="feature-services-div">
             <Link to="/adoption">
               <img
@@ -95,7 +99,9 @@ const Homepage = () => {
           </div>
         </div>
         <div>
-          <h3 className="subtitle">
+    
+
+          <h3 className="subtitle" ID="catsdog" >
             Cats & Dogs who wants to
             <span className="span-color"> go home with You</span>
           </h3>
