@@ -60,8 +60,8 @@ h1 {
 }
 
 .feature-services-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 80%;
   height: 75vh;
   gap: 2rem;

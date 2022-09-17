@@ -27,35 +27,40 @@ const Homepage = () => {
     <>
       <Container>
         <div className="hero-container mt-5">
-          <div className="hero-text-container" >
-            <h1 className="text-dark"data-aos="fade-left">
+          <div className="hero-text-container">
+            <h1 className="text-dark" data-aos="fade-left">
               Welcome to <span className="span-color">Charming Pets</span>
             </h1>
             <p className="hero-text-p" data-aos="fade-up">
               We believe every person, human and animal should be able to
               fulfill their potential.
             </p>
-            <Link className="button-link-style"data-aos="fade-right" to="/trainingclasses">
+            <Link
+              className="button-link-style"
+              data-aos="fade-right"
+              to="/trainingclasses"
+            >
               Enroll Now!
             </Link>
           </div>
           <div className="CarouselSlider">
-          <CarouselSlider />
-          </div>   
+            <CarouselSlider />
+          </div>
         </div>
 
-        <h3 className="subtitle">
+        <h3 className="subtitle d-block w-100">
           What Can <span className="span-color">We Do</span>
         </h3>
-        <p className="feature-services-container-description">
-          At Charming Pets, we train using positive reinforcement, often called
-          "clicker training." There are many ways to train a pet, but we believe
-          this method is the easiest, kindest, and most reliable way to train.
-          We focus on teaching your pets what we want them to do, not what we
-          don't. This science-based approach is used worldwide by animal
-          trainers in all disciplines, such as training zoo animals to allow
-          medical care or training chickens in order to better train pets.
-        </p>
+        {/* <p className="feature-services-container-description">
+          Charming Pets offers two major services - Training Classes and Pet
+          Adoption. We train using positive reinforcement. There are many ways
+          to train a pet, but we believe this method is the easiest, kindest,
+          and most reliable way to train. We focus on teaching your pets what we
+          want them to do, not what we don't. This science-based approach is
+          used worldwide by animal trainers in all disciplines, such as training
+          zoo animals to allow medical care or training chickens in order to
+          better train pets.
+        </p> */}
         <div className="feature-services-container">
           <div className="feature-services-div">
             <Link to="/trainingclasses">
@@ -63,8 +68,8 @@ const Homepage = () => {
             </Link>
             <p className="feature-services-title">Training</p>
             <p className="description">
-              5 months up 6-weeks. introductory class that teaches basic manners
-              with impulse control, relationship building and more.
+              Introductory class that teaches basic manners with impulse
+              control, relationship building and more.
             </p>
           </div>
 
@@ -99,9 +104,7 @@ const Homepage = () => {
           </div>
         </div>
         <div>
-    
-
-          <h3 className="subtitle" ID="catsdog" >
+          <h3 className="subtitle" ID="catsdog">
             Cats & Dogs who wants to
             <span className="span-color"> go home with You</span>
           </h3>
