@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 import CarouselReviews from "../components/CarouselReviews";
-import AdoptionPetDisplay from "../components/AdoptionPetHomepage";
+import AdoptionPetDisplay from "../components/AdoptionPetDisplay";
 import "../css/Homepage.css";
 import { useEffect } from "react";
 import AOS from "aos";
