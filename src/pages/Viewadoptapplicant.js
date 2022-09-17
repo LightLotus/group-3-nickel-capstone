@@ -7,14 +7,18 @@ import { Table } from "react-bootstrap";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import swal from "sweetalert";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
 const Viewadoptapplicant = () => {
   const [loading, setLoading] = useState(true);
   const [customer, setCustomer] = useState([]);
+  const test_id = useParams();
+
+  console.log(test_id);
 
   // code to display applicant
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/api/customer`).then((res) => {
+    axios.get(`http://127.0.0.1:8000/api/customer/${test_id.id}`).then((res) => {
       if (res.status === 200) {
         setCustomer(res.data.customer);
         setLoading(false);

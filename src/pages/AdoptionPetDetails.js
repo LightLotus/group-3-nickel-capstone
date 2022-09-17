@@ -9,11 +9,10 @@ import "../css/AdoptionPetdetails.css";
 import swal from "sweetalert";
 
 const AdoptionPetDetails = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   const [adoppets, setAdoppets] = useState("");
   const params = useParams();
 
@@ -44,6 +43,7 @@ const AdoptionPetDetails = () => {
       dateinterview: "",
       timeinterview: "",
       error_list: [],
+      adoption_id: "",
     });
 
     const handleInput = (e) => {
@@ -61,6 +61,7 @@ const AdoptionPetDetails = () => {
         address: customerInput.address,
         dateinterview: customerInput.dateinterview,
         timeinterview: customerInput.timeinterview,
+        adoption_id: adoppets.id,
       };
 
       axios.post(`http://127.0.0.1:8000/api/addcustomer`, data).then((res) => {
