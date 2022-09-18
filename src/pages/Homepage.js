@@ -28,16 +28,17 @@ const Homepage = () => {
       <Container>
         <div className="hero-container mt-5">
           <div className="hero-text-container">
-            <h1 className="text-dark" data-aos="fade-left">
+            <h1 id="welcome" className="text-dark" data-aos="fade-right">
               Welcome to <span className="span-color">Charming Pets</span>
             </h1>
-            <p className="hero-text-p" data-aos="fade-up">
+            <p className="hero-text-p" data-aos="fade-left">
               We believe every person, human and animal should be able to
               fulfill their potential.
             </p>
             <Link
+              id="enroll"
               className="button-link-style"
-              data-aos="fade-right"
+              data-aos="fade-up"
               to="/trainingclasses"
             >
               Enroll Now!
@@ -48,10 +49,10 @@ const Homepage = () => {
           </div>
         </div>
 
-        <h3 className="subtitle d-block w-100">
+        <h3 className="subtitle d-block w-100" id="whatcan">
           What Can <span className="span-color">We Do</span>
         </h3>
-        {/* <p className="feature-services-container-description">
+        <p className="feature-services-container-description">
           Charming Pets offers two major services - Training Classes and Pet
           Adoption. We train using positive reinforcement. There are many ways
           to train a pet, but we believe this method is the easiest, kindest,
@@ -60,7 +61,7 @@ const Homepage = () => {
           used worldwide by animal trainers in all disciplines, such as training
           zoo animals to allow medical care or training chickens in order to
           better train pets.
-        </p> */}
+        </p>
         <div className="feature-services-container">
           <div className="feature-services-div">
             <Link to="/trainingclasses">
@@ -114,7 +115,7 @@ const Homepage = () => {
           <AdoptionPetDisplay />
         </div>
         <div className="gallery-section">
-          <h3 class="subtitle">Gallery</h3>
+          <h3 class="subtitle" id="Gallery">Gallery</h3>
           <div className="gallery-container">
             <img
               className="featured-col gallery-img"
@@ -179,7 +180,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className="trainer-section">
-          <h3 className="subtitle">
+          <h3 className="subtitle" id="Trainers">
             Meet <span className="span-color">Our Trainers!</span>{" "}
           </h3>
           <div className="trainer-container">

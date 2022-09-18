@@ -30,12 +30,14 @@
   border: 1px solid rgb(55, 55, 55);
   display: inline-block;
   margin: 1rem 0;
+  padding: 1rem;
 }
 
 .form-details-textarea {
   width: 100%;
   border-radius: 0.5rem;
   margin: 1rem 0;
+  padding: 1rem;
 }
 
 .form-details-button {
@@ -62,5 +64,12 @@
 @media  (max-width:480px) {
 .contact-us-grid{
   display: inline;
+}
+.form-details-input{
+  padding: 1rem;
+}
+
+.form-details-textarea{
+  padding: 1rem;
 }
 }

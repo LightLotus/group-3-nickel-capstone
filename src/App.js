@@ -35,6 +35,7 @@ import EditPuppySched from "./components/EditPuppySched";
 import ViewPuppyEnrollees from "./components/ViewPuppyEnrollees";
 import EditPuppyEnrollees from "./pages/EditPuppyEnrollees";
 
+
 function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
