@@ -154,6 +154,10 @@ h1 {
 .trainer-name {
   font-weight: bold;
   font-size: 1.5rem;
+  text-align: center;
+}
+.trainer-position{
+  text-align: center;
 }
 
 .trainer-img {
