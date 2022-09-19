@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 import React, { Component } from "react";
 import axios from "axios";
 import { Navigate } from "react-router-dom";
-import "../css/Login.css";
-import { Tabtitle } from "../components/GeneralFunctions";
+import { Link } from "react-router-dom";
+import "../../css/Login.css";
 
 export default class AdminLogin extends Component {
   constructor(props) {
@@ -30,7 +29,7 @@ export default class AdminLogin extends Component {
   onSignInHandler = () => {
     this.setState({ isLoading: true });
     axios
-      .post("http://127.0.0.1:8000/api/customer-login", {
+      .post("http://127.0.0.1:8000/api/user-login", {
         email: this.state.email,
         password: this.state.password,
       })
@@ -38,7 +37,6 @@ export default class AdminLogin extends Component {
         this.setState({ isLoading: false });
         if (response.data.status === 200) {
           localStorage.setItem("isLoggedIn", true);
-          localStorage.setItem("customerLoggedIn", true);
           localStorage.setItem("userData", JSON.stringify(response.data.data));
           this.setState({
             msg: response.data.message,
@@ -74,11 +72,9 @@ export default class AdminLogin extends Component {
   };
 
   render() {
-    Tabtitle("Login | Charming Pets");
-
     const login = localStorage.getItem("isLoggedIn");
     if (login) {
-      window.location.href = "/dashboard";
+      window.location.href = "/mainadmin";
     }
     const isLoading = this.state.isLoading;
 
@@ -86,7 +82,7 @@ export default class AdminLogin extends Component {
       <>
         <div className="login-container">
           <div className="login-wrapper">
-            <p className="login-title">Login to my account</p>
+            <p className="login-title">Login to admin</p>
             <p>Enter your e-mail and password</p>
             <form action="#">
               <input
@@ -102,8 +98,8 @@ export default class AdminLogin extends Component {
               <input
                 className="login-input"
                 type="password"
-                placeholder="Password"
                 name="password"
+                placeholder="Password"
                 value={this.state.password}
                 onChange={this.onChangehandler}
               />
@@ -125,18 +121,11 @@ export default class AdminLogin extends Component {
                   <span></span>
                 )}
               </button>
+              <p className="text-danger">{this.state.errMsg}</p>
             </form>
-            <p className="text-danger">{this.state.errMsg}</p>
             <p className="dont-have-account">
-              Don't have account yet?{" "}
-              <Link id="create-account" to="/register">
-                {" "}
-                Create Account
-              </Link>
-            </p>
-            <p className="dont-have-account">
-              For Admin login{" "}
-              <Link id="create-account" to="/admin_login">
+              For Customer login{" "}
+              <Link id="create-account" to="/login">
                 {" "}
                 click here
               </Link>

@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navlink from "./components/Navbar";
+import NavbarAdmin from "./components/NavbarAdmin";
 import Footer from "./components/Footer";
 import Adoption from "./pages/Adoption";
 import Contact from "./pages/Contact";
@@ -17,7 +18,12 @@ import Homepage from "./pages/Homepage";
 import Checkout from "./pages/Checkout";
 import AdoptionPetDetails from "./pages/AdoptionPetDetails";
 import MannersAdmin from "./components/MannersAdmin";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
 import EditMannerSched from "./components/EditMannerSched";
 import MannerEnroll from "./pages/MannerEnroll";
 import ViewMannersEnrollees from "./components/ViewMannersEnrollees";
@@ -27,17 +33,14 @@ import AddAdoption from "./pages/AddAdoption";
 import Editadminadoption from "./pages/Editadminadoption";
 import Viewadoptapplicant from "./pages/Viewadoptapplicant";
 import PuppyEnroll from "./pages/PuppyEnroll";
-import { useEffect } from "react";
+import React, { Component } from "react";
 import MainAdmin from "./pages/MainAdmin";
 import PuppyAdmin from "./pages/PuppyAdmin";
 import EditPuppySched from "./components/EditPuppySched";
 import ViewPuppyEnrollees from "./components/ViewPuppyEnrollees";
 import EditPuppyEnrollees from "./pages/EditPuppyEnrollees";
+import AdminLogin from "./pages/Admin/AdminLogin";
 import Dashboard from "./pages/Dashboard";
-import AdoptionDashboard from "./components/AdoptionDashboard";
-import OwnerProfileDashboard from "./components/OwnerProfileDashboard";
-import PetClassesDashboard from "./components/PetClassesDashboard";
-
 
 function App() {
   useEffect(() => {
@@ -60,6 +63,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/admin_login" element={<AdminLogin />} />
         <Route path="/register" element={<Register />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/mannersadmin" element={<MannersAdmin />} />
@@ -97,10 +101,19 @@ function App() {
           path="/edit-puppyenrollees/:id"
           element={<EditPuppyEnrollees />}
         />
-        <Route path="/dashboard" element={<Dashboard />} >
-          <Route path="/dashboard/ownerprofiledashboard" element={<OwnerProfileDashboard/>}/>
-          <Route path="/dashboard/petclassesdashboard" element={<PetClassesDashboard/>}/>
-          <Route path="/dashboard/adoptiondashboard" element={<AdoptionDashboard/>}/>
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route
+            path="/dashboard/ownerprofiledashboard"
+            element={<OwnerProfileDashboard />}
+          />
+          <Route
+            path="/dashboard/petclassesdashboard"
+            element={<PetClassesDashboard />}
+          />
+          <Route
+            path="/dashboard/adoptiondashboard"
+            element={<AdoptionDashboard />}
+          />
         </Route>
       </Routes>
       <Footer />

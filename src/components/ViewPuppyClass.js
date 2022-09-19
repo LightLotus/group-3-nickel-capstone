@@ -31,7 +31,11 @@ function ViewPuppyClass() {
           <td>{item.trainer}</td>
           <td>{item.availslot}</td>
           <td>
-            <Link to={`/puppykindergarten/${item.id}`}>{item.status}</Link>
+            {item.status !== "available" ? (
+              item.status
+            ) : (
+              <Link to={`/puppykindergarten/${item.id}`}>{item.status}</Link>
+            )}
           </td>
           {/* <td>
             <Link
