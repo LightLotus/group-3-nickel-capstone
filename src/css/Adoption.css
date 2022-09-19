@@ -80,3 +80,40 @@
   height: 100vh;
   margin-top: 4rem;
 }
+
+.button-link-style{
+text-align: center;
+margin-left: 6rem;
+}
+
+.card-title{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width:480px)
+{
+
+.adoption-container{
+  display: block;
+} 
+.button-link-style{
+margin-left: 6rem;
+}
+.button-addopt {
+  width: 80%;
+}
+
+.card-title{
+  text-align: center;
+}
+
+.adoption-items{
+  margin-top: 3rem;
+}
+.vvp-shade{
+  width: 100%;
+  height: auto;
+}
+
+}

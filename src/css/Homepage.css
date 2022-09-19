@@ -155,6 +155,7 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
+  margin-top: 1rem!important;
 }
 
 .trainer-position{
@@ -194,8 +195,15 @@ h1 {
   -webkit-transform: scale(1.3); 
   transform: scale(1.3); 
   transition-duration: 1s;
-}
 
+  }
+
+
+
+
+
+
+ /* ==== MEDIA QUERY HERE==== */
 
 @media (max-width:480px)
 
@@ -252,7 +260,13 @@ margin-bottom: 3rem!important;
   
 }
 
+.adoption-container-homepage{
+  display: block;
+}
 
+.adoption-img-carousel{
+  margin-top: 2rem;
+}
 
 .feature-services-container-description{
   text-align: justify;
