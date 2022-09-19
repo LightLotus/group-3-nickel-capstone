@@ -23,7 +23,7 @@
 
 .customer-reviews-details {
   margin: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .adoption-container-homepage {
@@ -40,4 +40,9 @@
   display: block;
 }
 
+.customer-reviews-details-names{
+  text-align: center!important;
+  
+ 
+}
 

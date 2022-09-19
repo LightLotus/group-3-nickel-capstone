@@ -4,6 +4,7 @@ import { Tabtitle } from '../components/GeneralFunctions';
 import { useEffect } from "react";
 const Register = () => {
   Tabtitle('Register | Charming Pets')
+  
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
