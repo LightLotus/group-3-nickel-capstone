@@ -14,7 +14,6 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Homepage from "./pages/Homepage";
-import Dashboard from "./pages/Dashboard";
 import Checkout from "./pages/Checkout";
 import AdoptionPetDetails from "./pages/AdoptionPetDetails";
 import MannersAdmin from "./components/MannersAdmin";
@@ -34,6 +33,10 @@ import PuppyAdmin from "./pages/PuppyAdmin";
 import EditPuppySched from "./components/EditPuppySched";
 import ViewPuppyEnrollees from "./components/ViewPuppyEnrollees";
 import EditPuppyEnrollees from "./pages/EditPuppyEnrollees";
+import Dashboard from "./pages/Dashboard";
+import AdoptionDashboard from "./components/AdoptionDashboard";
+import OwnerProfileDashboard from "./components/OwnerProfileDashboard";
+import PetClassesDashboard from "./components/PetClassesDashboard";
 
 
 function App() {
@@ -94,6 +97,11 @@ function App() {
           path="/edit-puppyenrollees/:id"
           element={<EditPuppyEnrollees />}
         />
+        <Route path="/dashboard" element={<Dashboard />} >
+          <Route path="/dashboard/ownerprofiledashboard" element={<OwnerProfileDashboard/>}/>
+          <Route path="/dashboard/petclassesdashboard" element={<PetClassesDashboard/>}/>
+          <Route path="/dashboard/adoptiondashboard" element={<AdoptionDashboard/>}/>
+        </Route>
       </Routes>
       <Footer />
     </Router>

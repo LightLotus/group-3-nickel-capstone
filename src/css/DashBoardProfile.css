@@ -1,33 +1,28 @@
-h1{
-    color: #00DDC6;
-    text-align: center;
+h1 {
+  color: #00ddc6;
+  text-align: center;
 }
 
-.border-box-dash{
-    padding: 5rem;
-    border-color:black!important;
-    border-width: 1px!important;
-    
-    height: 100vh;
-}
-.d-menu a{
-    color: black;
-    text-decoration: none;
-   
-}
-.d-menu{
+.border-box-dash {
+  padding: 5rem;
+  border-color: black !important;
+  border-width: 1px !important;
 
-    border-color: #00DDC6!important;
-    
+  height: 100vh;
 }
-.d-menu a:hover{
-    color:#00DDC6 ;
-    text-decoration: none;
-   
+.d-menu a {
+  color: black;
+  text-decoration: none;
+}
+.d-menu {
+  border-color: #00ddc6 !important;
+}
+.d-menu a:hover {
+  color: #00ddc6;
+  text-decoration: none;
 }
 
-.button-pets-profile{
-
+.button-pets-profile {
   display: inline-block;
   text-decoration: none;
   background-color: #00ddc6;
@@ -38,10 +33,38 @@ h1{
   transition: 0.3s;
   font-weight: bold;
   margin: auto;
-  
 }
-.button-pets-profile:hover{
+.button-pets-profile:hover {
   background-color: #fff;
   border: 1px solid #00ddc6;
   color: #00ddc6;
+}
+
+#root > div > div.border-box-dash.border {
+  padding: 3rem;
+}
+
+.ownerproifile-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.dashboard-menu {
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.dashboard-menu:hover,
+.dashboard-menu:active,
+.dashboard-menu:focus {
+  background-color: #00ddc6;
+  color: #fff;
+}
+
+#root > div > div.border-box-dash.border > div > table > p:nth-child(4) {
+  margin: 0;
 }
