@@ -5,9 +5,9 @@ const FAQ = () => {
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
-  return (
+  return ( 
     <>
-    <div className='header text-center mt-5 mb-5'><p><b>FAQs</b></p></div>
+    <div className='header text-center mt-5 mb-5' id='head-faq'>FAQs</div>
       <Accordion className="faq" defaultActiveKey="0" flush>
         <Accordion.Item eventKey="0">
           <Accordion.Header className='btn-head mb-3 shadow'>Should I take a puppy class or a manners class?</Accordion.Header>
