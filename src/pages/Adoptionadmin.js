@@ -68,7 +68,7 @@ const Adoptionadmin = () => {
         <tr key={index}>
           <td>{pet.id}</td>
           <td>{pet.petname}</td>
-          <td>{pet.status}</td>
+          <td>{pet.petstatus ? "Unavailable" : "Available"}</td>
           <td>{pet.animaltype}</td>
           <td>{pet.estbirthday}</td>
           <td>{pet.color}</td>

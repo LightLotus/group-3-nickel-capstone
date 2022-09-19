@@ -14,17 +14,54 @@ const Viewadoptapplicant = () => {
   const [customer, setCustomer] = useState([]);
   const test_id = useParams();
 
-  console.log(test_id);
-
   // code to display applicant
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/api/customer/${test_id.id}`).then((res) => {
-      if (res.status === 200) {
-        setCustomer(res.data.customer);
-        setLoading(false);
-      }
-    });
+    axios
+      .get(`http://127.0.0.1:8000/api/customer/${test_id.id}`)
+      .then((res) => {
+        if (res.status === 200) {
+          setCustomer(res.data.customer);
+          setLoading(false);
+        }
+      });
   }, []);
+
+  const letsGoForLove = (e, id) => {
+    let status = e.target.value;
+
+    if (status.trim().length !== 0) {
+      swal({
+        title: "Update status?",
+        text: "Update adoption status",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      }).then((willDelete) => {
+        if (willDelete) {
+          console.log(customer);
+          const data = {
+            customer_id: id,
+            adoption_id: test_id.id,
+            status: status.trim(),
+          };
+
+          axios
+            .post(`http://127.0.0.1:8000/api/update-customer-status`, data)
+            .then((res) => {
+              if (res.data.status === 200) {
+                swal(
+                  `Status Update to ${status.trim().toUpperCase()}!`,
+                  res.data.message,
+                  "success"
+                );
+              } else {
+                swal("Error", res.data.message, "error");
+              }
+            });
+        }
+      });
+    }
+  };
 
   const deleteAdoption = (e, id) => {
     e.preventDefault();
@@ -74,6 +111,47 @@ const Viewadoptapplicant = () => {
           <td>{customer.dateinterview}</td>
           <td>{customer.timeinterview}</td>
           <td>
+            <select onChange={(e) => letsGoForLove(e, customer.id)}>
+              <option value="">=</option>
+              <option
+                selected={customer.pivot.status == "open" ? true : false}
+                value="open"
+              >
+                open
+              </option>
+              <option
+                selected={customer.pivot.status == "pending" ? true : false}
+                value="pending"
+              >
+                pending
+              </option>
+              <option
+                selected={customer.pivot.status == "canceled" ? true : false}
+                value="canceled"
+              >
+                canceled
+              </option>
+              <option
+                selected={customer.pivot.status == "closed" ? true : false}
+                value="closed"
+              >
+                closed
+              </option>
+              <option
+                selected={customer.pivot.status == "onreview" ? true : false}
+                value="onreview"
+              >
+                onreview
+              </option>
+              <option
+                selected={customer.pivot.status == "accepted" ? true : false}
+                value="accepted"
+              >
+                accepted
+              </option>
+            </select>
+          </td>
+          <td>
             <span
               onClick={(e) => deleteAdoption(e, customer.id)}
               className="btn btn-danger btn-sm"
@@ -103,6 +181,7 @@ const Viewadoptapplicant = () => {
             <th>Address</th>
             <th>Date Interview</th>
             <th>Time Interview</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>{customer_HTMLTABLE}</tbody>
