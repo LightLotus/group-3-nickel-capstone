@@ -145,17 +145,42 @@
 }
 
 @media (max-width:480px) {
-   .navlinks-ul  {
-    flex-direction: column; 
+.navlinks-ul  {
+
+  display:inline-block;
+  font-size: 1rem;
+
+
+
+    /* flex-direction: column; 
     padding: 1.5rem;
     color: #f42d46;
    align-items: baseline;
-   margin-left:-20px;
+   margin-left:-20px; */
    
   }
+
+  .navlinks-ul:hover{
+    color: #00ddc6;
+  }
+
 .cartIcon{
   display: none;
 }
 
+}
+
+
+
+
+@media (max-width:820px) {
+.navbar{
+  width: 100%;
+  padding: 2rem;
+  display:inline-table;
 
 }
+
+}
+  
+

@@ -104,7 +104,7 @@ const Homepage = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="cats-and-dog">
           <h3 className="subtitle" ID="catsdog">
             Cats & Dogs who wants to
             <span className="span-color"> go home with You</span>
