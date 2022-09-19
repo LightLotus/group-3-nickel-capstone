@@ -204,15 +204,36 @@ margin-bottom: 2 rem;
 
 }
 
-.CarouselSlider{
-display: block;
-margin-top: 3rem;
-margin-bottom: 3rem!important;
- 
+#welcome{
+  margin-top: -1rem;
+  font-size:2rem;
+}
+
+.hero-text-p{
+  margin-top: -3rem;
+ text-align: center;
+ line-height:1.5rem;
 
 }
+#enroll{
+
+  margin-left: 7rem!important;
+
+}
+
+.CarouselSlider{
+display: block;
+margin-top: 1rem;
+margin-bottom: 3rem!important;
+ 
+}
+
+#whatcan{
+  margin-top: 3rem!important;
+}
+
 .subtitle ,.span-color{
-  margin-top: 8rem;
+  margin-top: 1rem;
 }
   
 .feature-services-container-description{
@@ -220,25 +241,41 @@ margin-bottom: 3rem!important;
 }
 
 .feature-services-container {
-  display: inline-block;
+  display:block!important;
 
 }
 .feature-services-div{
- margin-left: 5rem;
+
 }
 .description{
-margin: 0 -5rem 2rem;
-padding: 1rem;
+/* margin: 0 -5rem 2rem; */
+padding: 0.5rem;
 text-align: center;
 margin-bottom: 3rem;
   
 }
+#catsdog{
+
+margin-top: 5rem!important;
+
+}
+
+#Gallery{
+  margin-top: -5rem;
+  margin-bottom: 3rem;
+}
+
 
 .gallery-container{
 display:block;
   }
 .gallery-img{
   margin-bottom: 1rem;
+}
+
+#Trainers{
+  margin-top: -5rem;
+  margin-bottom: 3rem;
 }
 .trainer-container{
   display: block;
@@ -251,10 +288,80 @@ display:block;
 
 }
 .customer-reviews{
+ 
   margin-bottom: 1rem;
 
 }
 .customer-reviews-details{
   text-align: center;
 }
+
+}
+
+
+/* 820 max */
+
+@media (max-width:820px){
+
+
+
+  .hero-container{
+    display: block;
+    justify-content: center;
+    margin-bottom: 2 rem;
+    
+    }
+
+#enroll{
+  margin-bottom: 3rem;
+}
+
+#whatcan{
+  margin-top: -10rem;
+}
+.feature-services-container-description{
+  text-align: justify;
+}
+.feature-services-container{
+  display: block;
+}
+
+#catsdog{
+
+  font-size: 2rem;
+}
+
+.gallery-section{
+  margin-top: -5rem;
+
+}
+.gallery-container{
+  display: block;
+  padding-top: 2rem;
+}
+
+.gallery-img{
+  margin-bottom: 1rem;
+}
+
+#Trainers{
+  margin-top: -6rem;
+  
+}
+.trainer-container{
+  display: block;
+  
+}
+
+.trainer-img{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.customer-reviews-container{
+  display: block;
+}
+.customer-reviews{
+  margin-bottom: 1rem;
+}
+
 }

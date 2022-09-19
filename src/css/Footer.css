@@ -92,3 +92,39 @@
   font-size: 0.8rem;
   opacity: 0.8;
 }
+
+@media (max-width:480px)
+{
+
+.footer-container{
+display: inline-block;
+padding: 1rem;
+
+
+}
+
+.logo-img{
+margin-left: 5rem;
+
+}
+.footer-social-icons-container{
+  padding: auto;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+}
+.usefule-links{
+
+display: inline;  
+text-align: start;
+}
+.newsletter-p{
+  text-align: center;
+}
+
+.copyright{
+  text-align: center;
+}
+
+}

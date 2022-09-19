@@ -30,12 +30,14 @@
   border: 1px solid rgb(55, 55, 55);
   display: inline-block;
   margin: 1rem 0;
+  padding: 1rem;
 }
 
 .form-details-textarea {
   width: 100%;
   border-radius: 0.5rem;
   margin: 1rem 0;
+  padding: 1rem;
 }
 
 .form-details-button {
@@ -63,4 +65,46 @@
 .contact-us-grid{
   display: inline;
 }
+
+.form-details-input{
+  padding: 1rem;
 }
+
+.form-details-textarea{
+  padding: 1rem;
+}
+}
+
+@media  (max-width:540px) {
+  .contact-us-grid{
+    display: inline;
+  }
+  .form-details-input{
+    padding: 1rem;
+  }
+  
+  .contact-us-details{
+    text-align: justify;
+  }
+  
+  .form-details-textarea{
+    padding: 1rem;
+  }
+  }
+
+  @media  (max-width:280px) {
+    .contact-us-grid{
+      display: inline;
+    }
+    .form-details-input{
+      padding: 1rem;
+    }
+    
+    .form-details-textarea{
+      padding: 1rem;
+    }
+.contact-us-details{
+  text-align: justify;
+}
+
+  }
