@@ -43,12 +43,16 @@ const Adoption = () => {
               <strong>{pet.petname}</strong>
             </h5>
             <p className="card-text">{pet.description}</p>
-            <Link
-              to={`/adoption-details/${pet.id}`}
-              className="button-link-style"
-            >
-              {`Adopt ${pet.petname}`}
-            </Link>
+            {!pet.petstatus ? (
+              <Link
+                to={`/adoption-details/${pet.id}`}
+                className="button-link-style"
+              >
+                {`Adopt ${pet.petname}`}
+              </Link>
+            ) : (
+              <button className="button-link-style">Unavailable</button>
+            )}
           </div>
         </div>
       );
