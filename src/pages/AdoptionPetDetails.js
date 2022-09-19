@@ -107,12 +107,14 @@ const AdoptionPetDetails = (props) => {
 };
 
 const AddCustomer = (props) => {
+  const user = JSON.parse(localStorage.getItem("userData"));
+
   const [customerInput, setCustomer] = useState({
-    firstname: "",
-    lastname: "",
-    contactnumber: "",
-    email: "",
-    address: "",
+    firstname: user && user.firstname ? user.firstname : "",
+    lastname: user && user.lastname ? user.lastname : "",
+    contactnumber: user && user.contactnumber ? user.contactnumber : "",
+    email: user && user.email ? user.email : "",
+    address: user && user.address ? user.address : "",
     dateinterview: "",
     timeinterview: "",
     error_list: [],
@@ -135,6 +137,7 @@ const AddCustomer = (props) => {
       dateinterview: customerInput.dateinterview,
       timeinterview: customerInput.timeinterview,
       adoption_id: props.adoppets.id,
+      logged_id: user && user.id ? user.id : null,
     };
 
     axios.post(`http://127.0.0.1:8000/api/addcustomer`, data).then((res) => {
@@ -198,6 +201,7 @@ const AddCustomer = (props) => {
                 <input
                   className="customer-details-input"
                   type="text"
+                  disabled={user && user.firstname ? true : false}
                   placeholder="First Name"
                   name="firstname"
                   onChange={handleInput}
@@ -214,6 +218,7 @@ const AddCustomer = (props) => {
                   type="text"
                   placeholder="Last Name"
                   name="lastname"
+                  disabled={user && user.lastname ? true : false}
                   onChange={handleInput}
                   value={customerInput.lastname}
                 />
@@ -228,6 +233,7 @@ const AddCustomer = (props) => {
                   type="text"
                   placeholder="Contact Number"
                   name="contactnumber"
+                  disabled={user && user.contactnumber ? true : false}
                   onChange={handleInput}
                   value={customerInput.contactnumber}
                 />
@@ -242,6 +248,7 @@ const AddCustomer = (props) => {
                   type="email"
                   placeholder="Email"
                   name="email"
+                  disabled={user && user.email ? true : false}
                   onChange={handleInput}
                   value={customerInput.email}
                 />
@@ -256,6 +263,7 @@ const AddCustomer = (props) => {
                   type="text"
                   placeholder="Address"
                   name="address"
+                  disabled={user && user.address ? true : false}
                   onChange={handleInput}
                   value={customerInput.address}
                 />

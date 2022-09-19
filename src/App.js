@@ -41,84 +41,160 @@ import ViewPuppyEnrollees from "./components/ViewPuppyEnrollees";
 import EditPuppyEnrollees from "./pages/EditPuppyEnrollees";
 import AdminLogin from "./pages/Admin/AdminLogin";
 import Dashboard from "./pages/Dashboard";
+import AdoptionDashboard from "./components/AdoptionDashboard";
+import OwnerProfileDashboard from "./components/OwnerProfileDashboard";
+import PetClassesDashboard from "./components/PetClassesDashboard";
 
-function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  return (
-    <Router>
-      <Navlink />
-      <Routes>
-        <Route path="/" index element={<Homepage />} />
-        <Route path="/ourstory" element={<OurStory />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/trainingclasses" element={<TrainingClasses />} />
-        <Route path="/manners" element={<Manners />} />
-        <Route path="/puppykindergarten" element={<PuppyKindergarten />} />
-        <Route path="/privatelessons" element={<PrivateLessons />} />
-        <Route path="/adoption" element={<Adoption />} />
-        <Route path="/adoptionpetdetails" element={<AdoptionPetDetails />} />
-        <Route path="/ourproducts" element={<OurProducts />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/admin_login" element={<AdminLogin />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/mannersadmin" element={<MannersAdmin />} />
-        <Route
-          path="/mannersadmin/edit-mannersched/:id"
-          element={<EditMannerSched />}
-        />
-        <Route path="/manners/mannerenroll/:id" element={<MannerEnroll />} />
-        <Route
-          path="/mannersadmin/view-enrollees/:id"
-          element={<ViewMannersEnrollees />}
-        />
-        <Route path="/edit-enrollees/:id" element={<EditMannersEnrollees />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/adoptionadmin" element={<Adoptionadmin />} />
-        <Route path="/adoptionadminadd" element={<AddAdoption />} />
-        <Route path="/editadminadoption/:id" element={<Editadminadoption />} />
-        <Route path="/adoption-details/:id" element={<AdoptionPetDetails />} />
-        <Route
-          path="/viewadoptionapplicant/:id"
-          element={<Viewadoptapplicant />}
-        />
-        <Route path="/puppykindergarten/:id" element={<PuppyEnroll />} />
-        <Route path="/mainadmin" element={<MainAdmin />} />
-        <Route path="/puppyadmin" element={<PuppyAdmin />} />
-        <Route
-          path="/puppyadmin/edit-puppysched/:id"
-          element={<EditPuppySched />}
-        />
-        <Route
-          path="/puppyadmin/view-enrollees/:id"
-          element={<ViewPuppyEnrollees />}
-        />
-        <Route
-          path="/edit-puppyenrollees/:id"
-          element={<EditPuppyEnrollees />}
-        />
-        <Route path="/dashboard" element={<Dashboard />}>
-          <Route
-            path="/dashboard/ownerprofiledashboard"
-            element={<OwnerProfileDashboard />}
-          />
-          <Route
-            path="/dashboard/petclassesdashboard"
-            element={<PetClassesDashboard />}
-          />
-          <Route
-            path="/dashboard/adoptiondashboard"
-            element={<AdoptionDashboard />}
-          />
-        </Route>
-      </Routes>
-      <Footer />
-    </Router>
-  );
+export default class App extends Component {
+  render() {
+    const login = localStorage.getItem("isLoggedIn");
+
+    return (
+      <div>
+        {login ? (
+          <Router>
+            <NavbarAdmin />
+            <Routes>
+              <Route path="/" index element={<Homepage />} />
+              <Route path="/ourstory" element={<OurStory />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/trainingclasses" element={<TrainingClasses />} />
+              <Route path="/manners" element={<Manners />} />
+              <Route
+                path="/puppykindergarten"
+                element={<PuppyKindergarten />}
+              />
+              <Route path="/privatelessons" element={<PrivateLessons />} />
+              <Route path="/adoption" element={<Adoption />} />
+              <Route
+                path="/adoptionpetdetails"
+                element={<AdoptionPetDetails />}
+              />
+              <Route path="/ourproducts" element={<OurProducts />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/admin_login" element={<AdminLogin />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/mannersadmin" element={<MannersAdmin />} />
+              <Route
+                path="/mannersadmin/edit-mannersched/:id"
+                element={<EditMannerSched />}
+              />
+              <Route
+                path="/manners/mannerenroll/:id"
+                element={<MannerEnroll />}
+              />
+              <Route
+                path="/mannersadmin/view-enrollees/:id"
+                element={<ViewMannersEnrollees />}
+              />
+              <Route
+                path="/edit-enrollees/:id"
+                element={<EditMannersEnrollees />}
+              />
+              <Route path="/dashboard" element={<Dashboard />}>
+                <Route
+                  path="/dashboard/ownerprofiledashboard"
+                  element={<OwnerProfileDashboard />}
+                />
+                <Route
+                  path="/dashboard/petclassesdashboard"
+                  element={<PetClassesDashboard />}
+                />
+                <Route
+                  path="/dashboard/adoptiondashboard"
+                  element={<AdoptionDashboard />}
+                />
+              </Route>
+              <Route path="/adoptionadmin" element={<Adoptionadmin />} />
+              <Route path="/adoptionadminadd" element={<AddAdoption />} />
+              <Route
+                path="/editadminadoption/:id"
+                element={<Editadminadoption />}
+              />
+              <Route
+                path="/adoption-details/:id"
+                element={<AdoptionPetDetails />}
+              />
+              <Route
+                path="/viewadoptionapplicant/:id"
+                element={<Viewadoptapplicant />}
+              />
+              <Route path="/puppykindergarten/:id" element={<PuppyEnroll />} />
+              <Route path="/mainadmin" element={<MainAdmin />} />
+              <Route path="/puppyadmin" element={<PuppyAdmin />} />
+              <Route
+                path="/puppyadmin/edit-puppysched/:id"
+                element={<EditPuppySched />}
+              />
+              <Route
+                path="/puppyadmin/view-enrollees/:id"
+                element={<ViewPuppyEnrollees />}
+              />
+              <Route
+                path="/edit-puppyenrollees/:id"
+                element={<EditPuppyEnrollees />}
+              />
+            </Routes>
+            <Footer />
+          </Router>
+        ) : (
+          <Router>
+            <Navlink />
+            <Routes>
+              <Route path="/" index element={<Homepage />} />
+              <Route path="/ourstory" element={<OurStory />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/trainingclasses" element={<TrainingClasses />} />
+              <Route path="/manners" element={<Manners />} />
+              <Route
+                path="/puppykindergarten"
+                element={<PuppyKindergarten />}
+              />
+              <Route path="/privatelessons" element={<PrivateLessons />} />
+              <Route path="/adoption" element={<Adoption />} />
+              <Route
+                path="/adoptionpetdetails"
+                element={<AdoptionPetDetails />}
+              />
+              <Route path="/ourproducts" element={<OurProducts />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/admin_login" element={<AdminLogin />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route
+                path="/manners/mannerenroll/:id"
+                element={<MannerEnroll />}
+              />
+              <Route
+                path="/edit-enrollees/:id"
+                element={<EditMannersEnrollees />}
+              />
+              <Route path="/dashboard" element={<Dashboard />} />
+
+              <Route
+                path="/adoption-details/:id"
+                element={<AdoptionPetDetails />}
+              />
+              <Route
+                path="/viewadoptionapplicant/:id"
+                element={<Viewadoptapplicant />}
+              />
+              <Route path="/puppykindergarten/:id" element={<PuppyEnroll />} />
+
+              <Route
+                path="/edit-puppyenrollees/:id"
+                element={<EditPuppyEnrollees />}
+              />
+            </Routes>
+            <Footer />
+          </Router>
+        )}
+      </div>
+    );
+  }
 }
-
-export default App;

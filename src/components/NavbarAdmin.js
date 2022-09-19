@@ -113,7 +113,10 @@ function NavbarAdmin() {
                   <ul className="navlinks-ul">
                     <li className="navlinks-li">
                       {customerLoggedIn ? (
-                        <Link className="navlinks-a" to="/dashboard">
+                        <Link
+                          className="navlinks-a"
+                          to="/dashboard/ownerprofiledashboard"
+                        >
                           Dashboard
                         </Link>
                       ) : (

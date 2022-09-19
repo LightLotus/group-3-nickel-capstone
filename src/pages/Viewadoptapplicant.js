@@ -108,8 +108,8 @@ const Viewadoptapplicant = () => {
           <td>{customer.contactnumber}</td>
           <td>{customer.email}</td>
           <td>{customer.address}</td>
-          <td>{customer.dateinterview}</td>
-          <td>{customer.timeinterview}</td>
+          <td>{customer.pivot.dateinterview}</td>
+          <td>{customer.pivot.timeinterview}</td>
           <td>
             <select onChange={(e) => letsGoForLove(e, customer.id)}>
               <option value="">=</option>

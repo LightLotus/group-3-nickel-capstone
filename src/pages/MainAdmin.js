@@ -1,10 +1,23 @@
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../css/MainAdmin.css";
-import { Tabtitle } from '../components/GeneralFunctions';
+import swal from "sweetalert";
+import { Tabtitle } from "../components/GeneralFunctions";
 
 const MainAdmin = () => {
-  Tabtitle('Main Admin| Charming Pets')
+  Tabtitle("Main Admin| Charming Pets");
+
+  useEffect(() => {
+    const customerLoggedIn = localStorage.getItem("customerLoggedIn");
+
+    if (customerLoggedIn) {
+      swal("Error!", "Cannot access admin page", "warning").then(() => {
+        window.location.href = "/";
+      });
+    }
+  }, []);
+
   return (
     <Container>
       <h1>

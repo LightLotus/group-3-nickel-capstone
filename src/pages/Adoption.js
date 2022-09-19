@@ -1,6 +1,5 @@
 import Ratio from "react-bootstrap/Ratio";
 import Container from "react-bootstrap/Container";
-import { MDBBtn } from "mdb-react-ui-kit";
 import "../css/Adoption.css";
 import React from "react";
 import { useEffect, useState } from "react";
@@ -11,6 +10,7 @@ import { Tabtitle } from "../components/GeneralFunctions";
 
 const Adoption = () => {
   Tabtitle("Adoption | Charming Pets");
+
   const [loading, setLoading] = useState(true);
   const [adoppets, setAdoppets] = useState([]);
 
