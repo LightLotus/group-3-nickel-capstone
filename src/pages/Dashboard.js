@@ -1,5 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import "../css/DashBoardProfile.css";
+import { Link, Outlet } from 'react-router-dom';
 
 
 
@@ -8,16 +9,14 @@ const Dashboard = () => {
   
   <Container><h1>My Account Dashboard</h1>
   
-  <div className=" d-flex flex-row mb-3">
-        <div className="d-menu px-5 border"><a href="#">View Profile</a></div>
-        <div className="d-menu px-5 border"><a href="#">Edit Profile</a></div>
-        <div className="d-menu px-5 border"><a href="#">Bookings</a></div>
-        <div className="d-menu px-5 border"><a href="#">Orders</a></div>
-        <div className="d-menu px-5 border"><a href="#">Log out</a></div>
-    </div>
+  <div>
+        <Link className="dashboard-menu d-menu px-5 border" to="/dashboard/ownerprofiledashboard">View Profile</Link>
+        <Link className="dashboard-menu d-menu px-5 border" to="/dashboard/petclassesdashboard">Pet's Classes</Link>
+        <Link className="dashboard-menu d-menu px-5 border" to="/dashboard/adoptiondashboard">Adoption</Link>
+  </div>
   <div className="border-box-dash border">
 
-    <button className='button-pets-profile'>Add Pets Profile</button>
+    <Outlet/>
 
   </div>
   
