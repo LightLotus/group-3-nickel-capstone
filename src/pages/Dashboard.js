@@ -1,10 +1,11 @@
 import Container from 'react-bootstrap/Container';
 import "../css/DashBoardProfile.css";
 import { Link, Outlet } from 'react-router-dom';
-
+import { Tabtitle } from '../components/GeneralFunctions';
 
 
 const Dashboard = () => {
+Tabtitle('Dashboard | Charming Pets')
     return (
   
   <Container><h1>My Account Dashboard</h1>

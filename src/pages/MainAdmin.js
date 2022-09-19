@@ -1,7 +1,10 @@
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../css/MainAdmin.css";
+import { Tabtitle } from '../components/GeneralFunctions';
+
 const MainAdmin = () => {
+  Tabtitle('Main Admin| Charming Pets')
   return (
     <Container>
       <h1>
