@@ -65,6 +65,7 @@
 .contact-us-grid{
   display: inline;
 }
+
 .form-details-input{
   padding: 1rem;
 }
@@ -73,3 +74,37 @@
   padding: 1rem;
 }
 }
+
+@media  (max-width:540px) {
+  .contact-us-grid{
+    display: inline;
+  }
+  .form-details-input{
+    padding: 1rem;
+  }
+  
+  .contact-us-details{
+    text-align: justify;
+  }
+  
+  .form-details-textarea{
+    padding: 1rem;
+  }
+  }
+
+  @media  (max-width:280px) {
+    .contact-us-grid{
+      display: inline;
+    }
+    .form-details-input{
+      padding: 1rem;
+    }
+    
+    .form-details-textarea{
+      padding: 1rem;
+    }
+.contact-us-details{
+  text-align: justify;
+}
+
+  }

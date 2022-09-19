@@ -19,6 +19,10 @@ h1 {
   color: aquamarine !important;
 }
 
+ p{
+  text-align: justify;
+}
+
 .img-circle {
   width: 10px;
   height: 10px;
@@ -72,4 +76,55 @@ h1 {
 .values-container-h3 {
   font-weight: bold;
   margin: 1rem 0;
+}
+
+@media (max-width:480px) {
+  .core-values-wrapper{
+  display:block;
+
+  }
+.core-values-wrapper p{
+  text-align: justify;
+}
+.card-text{
+  text-align: justify;
+}
+
+}
+
+@media (max-width:480px)
+{
+  .core-values-wrapper{
+    display:block;
+  
+    }
+.card-text{
+  text-align: justify;
+}
+
+}
+@media (max-width:500px)
+{
+  .core-values-wrapper{
+    display:block;
+  
+    }
+.card-text{
+  text-align: justify;
+}
+
+}
+
+@media (max-width:540px)
+{
+  .core-values-wrapper{
+    display:block;
+    padding: 2rem!important;
+  
+    }
+.card-text{
+  text-align: justify;
+}
+
+
 }
