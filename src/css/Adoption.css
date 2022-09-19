@@ -90,6 +90,9 @@ margin-left: 6rem;
   text-align: center;
   margin-bottom: 1rem;
 }
+.card-body{
+  max-height: 5vh;
+}
 
 @media (max-width:480px)
 {
@@ -111,9 +114,10 @@ margin-left: 6rem;
 .adoption-items{
   margin-top: 3rem;
 }
-.vvp-shade{
+.video-container iframe{
   width: 100%;
   height: auto;
 }
+
 
 }

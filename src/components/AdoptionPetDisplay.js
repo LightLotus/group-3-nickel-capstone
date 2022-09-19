@@ -22,7 +22,7 @@ const AdoptionPetDisplay = () => {
     return (
       <div key={index}>
         <img src={pet.imgsrc} alt="" className="adoption-img-carousel" />
-        <div className="text-dark mt-3">
+        <div className="text-dark mt-3 text-center">
           <strong>Name: {pet.petname} </strong>
           <br /> <strong>Sex: {pet.sex}</strong>
         </div>
