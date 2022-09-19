@@ -7,8 +7,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "../css/Adoption.css";
 import { Link } from "react-router-dom";
+import { Tabtitle } from '../components/GeneralFunctions';
 
 const Adoption = () => {
+  Tabtitle('Adoption | Charming Pets');
   const [loading, setLoading] = useState(true);
   const [adoppets, setAdoppets] = useState([]);
 

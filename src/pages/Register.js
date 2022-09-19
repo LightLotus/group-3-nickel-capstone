@@ -1,7 +1,9 @@
 import "../css/Register.css";
 import { Link } from "react-router-dom";
-
+import { Tabtitle } from '../components/GeneralFunctions';
 const Register = () => {
+  Tabtitle('Register | Charming Pets')
+
   return (
     <>
       <div className="login-container">

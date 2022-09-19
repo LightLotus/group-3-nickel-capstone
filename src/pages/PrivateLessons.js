@@ -2,17 +2,18 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import "../css/PrivateLesson.css";
 import { useEffect } from "react";
+import { Tabtitle } from '../components/GeneralFunctions';
 
 
 const PrivateLessons = () => {
-
+  Tabtitle('PrivateLessons | Charming Pets');
   useEffect(() => {
     window.scrollTo(0, 0)    
   }, [])
 
   return (
   <>
-  <div className='header text-center'><p><b>Private Lessons</b></p></div><br></br>
+  <div className='header text-center'>Private Lessons</div><br></br>
   <Container className="content"><p>Some dogs need more individualized instruction than we can provide in a group class, and that's okay! 
     Whether your dog is reactive around other dogs, has specific behavioral issues you need to address, or you just can't find a group class that fits your schedule, private lessons are a great option. 
     These one-on-one sessions allow you to work with a trainer at length to discuss and address the needs of your dog. 

@@ -1,7 +1,10 @@
 import Accordion from 'react-bootstrap/Accordion';
 import "../css/FAQ.css";
 import { useEffect } from 'react';
+import { Tabtitle } from '../components/GeneralFunctions';
+
 const FAQ = () => {
+  Tabtitle('Faqs | Charming Pets');
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);

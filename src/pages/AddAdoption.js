@@ -8,6 +8,7 @@ import { Container } from "react-bootstrap";
 import "../css/Adoption.css";
 
 const AddAdoption = () => {
+  
   const [adoptionInput, setAdoption] = useState({
     petname: "",
     status: "",

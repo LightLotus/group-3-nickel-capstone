@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-
+import { Tabtitle } from '../components/GeneralFunctions';
 import "../css/Login.css";
 
 const Login = () => {
+  Tabtitle('Login | Charming Pets');
 
   return (
     <>

@@ -13,8 +13,10 @@ import "../css/Homepage.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Tabtitle } from '../components/GeneralFunctions';
 
 const Homepage = () => {
+  Tabtitle('Charming Pets');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

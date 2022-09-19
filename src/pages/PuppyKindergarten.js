@@ -5,8 +5,10 @@ import ViewPuppyClass from "../components/ViewPuppyClass";
 import { Link } from "react-router-dom";
 import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Tabtitle } from '../components/GeneralFunctions';
 
 const PuppyKindergarten = () => {
+  Tabtitle('PuppyKindergarten | Charming Pets');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
