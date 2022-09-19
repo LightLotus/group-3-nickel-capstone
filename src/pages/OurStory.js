@@ -17,8 +17,10 @@ import Col from "react-bootstrap/Col";
 import dogchild from "../images/dog-child.png";
 import { useEffect } from "react";
 import "../css/Ourstory.css";
+import { Tabtitle } from '../components/GeneralFunctions';
 
 const OurStory = () => {
+  Tabtitle('Our Story | Charming Pets');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

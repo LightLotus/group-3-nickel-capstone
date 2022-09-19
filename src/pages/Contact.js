@@ -8,8 +8,10 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import swal from "sweetalert";
+import { Tabtitle } from '../components/GeneralFunctions';
 
 const Contact = () => {
+  Tabtitle('Contacts | Charming Pets');
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");

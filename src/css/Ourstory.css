@@ -128,3 +128,10 @@ h1 {
 
 
 }
+@media (max-width:768px){
+  .core-values-wrapper{
+  display:block;
+  padding: 2rem!important;
+  }
+
+}

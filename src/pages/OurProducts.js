@@ -4,11 +4,12 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import {MDBBtn} from 'mdb-react-ui-kit';
 import "../css/Ourproducts.css";
 import { useEffect } from "react";
+import { Tabtitle } from '../components/GeneralFunctions';
 
 
 
 const OurProducts = () => {
-
+  Tabtitle('OurProducts | Charming Pets');
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])

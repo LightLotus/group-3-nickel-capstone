@@ -14,8 +14,10 @@ import {
 } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Tabtitle } from '../components/GeneralFunctions';
 
 const TrainingClasses = () => {
+  Tabtitle('Training Classes | Charming Pets');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
