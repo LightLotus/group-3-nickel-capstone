@@ -31,3 +31,20 @@
   object-fit: cover;
   padding: 1rem;
 }
+
+@media (max-width:820px){
+.card-group{
+  display: block;
+}
+
+}
+
+@media (max-width:912px) {
+
+.card-group{
+display:block!important ;
+
+}
+
+
+}

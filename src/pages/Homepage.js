@@ -189,7 +189,7 @@ const Homepage = () => {
             <div className="trainer-profile">
               <img
                 className="trainer-img container-fluid p-0 "
-                src="https://s0.hfdstatic.com/sites/the_hartford/pubimgs/1444709093966.jpg?v=2021-02-19_124202848"  
+                src="https://s0.hfdstatic.com/sites/the_hartford/pubimgs/1444709093966.jpg?v=2021-02-19_124202848"
                 alt=""
               />
               <p className="trainer-name">Keith Thurman</p>

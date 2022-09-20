@@ -37,13 +37,12 @@ const EditMannersEnrollees = () => {
     const data = {
       petname: mannersenrollInput.petname,
       age: mannersenrollInput.age,
-      ownername: mannersenrollInput.ownername,
-      email: mannersenrollInput.email,
-      phonenumber: mannersenrollInput.phonenumber,
-      address: mannersenrollInput.address,
     };
     axios
-      .put(`http://127.0.0.1:8000/api/updatemannerenroll/${mannerenroll_id}`, data)
+      .put(
+        `http://127.0.0.1:8000/api/updatemannerenroll/${mannerenroll_id}`,
+        data
+      )
       .then((res) => {
         if (res.data.status === 200) {
           swal("Success", res.data.message, "success");
@@ -63,7 +62,10 @@ const EditMannersEnrollees = () => {
 
   return (
     <Container>
-      <Link to="/mannersadmin/view-enrollees/:d" className="fs-5 mb-4 d-block">
+      <Link
+        to={`/mannersadmin/view-enrollees/${params.id}`}
+        className="fs-5 mb-4 d-block"
+      >
         <FontAwesomeIcon icon={faArrowAltCircleLeft}></FontAwesomeIcon>
         Back
       </Link>
@@ -94,59 +96,26 @@ const EditMannersEnrollees = () => {
           />
           <span className="add-manner-span">{errorInput.age}</span>
         </div>
+
         <div className="add-manners-div">
           {" "}
           <label className="add-manners-input" htmlFor="">
-            Owner's Name:{" "}
-          </label>
-          <input
-            type="text"
-            name="ownername"
-            onChange={handleInput}
-            value={mannersenrollInput.ownername}
-          />
-          <span className="add-manner-span">{errorInput.ownername}</span>
-        </div>
-        <div className="add-manners-div">
-          {" "}
-          <label className="add-manners-input" htmlFor="">
-            Email:
-          </label>
-          <input
-            type="email"
-            name="email"
-            onChange={handleInput}
-            value={mannersenrollInput.email}
-          />
-          <span className="add-manner-span">{errorInput.email}</span>
-        </div>
-        <div className="add-manners-div">
-          {" "}
-          <label className="add-manners-input" htmlFor="">
-            Phone Number:
-          </label>
-          <input
-            type="text"
-            name="phonenumber"
-            onChange={handleInput}
-            value={mannersenrollInput.phonenumber}
-          />
-          <span className="add-manner-span">{errorInput.phonenumber}</span>
-        </div>
-        <div className="add-manners-div">
-          {" "}
-          <label className="add-manners-input" htmlFor="">
-            Address:
+            Owner:
           </label>
           <input
             type="text"
             name="address"
             onChange={handleInput}
-            value={mannersenrollInput.address}
+            disabled={true}
+            value={mannersenrollInput.ownername}
           />
-          <span className="add-manner-span">{errorInput.address}</span>
+          <span className="add-manner-span">{errorInput.ownername}</span>
         </div>
-        <button type="button" onClick={updateEnrollees} class="button-link-style">
+        <button
+          type="button"
+          onClick={updateEnrollees}
+          class="button-link-style"
+        >
           Update Student Details
         </button>
       </form>
