@@ -51,14 +51,14 @@ const AdoptionPetDetails = (props) => {
         <strong>Adoption Pet Details</strong>
       </h3>
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6" id="petdetalye">
           <img
             src={adoppets.imgsrc}
             className="adoptiondetails-img container-fluid"
             alt=""
           />
         </div>
-        <div className="col-md-6">
+        <div className="pet-details col-md-6 ">
           <h2>
             <strong>{adoppets.petname}</strong>
           </h2>
@@ -97,7 +97,7 @@ const AdoptionPetDetails = (props) => {
             <AddCustomer
               showformadd={showAddCustomerHandler}
               adoppets={adoppets}
-              className="button-link-style"
+              className="button-link-style" id="btn-pet-details"
             />
           )}
         </div>

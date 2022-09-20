@@ -66,7 +66,7 @@ const Adoption = () => {
       <h1>
         <span className="text-dark">Welcome to </span>Charming Pets Adoption
       </h1>
-      <div className="mx-auto" style={{ width:"100%" ,height: "auto" }}>
+      <div className="mx-auto" style={{ width:"80%" ,height: "auto" }}>
         <Ratio aspectRatio="16x9">
           <embed
             type="image/svg+xml"
