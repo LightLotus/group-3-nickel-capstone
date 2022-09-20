@@ -148,12 +148,6 @@
 .navlinks-ul  {
 
   display:inline-block;
-
-  /* flex-direction: column; 
-  padding: 1.5rem;
-  color: #f42d46;
-  align-items: baseline;
-  margin-left:-20px; */
    
 }
 .nav-links-container {
@@ -201,25 +195,17 @@ background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpikumddWJ
 background-position:4vmin 22rem ;
 background-repeat: no-repeat!important;
 margin-left: 1rem;
-
-
-
-
 }
 
 }
 
+/* =========820============= */
 
 
-
-@media (max-width:820px) {
-.navbar{
-  width: 100%;
-  padding: 2rem;
-  display:inline-table;
-
+.{
+color: #f42d46!important;
 }
 
-}
+
   
 
