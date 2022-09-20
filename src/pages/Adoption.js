@@ -34,7 +34,7 @@ const Adoption = () => {
     var adoption_HTMLTABLE = "";
     adoption_HTMLTABLE = adoppets.map((pet, index) => {
       return (
-        <div className="adoption-items" key={index}>
+        <div className="adoption-items" id="adoptitem" key={index}>
           <img
             src={pet.imgsrc}
             className="card-img-top adoption-img"
@@ -48,7 +48,7 @@ const Adoption = () => {
             {!pet.petstatus ? (
               <Link
                 to={`/adoption-details/${pet.id}`}
-                className="button-link-style"
+                className="button-link-style" 
               >
                 {`Adopt ${pet.petname}`}
               </Link>

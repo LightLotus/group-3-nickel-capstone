@@ -49,6 +49,7 @@
 .add-adoption-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
 }
 .add-adoption-div {
   display: flex;
@@ -79,6 +80,7 @@
 .adoption-items {
   height: 100vh;
   margin-top: 4rem;
+  width: auto;
 }
 
 .button-link-style{
@@ -90,9 +92,15 @@ margin-left: 6rem;
   text-align: center;
   margin-bottom: 1rem;
 }
-.card-body{
-  max-height: 5vh;
-}
+
+
+
+
+
+
+/* 
+=============MEDIA QUERY============== */
+
 
 @media (max-width:480px)
 {
