@@ -66,12 +66,12 @@ const Adoption = () => {
       <h1>
         <span className="text-dark">Welcome to </span>Charming Pets Adoption
       </h1>
-      <div className="mx-auto" style={{ width:"80%" ,height: "auto" }}>
-        <Ratio aspectRatio="16x9">
+      <div className="mx-auto" style={{ width:"80%" ,height: "auto" }} >
+        <Ratio aspectRatio="16x9 ">
           <embed
             type="image/svg+xml"
-            src="https://player.vimeo.com/video/179738694?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1"
-            fluid
+            src="https://player.vimeo.com/video/179738694?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1" 
+            fluid  autoplay muted
           />
         </Ratio>
       </div>
