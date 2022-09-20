@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../css/DashBoardProfile.css";
 
 const OwnerProfileDashboard = () => {
+  const user = JSON.parse(localStorage.getItem("userData"));
+
   return (
     <div className="dashboard-content">
       <div className="ownerproifile-header">
@@ -13,22 +15,34 @@ const OwnerProfileDashboard = () => {
       </div>
       <div>
         <p>
-          Name: <span>John Doe</span>{" "}
+          Name:{" "}
+          <span>
+            <strong>{user.firstname}</strong>
+          </span>{" "}
+          <span>
+            <strong>{user.lastname}</strong>
+          </span>{" "}
         </p>
         <p>
-          Phone No: <span>09091234576</span>{" "}
+          Phone No:{" "}
+          <span>
+            <strong>{user.contactnumber}</strong>
+          </span>{" "}
         </p>
         <p>
-          Address: <span>John Doe</span>{" "}
+          Address:{" "}
+          <span>
+            <strong>{user.address}</strong>
+          </span>{" "}
+        </p>
+        <p>
+          Email:{" "}
+          <span>
+            <strong>{user.email}</strong>
+          </span>{" "}
         </p>
       </div>
       <hr />
-      <p>
-        Email: <span>johndoe@email.com</span>{" "}
-      </p>
-      <p>
-        Password: <span>********</span>{" "}
-      </p>
     </div>
   );
 };
