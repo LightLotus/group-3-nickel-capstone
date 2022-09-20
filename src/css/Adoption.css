@@ -49,7 +49,6 @@
 .add-adoption-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
 .add-adoption-div {
   display: flex;
@@ -80,60 +79,4 @@
 .adoption-items {
   height: 100vh;
   margin-top: 4rem;
-  width: auto;
-}
-
-.button-link-style{
-text-align: center;
-margin-left: 6rem;
-}
-
-.card-title{
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.video{
-  height: auto;
-  width: 100%;
-}
-
-
-
-
-
-/* 
-=============MEDIA QUERY============== */
-
-
-@media (max-width:480px)
-{
-
-.adoption-container{
-  display: block;
-} 
-.button-link-style{
-margin-left: 6rem;
-margin-bottom: 1rem!important;
-}
-.button-addopt {
-  width: 80%;
-}
-
-.card-title{
-  text-align: center;
-}
-
-.adoption-items{
-  margin-top: 5rem;
-  margin-bottom: 3rem!important;
-}
-.video-container iframe{
-  width: 100%;
-  height: auto;
-}
-.video{
-  height: auto;
-  width: 100%;
-}
-
 }

@@ -49,7 +49,7 @@ export default class Signup extends Component {
           });
           setTimeout(() => {
             this.setState({ msg: "" });
-            window.location.href = "/dashboard";
+            window.location.href = "/dashboard/ownerprofiledashboard";
           }, 2000);
         }
 

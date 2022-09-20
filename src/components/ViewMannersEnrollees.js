@@ -8,18 +8,22 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import swal from "sweetalert";
 import Table from "react-bootstrap/Table";
+import { useParams } from "react-router-dom";
 
 const ViewMannersEnrollees = () => {
   const [loading, setLoading] = useState(true);
   const [students, setStudents] = useState([]);
+  const params = useParams();
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/api/mannerenroll`).then((res) => {
-      if (res.status === 200) {
-        setStudents(res.data.mannerenroll);
-        setLoading(false);
-      }
-    });
+    axios
+      .get(`http://127.0.0.1:8000/api/mannerenroll/${params.id}`)
+      .then((res) => {
+        if (res.status === 200) {
+          setStudents(res.data.mannerenroll);
+          setLoading(false);
+        }
+      });
   }, []);
 
   const deleteStudent = (e, id) => {
@@ -64,10 +68,10 @@ const ViewMannersEnrollees = () => {
         <tr key={index}>
           <td>{item.petname}</td>
           <td>{item.age}</td>
-          <td>{item.ownername}</td>
-          <td>{item.email}</td>
-          <td>{item.phonenumber}</td>
-          <td>{item.address}</td>
+          <td>{item.customer.firstname}</td>
+          <td>{item.customer.email}</td>
+          <td>{item.customer.contactnumber}</td>
+          <td>{item.customer.address}</td>
           <td>
             <Link
               to={`/edit-enrollees/${item.id}`}

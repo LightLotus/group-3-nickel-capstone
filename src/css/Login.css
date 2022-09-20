@@ -27,17 +27,11 @@
   }
   
   #login-button {
-      margin-top: 1rem!important;
+      margin-top: 1rem;
       background-color: #000;
       width: 100%;
-      margin: auto!important;
-
   }
-  .login-input{
-    margin-bottom: 1rem;
-  }
-
-
+  
   .dont-have-account {
       margin-top: 1rem;
   }

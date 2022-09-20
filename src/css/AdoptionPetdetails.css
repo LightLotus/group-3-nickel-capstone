@@ -15,7 +15,7 @@
   transition: 0.3s;
   font-weight: bold;
   margin-bottom: 5rem;
- 
+  
 }
 
 .adopt-button:hover {
@@ -27,9 +27,7 @@
 .Adopt-card{
     margin-top: 5rem;
 }
-.button-link-style{
-  margin: auto;
-}
+
 
 .modal-footer{
   justify-content: center;
@@ -68,22 +66,4 @@
   display: block;
   width: 100%;
   margin: 1rem 0;
-}
-
-
-
-@media (max-width:480px){
-.pet-details{
-   margin-top: -1rem;
-   text-align: center;
-  }
-.adopt-status{
-  text-align: center;
-}
-.button-link-style{
-  margin: auto;
-}
-
-
-
 }

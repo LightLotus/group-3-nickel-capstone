@@ -9,14 +9,16 @@ import "../css/MannerEnroll.css";
 function PuppyEnroll() {
   const params = useParams();
   const enroll_id = params.id;
+  const user = JSON.parse(localStorage.getItem("userData"));
 
   const [enrollInput, setEnroll] = useState({
     petname: "",
     age: "",
-    ownername: "",
-    email: "",
-    phonenumber: "",
-    address: "",
+    ownername: user && user.firstname ? user.firstname : "",
+    lastname: user && user.lastname ? user.lastname : "",
+    email: user && user.email ? user.email : "",
+    phonenumber: user && user.contactnumber ? user.contactnumber : "",
+    address: user && user.address ? user.address : "",
     error_list: [],
   });
 
@@ -62,10 +64,12 @@ function PuppyEnroll() {
       petname: enrollInput.petname,
       age: enrollInput.age,
       ownername: enrollInput.ownername,
+      lastname: enrollInput.lastname,
       email: enrollInput.email,
       phonenumber: enrollInput.phonenumber,
       address: enrollInput.address,
       puppy_id: enroll_id,
+      logged_id: user && user.id ? user.id : null,
     };
 
     axios.post(`http://127.0.0.1:8000/api/addpuppyenroll`, data).then((res) => {
@@ -77,6 +81,7 @@ function PuppyEnroll() {
           petname: "",
           age: "",
           ownername: "",
+          lastname: "",
           email: "",
           phonenumber: "",
           address: "",
@@ -139,6 +144,7 @@ function PuppyEnroll() {
               name="ownername"
               onChange={handleInput}
               value={enrollInput.ownername}
+              disabled={user && user.firstname ? true : false}
               placeholder="Owner Name"
             />
             <span className="add-manner-span">
@@ -146,9 +152,22 @@ function PuppyEnroll() {
             </span>
             <input
               className="mannerenroll-input"
+              type="text"
+              name="lastname"
+              onChange={handleInput}
+              disabled={user && user.lastname ? true : false}
+              value={enrollInput.lastname}
+              placeholder="Owner Last Name"
+            />
+            <span className="add-manner-span">
+              {enrollInput.error_list.lastname}
+            </span>
+            <input
+              className="mannerenroll-input"
               type="email"
               name="email"
               onChange={handleInput}
+              disabled={user && user.email ? true : false}
               value={enrollInput.email}
               placeholder="Email"
             />
@@ -160,6 +179,7 @@ function PuppyEnroll() {
               type="text"
               name="phonenumber"
               onChange={handleInput}
+              disabled={user && user.contactnumber ? true : false}
               value={enrollInput.phonenumber}
               placeholder="Phone Number"
             />
@@ -172,6 +192,7 @@ function PuppyEnroll() {
               name="address"
               onChange={handleInput}
               value={enrollInput.address}
+              disabled={user && user.address ? true : false}
               placeholder="address"
             />
             <span className="add-manner-span">

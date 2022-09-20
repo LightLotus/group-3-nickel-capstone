@@ -9,14 +9,16 @@ import "../css/MannerEnroll.css";
 function MannerEnroll() {
   const params = useParams();
   const enroll_id = params.id;
+  const user = JSON.parse(localStorage.getItem("userData"));
 
   const [enrollInput, setEnroll] = useState({
     petname: "",
     age: "",
-    ownername: "",
-    email: "",
-    phonenumber: "",
-    address: "",
+    ownername: user && user.firstname ? user.firstname : "",
+    lastname: user && user.lastname ? user.lastname : "",
+    email: user && user.email ? user.email : "",
+    phonenumber: user && user.contactnumber ? user.contactnumber : "",
+    address: user && user.address ? user.address : "",
     error_list: [],
   });
   const [viewAgeLists, setViewAgeLists] = useState();
@@ -47,10 +49,12 @@ function MannerEnroll() {
       petname: enrollInput.petname,
       age: enrollInput.age,
       ownername: enrollInput.ownername,
+      lastname: enrollInput.lastname,
       email: enrollInput.email,
       phonenumber: enrollInput.phonenumber,
       address: enrollInput.address,
       manner_id: enroll_id,
+      logged_id: user && user.id ? user.id : null,
     };
 
     axios
@@ -64,6 +68,7 @@ function MannerEnroll() {
             petname: "",
             age: "",
             ownername: "",
+            lastname: "",
             email: "",
             phonenumber: "",
             address: "",
@@ -140,10 +145,23 @@ function MannerEnroll() {
               name="ownername"
               onChange={handleInput}
               value={enrollInput.ownername}
-              placeholder="Owner Name"
+              disabled={user && user.firstname ? true : false}
+              placeholder="Owner First Name"
             />
             <span className="add-manner-span">
               {enrollInput.error_list.ownername}
+            </span>
+            <input
+              className="mannerenroll-input"
+              type="text"
+              name="lastname"
+              onChange={handleInput}
+              disabled={user && user.lastname ? true : false}
+              value={enrollInput.lastname}
+              placeholder="Owner Last Name"
+            />
+            <span className="add-manner-span">
+              {enrollInput.error_list.lastname}
             </span>
             <input
               className="mannerenroll-input"
@@ -151,6 +169,7 @@ function MannerEnroll() {
               name="email"
               onChange={handleInput}
               value={enrollInput.email}
+              disabled={user && user.email ? true : false}
               placeholder="Email"
             />
             <span className="add-manner-span">
@@ -162,6 +181,7 @@ function MannerEnroll() {
               name="phonenumber"
               onChange={handleInput}
               value={enrollInput.phonenumber}
+              disabled={user && user.contactnumber ? true : false}
               placeholder="Phone Number"
             />
             <span className="add-manner-span">
@@ -173,6 +193,7 @@ function MannerEnroll() {
               name="address"
               onChange={handleInput}
               value={enrollInput.address}
+              disabled={user && user.address ? true : false}
               placeholder="address"
             />
             <span className="add-manner-span">
