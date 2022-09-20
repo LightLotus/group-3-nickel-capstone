@@ -37,13 +37,12 @@ const EditPuppyEnrollees = () => {
     const data = {
       petname: puppyenrollInput.petname,
       age: puppyenrollInput.age,
-      ownername: puppyenrollInput.ownername,
-      email: puppyenrollInput.email,
-      phonenumber: puppyenrollInput.phonenumber,
-      address: puppyenrollInput.address,
     };
     axios
-      .put(`http://127.0.0.1:8000/api/updatepuppyenroll/${puppyenroll_id}`, data)
+      .put(
+        `http://127.0.0.1:8000/api/updatepuppyenroll/${puppyenroll_id}`,
+        data
+      )
       .then((res) => {
         if (res.data.status === 200) {
           swal("Success", res.data.message, "success");
@@ -63,7 +62,7 @@ const EditPuppyEnrollees = () => {
 
   return (
     <Container>
-      <Link to="/puppyadmin/view-enrollees/:d" className="fs-5 mb-4 d-block">
+      <Link to="/puppyadmin" className="fs-5 mb-4 d-block">
         <FontAwesomeIcon icon={faArrowAltCircleLeft}></FontAwesomeIcon>
         Back
       </Link>
@@ -97,56 +96,22 @@ const EditPuppyEnrollees = () => {
         <div className="add-manners-div">
           {" "}
           <label className="add-manners-input" htmlFor="">
-            Owner's Name:{" "}
+            Owner:{" "}
           </label>
           <input
             type="text"
+            disabled={true}
             name="ownername"
             onChange={handleInput}
             value={puppyenrollInput.ownername}
           />
           <span className="add-manner-span">{errorInput.ownername}</span>
         </div>
-        <div className="add-manners-div">
-          {" "}
-          <label className="add-manners-input" htmlFor="">
-            Email:
-          </label>
-          <input
-            type="email"
-            name="email"
-            onChange={handleInput}
-            value={puppyenrollInput.email}
-          />
-          <span className="add-manner-span">{errorInput.email}</span>
-        </div>
-        <div className="add-manners-div">
-          {" "}
-          <label className="add-manners-input" htmlFor="">
-            Phone Number:
-          </label>
-          <input
-            type="text"
-            name="phonenumber"
-            onChange={handleInput}
-            value={puppyenrollInput.phonenumber}
-          />
-          <span className="add-manner-span">{errorInput.phonenumber}</span>
-        </div>
-        <div className="add-manners-div">
-          {" "}
-          <label className="add-manners-input" htmlFor="">
-            Address:
-          </label>
-          <input
-            type="text"
-            name="address"
-            onChange={handleInput}
-            value={puppyenrollInput.address}
-          />
-          <span className="add-manner-span">{errorInput.address}</span>
-        </div>
-        <button type="button" onClick={updateEnrollees} class="button-link-style">
+        <button
+          type="button"
+          onClick={updateEnrollees}
+          class="button-link-style"
+        >
           Update Student Details
         </button>
       </form>

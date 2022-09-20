@@ -78,7 +78,7 @@ export default class AdminLogin extends Component {
 
     const login = localStorage.getItem("isLoggedIn");
     if (login) {
-      window.location.href = "/dashboard";
+      window.location.href = "/dashboard/ownerprofiledashboard";
     }
     const isLoading = this.state.isLoading;
 
