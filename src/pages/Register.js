@@ -110,7 +110,7 @@ export default class Signup extends Component {
                 type="button"
                 onClick={this.onSubmitHandler}
               >
-                Login{" "}
+                Register{" "}
                 {isLoading ? (
                   <span
                     className="spinner-border spinner-border-sm ml-5"
