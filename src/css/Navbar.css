@@ -148,7 +148,7 @@
 .navlinks-ul  {
 
   display:inline-block;
-  font-size: 1rem;
+
   /* flex-direction: column; 
   padding: 1.5rem;
   color: #f42d46;
@@ -161,29 +161,49 @@
   
 }
 .navlinks-a{
-  font-size: 2rem;
+  font-size: 1rem;
   margin-top: 1rem;
+  color:  rgb(34, 42, 41)
+
  
 }
 #basic-nav-dropdown{
-  font-size: 2rem!important;
+  font-size: 1rem!important;
   margin-top: 1rem;
- 
+  color:  rgb(34, 42, 41)
 
 }
 .navlinks-li{
-  margin-top: 1rem;
+  margin-top:  1rem;
  
 }
 .offcanvas-body{
-  background-color: #ccfdf8;
+  background-color: #a5e5df!important;
+ 
 }
 
-
+.nav-dropdown{
+ 
+  color: #000;
+}
+.dropright{
+  color:  rgb(34, 42, 41)
+}
 
 
 .cartIcon{
   display: none;
+
+}
+
+.offcanvas-body{
+background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpikumddWJ_wY1v5I_cklHoDm8Do6tK0mLpw&usqp=CAU);
+background-position:4vmin 22rem ;
+background-repeat: no-repeat!important;
+margin-left: 1rem;
+
+
+
 
 }
 

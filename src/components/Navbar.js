@@ -105,7 +105,7 @@ function Navlink() {
                         Sign Up
                       </Link>
                     </li>
-                    <span>|</span>
+                   
                     <Link to="/cart" className="cartIcon">
                       <FontAwesomeIcon icon={faCartShopping} />
                       <span className="cartIcon-qty">0</span>
