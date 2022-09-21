@@ -66,7 +66,7 @@ const Adoption = () => {
       <h1 className="mt-5">
         <span className="text-dark">Welcome to </span>Charming Pets Adoption
       </h1>
-      <div className="mx-auto" style={{ width:"90%" , height: "auto" }}>
+      <div className="mx-auto" style={{ width: "90%", height: "auto" }}>
         <Ratio aspectRatio="16x9">
           <embed
             type="image/svg+xml"
@@ -91,17 +91,15 @@ const Adoption = () => {
       {/* <button href="#" className="button-addopt ">
         Donate through PayPal
       </button> */}
-      <h3 className="mb-5">Help care these rescued animals with your donation.<br></br>
-      You can donate through GCASH Number: 0912-345-7689
-      donate.</h3>
+      <h3 className="mb-5">
+        Help care these rescued animals with your <strong>donation.</strong>
+        <br></br>
+        You can donate through <strong>GCASH Number: 0912-345-7689.</strong>
+      </h3>
 
       <h3 className="text-center mt-5">
         <strong>Meet Our Fur Babies</strong>
       </h3>
-
-      
-
-
 
       <div className="adoption-container">{adoption_HTMLTABLE}</div>
 
