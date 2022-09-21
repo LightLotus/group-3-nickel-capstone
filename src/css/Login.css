@@ -55,9 +55,15 @@
     margin-left:2rem;
     margin-right:2rem;
     height: 20%!important;
-        
+}
 
-   
+.logtext{
+text-align:left;
+}
+
+.login-title{
+    text-align: center;
+    font-size: 1rem;
 }
 
   }
