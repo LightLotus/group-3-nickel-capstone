@@ -125,14 +125,15 @@ function NavbarAdmin() {
                         </Link>
                       )}
                     </li>
+                    <span>|</span>
                     <li className="navlinks-li">
                       <Logout />
                     </li>
-                    <span>|</span>
-                    <Link to="/cart" className="cartIcon">
+
+                    {/* <Link to="/cart" className="cartIcon">
                       <FontAwesomeIcon icon={faCartShopping} />
                       <span className="cartIcon-qty">0</span>
-                    </Link>
+                    </Link> */}
                   </ul>
                 </div>
               </Nav>
