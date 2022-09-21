@@ -55,7 +55,7 @@ const PuppyKindergarten = () => {
         <Link
           to="/Faq">
           
-          Read more
+          Please visit the FAQs section for more info.
         </Link>
 
         

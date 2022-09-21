@@ -71,7 +71,7 @@ const AddAdoption = () => {
             Pet Name:{" "}
           </label>
           <input
-            className="add-adoption-input"
+            className="add-adoption-input p-2"
             type="text"
             name="petname"
             onChange={handleInput}

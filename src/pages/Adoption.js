@@ -63,7 +63,7 @@ const Adoption = () => {
 
   return (
     <Container>
-      <h1>
+      <h1 className="mt-5">
         <span className="text-dark">Welcome to </span>Charming Pets Adoption
       </h1>
       <div className="mx-auto" style={{ width:"90%" , height: "auto" }}>
@@ -88,12 +88,21 @@ const Adoption = () => {
         Not ready to adopt yet? Help care these rescued animals with your
         donation.
       </p>
-      <button href="#" className="button-addopt ">
+      {/* <button href="#" className="button-addopt ">
         Donate through PayPal
-      </button>
-      <h3 className="text-center">
+      </button> */}
+      <h3 className="mb-5">Help care these rescued animals with your donation.<br></br>
+      You can donate through GCASH Number: 0912-345-7689
+      donate.</h3>
+
+      <h3 className="text-center mt-5">
         <strong>Meet Our Fur Babies</strong>
       </h3>
+
+      
+
+
+
       <div className="adoption-container">{adoption_HTMLTABLE}</div>
 
       {/* <MDBRow className="row-cols-1 row-cols-md-3 g-4">

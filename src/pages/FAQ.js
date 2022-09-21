@@ -2,6 +2,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import "../css/FAQ.css";
 import { useEffect } from 'react';
 import { Tabtitle } from '../components/GeneralFunctions';
+import { Link } from "react-router-dom";
 
 const FAQ = () => {
   Tabtitle('Faqs | Charming Pets');
@@ -76,7 +77,18 @@ const FAQ = () => {
           quick follow-up to make sure you don't run into any more problems.</small>
           </Accordion.Body>
         </Accordion.Item>
+          <br></br>
+          <br></br>
+        <Link
+          to="/contact">
+           Please visit the Contact page for more questions.
+        </Link>
       </Accordion>
+
+         
+
+
+
       </>
     );
 };

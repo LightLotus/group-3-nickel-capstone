@@ -59,10 +59,11 @@ const Manners = () => {
           If you're not sure whether or not your dog is exhibiting aggression, 
           please give us a call or fill out the contact form above.
         </p>
+        
         <Link
           to="/Faq">
           
-          Read more
+          Please visit the FAQs section for more info.
         </Link>
 
     
