@@ -86,7 +86,7 @@ export default class AdminLogin extends Component {
       <>
         <div className="login-container">
           <div className="login-wrapper">
-            <p className="login-title">Login to my account</p>
+            <p className="login-title">LOGIN TO MY ACCOUNT</p>
             <p className="logtext">Enter your e-mail and password</p>
             <form action="#">
               <input

@@ -70,7 +70,7 @@ export default class Signup extends Component {
         <div className="login-container">
           <div className="login-wrapper">
             <p className="login-title">Create Account</p>
-            <p>Please fill in the information below</p>
+            <p className="create-text">Please fill in the information below</p>
             <form action="#">
               <input
                 className="login-input"
