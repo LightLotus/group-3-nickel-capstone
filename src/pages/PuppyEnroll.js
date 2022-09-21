@@ -133,6 +133,7 @@ function PuppyEnroll() {
               className="mannerenroll-input"
               onChange={handleInput}
             >
+              <option value=""></option>
               {viewAgeLists}
             </select>
             <span className="add-manner-span">
