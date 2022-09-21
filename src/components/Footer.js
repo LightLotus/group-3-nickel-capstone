@@ -7,8 +7,21 @@ import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faSquareTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faSquarePinterest } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import swal from "sweetalert";
+import { useState } from "react"; 
 
 const Footer = () => {
+  const [email, setEmail] = useState();
+  const baxlovenica = (e) => {
+    axios
+      .get(`http://127.0.0.1:8000/api/send-mail/${email}`)
+      .then((res) => {
+        if (res.status === 200) {
+            swal("Successfully Subscribed !");
+        }
+      });
+  }
   return (
     <>
       <footer className="footer">
@@ -82,8 +95,9 @@ const Footer = () => {
                   Subscribe to our newsletter for latest updates!
                 </p>
                 <form className="newsletter-form" action="#">
-                  <input className="newsletter-input" type="email" placeholder="Email" />
-                  <button type="Submit" className="newsletter-button button-link-style">
+                  <input className="newsletter-input" type="email" 
+                  onChange={(event) => setEmail(event.target.value)} placeholder="Email" />
+                  <button type="button" className="newsletter-button button-link-style" onClick={baxlovenica}>
                     Subscribe
                   </button>
                 </form>
