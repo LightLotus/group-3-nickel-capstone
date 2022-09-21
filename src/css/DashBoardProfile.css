@@ -68,3 +68,7 @@ h1 {
 #root > div > div.border-box-dash.border > div > table > p:nth-child(4) {
   margin: 0;
 }
+
+#root > div > div > div.border-box-dash.border {
+  height: 200vh;
+}

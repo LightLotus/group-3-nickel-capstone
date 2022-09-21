@@ -22,7 +22,7 @@ const Dashboard = () => {
     <Container>
       <h1>My Account Dashboard</h1>
 
-      <div>
+      <div className="dashboard-menu-container">
         <Link
           className="dashboard-menu d-menu px-5 border"
           to="/dashboard/ownerprofiledashboard"
