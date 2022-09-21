@@ -61,7 +61,7 @@ h1 {
 
 .feature-services-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   width: 80%;
   height: 75vh;
   gap: 2rem;

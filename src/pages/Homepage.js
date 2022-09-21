@@ -90,7 +90,7 @@ const Homepage = () => {
               helping change the life of a pet in need.
             </p>
           </div>
-          <div className="feature-services-div">
+          {/* <div className="feature-services-div">
             <Link to="/ourproducts">
               <img
                 className="feature-services-img"
@@ -104,7 +104,7 @@ const Homepage = () => {
               includes a retail store full of only the best dog products and a
               few for dog people, too!
             </p>
-          </div>
+          </div> */}
         </div>
         <div className="cats-and-dog">
           <h3 className="subtitle" ID="catsdog">
