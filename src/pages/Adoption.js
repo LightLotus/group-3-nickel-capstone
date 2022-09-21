@@ -68,7 +68,7 @@ const Adoption = () => {
       </h1>
       <div className="mx-auto" style={{ width:"90%" , height: "auto" }}>
         <Ratio aspectRatio="16x9">
-          <embed controls autoplay
+          <embed
             type="image/svg+xml"
             src="https://player.vimeo.com/video/179738694?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1"
             fluid
