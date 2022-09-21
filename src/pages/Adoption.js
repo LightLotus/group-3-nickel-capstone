@@ -68,7 +68,7 @@ const Adoption = () => {
       </h1>
       <div className="mx-auto" style={{ width:"90%" , height: "auto" }}>
         <Ratio aspectRatio="16x9">
-          <embed
+          <embed controls autoplay
             type="image/svg+xml"
             src="https://player.vimeo.com/video/179738694?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1"
             fluid
@@ -91,10 +91,13 @@ const Adoption = () => {
       {/* <button href="#" className="button-addopt ">
         Donate through PayPal
       </button> */}
+      <br></br>
+      <br></br>
       <h2 className="mb-5">Help care these rescued animals with your donation.<br></br>
       You can donate through GCASH Number:<span className="phone"> 0912-345-7689 </span>
       donate.</h2>
-
+      <br></br>
+      <br></br>
       <h3 className="text-center mt-5">
         <strong>Meet Our Fur Babies</strong>
       </h3>

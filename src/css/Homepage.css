@@ -226,13 +226,13 @@ margin-bottom: 2 rem;
 }
 
 .hero-text-p{
-  margin-top: -3rem;
+ margin-top: -2.8rem;
  text-align: center;
- line-height:1.5rem;
+ line-height:2rem;
 
 }
 #enroll{
-
+  margin-top: -2rem;
   margin-left: 7rem!important;
 
 }
@@ -256,7 +256,7 @@ margin-bottom: 3rem!important;
 
   
 .cats-and-dog{
-  margin-top: 35rem;
+  margin-top: 10rem;
   text-align: center;
   
 
