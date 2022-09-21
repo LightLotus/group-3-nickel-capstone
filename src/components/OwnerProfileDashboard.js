@@ -11,7 +11,7 @@ const OwnerProfileDashboard = () => {
         <h3>
           <strong>Owner Details</strong>
         </h3>
-        <Link to="/dashboard/editprofiledashboard">Edit Profile</Link>
+        {/* <Link to="/dashboard/editprofiledashboard">Edit Profile</Link> */}
       </div>
       <div>
         <p>
