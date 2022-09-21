@@ -81,9 +81,9 @@ function Navlink() {
                     <NavDropdown.Item>
                       <Link className="nav-dropdown" to="/adoption">Adoption</Link>
                     </NavDropdown.Item>
-                    <NavDropdown.Item>
+                    {/* <NavDropdown.Item>
                       <Link className="nav-dropdown" to="/ourproducts">Our Products</Link>
-                    </NavDropdown.Item>
+                    </NavDropdown.Item> */}
                   </NavDropdown>
                   <li className="navlinks-li">
                     <Link className="navlinks-a" to="/contact">
