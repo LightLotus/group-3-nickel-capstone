@@ -9,12 +9,19 @@
       border-radius: 1rem;
       width: 30%;
       margin: 2rem auto;
+    
   }
   
   .login-title {
       font-weight: bold;
       margin: 0;
+      
   }
+#log-text{
+    text-align: center!important;
+   
+}
+ 
   
   .login-input {
       display: block;
