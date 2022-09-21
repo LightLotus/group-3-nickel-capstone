@@ -49,29 +49,23 @@ const Manners = () => {
         </p>
 
         <h6 className="mt-5 mb-3">
-          <b>What do I need to start a class?</b>
+          <b>Do you work with aggressive dogs?</b>
         </h6>
 
         <p className="text-start">
-          Please attend the mandatory orientation prior to starting class. Your
-          dog needs to be current on all vaccines or titers. When you register
-          with us, you will be required to read the liability waiver and check
-          the box which requires your dog to be fully vaccinated. Please send us
-          your dog's most recent shot records ahead of time. Dogs 6 months and
-          older must be up to date on Parvo, Distemper, Bordetella and Rabies.
+          No, aggressive dogs are not allowed in the facility for liability reasons. 
+          Please contact a behaviorist to help with aggression. 
+          We do work with frustrated greeters and fearful dogs in private lessons only. 
+          If you're not sure whether or not your dog is exhibiting aggression, 
+          please give us a call or fill out the contact form above.
         </p>
+        <Link
+          to="/Faq">
+          
+          Read more
+        </Link>
 
-        <h6 className="text-start mt-5 mb-3">
-          <b>What do I need to start a class?</b>
-        </h6>
-        <p className="text-start">
-          Please attend the mandatory orientation prior to starting class. Your
-          dog needs to be current on all vaccines or titers. When you register
-          with us, you will be required to read the liability waiver and check
-          the box which requires your dog to be fully vaccinated. Please send us
-          your dog's most recent shot records ahead of time. Dogs 6 months and
-          older must be up to date on Parvo, Distemper, Bordetella and Rabies.
-        </p>
+    
       </Container>
     </>
   );

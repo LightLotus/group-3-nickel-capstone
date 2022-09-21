@@ -192,14 +192,49 @@
 
 .offcanvas-body{
 background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpikumddWJ_wY1v5I_cklHoDm8Do6tK0mLpw&usqp=CAU);
-background-position:4vmin 22rem ;
+background-position:1.5vmin 25rem ;
 background-repeat: no-repeat!important;
-margin-left: 1rem;
+
 }
 
 }
 
 /* =========820============= */
+
+
+@media(max-width:741px){
+  .navlinks-ul  {
+
+    display:inline-block;
+     
+  }
+
+  .offcanvas-body{
+    background-color: #a5e5df!important;
+   
+  }
+
+.nav-links-container{
+  padding-left: -5rem;
+
+}
+.cartIcon-qty{
+  display: none;
+}
+
+.offcanvas-body{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpikumddWJ_wY1v5I_cklHoDm8Do6tK0mLpw&usqp=CAU);
+  background-position:4vmin 25rem ;
+  background-repeat: no-repeat!important;
+
+  }
+.dropright{
+  float: left;
+}
+
+
+
+}
 
 
 .{

@@ -20,7 +20,7 @@ function Navlink() {
       <Navbar
         bg="light"
         expand="md"
-        className="navbar mb-3 py-2 sticky-top border-bottom "
+        className="navbar-sm mb-3 py-2 sticky-top border-bottom  navbar-expand-lg "
       >
         <Container className="container-fluid">
           <Navbar.Brand>
@@ -28,18 +28,18 @@ function Navlink() {
               <img className="logo" src={logoImg} alt="" />
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
+          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md-sm" />
           <Navbar.Offcanvas
             id="offcanvasNavbar-expand-md"
-            aria-labelledby="offcanvasNavbarLabel-expand-md"
+            aria-labelledby="offcanvasNavbarLabel-expand-md-sm"
             placement="end"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel-expand-md"></Offcanvas.Title>
+              <Offcanvas.Title id="offcanvasNavbarLabel-expand-md-sm"></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="nav-links-container justify-content-end flex-grow-1 pe-3">
-                <ul className="navlinks-ul">
+                <ul className="navlinks-ul mr-auto">
                   <li className="navlinks-li">
                     <Link className="navlinks-a" to="/">
                       Homepage

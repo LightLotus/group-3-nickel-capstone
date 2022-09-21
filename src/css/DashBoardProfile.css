@@ -68,3 +68,16 @@ h1 {
 #root > div > div.border-box-dash.border > div > table > p:nth-child(4) {
   margin: 0;
 }
+
+@media(max-width:480px)
+{
+.border-box-dash{
+  margin-top: 2rem;
+}
+ .dashboard-menu {
+  margin-bottom: 1rem;
+ }
+
+
+
+}

@@ -42,29 +42,23 @@ const PuppyKindergarten = () => {
         </p>
 
         <h6 className="mt-5 mb-3">
-          <b>What do I need to start a class?</b>
+          <b>Can you help with potty training?</b>
         </h6>
 
         <p className="text-start">
-          Please attend the mandatory orientation prior to starting class. Your
-          dog needs to be current on all vaccines or titers. When you register
-          with us, you will be required to read the liability waiver and check
-          the box which requires your dog to be fully vaccinated. Please send us
-          your dog's most recent shot records ahead of time. Dogs 6 months and
-          older must be up to date on Parvo, Distemper, Bordetella and Rabies.
+          Yes! If you are enrolled in puppy kindergarten, 
+          we will go over this in class. Otherwise, please schedule a 30-minute private in the facility. 
+          We'll look at where you're having trouble, come up with a game plan to fix it, and schedule a 
+          quick follow-up to make sure you don't run into any more problems..
         </p>
 
-        <h6 className="text-start mt-5 mb-3">
-          <b>What do I need to start a class?</b>
-        </h6>
-        <p className="text-start">
-          Please attend the mandatory orientation prior to starting class. Your
-          dog needs to be current on all vaccines or titers. When you register
-          with us, you will be required to read the liability waiver and check
-          the box which requires your dog to be fully vaccinated. Please send us
-          your dog's most recent shot records ahead of time. Dogs 6 months and
-          older must be up to date on Parvo, Distemper, Bordetella and Rabies.
-        </p>
+        <Link
+          to="/Faq">
+          
+          Read more
+        </Link>
+
+        
       </Container>
     </>
   );

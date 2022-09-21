@@ -203,7 +203,10 @@ h1 {
   transform: scale(1.3); 
   transition-duration: 1s;
 }
-
+#enroll{
+ margin-left: 12rem;
+ margin-top: 1rem;
+}
 
 @media (max-width:480px)
 
