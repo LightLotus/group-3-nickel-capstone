@@ -69,15 +69,6 @@ h1 {
   margin: 0;
 }
 
-@media(max-width:480px)
-{
-.border-box-dash{
-  margin-top: 2rem;
-}
- .dashboard-menu {
-  margin-bottom: 1rem;
- }
-
-
-
+#root > div > div > div.border-box-dash.border {
+  height: 200vh;
 }
