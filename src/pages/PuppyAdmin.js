@@ -9,6 +9,8 @@ import { faPencil } from "@fortawesome/free-solid-svg-icons";
 import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 import AddPuppySched from "./AddPuppySched";
 import { Container } from "react-bootstrap";
+import "../css/PuppyAdmin.css";
+
 
 const PuppyAdmin = () => {
   const [loading, setLoading] = useState(true);
@@ -101,14 +103,15 @@ const PuppyAdmin = () => {
       <div>
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="con-ad col-md-12">
               <p className="fs-2 text-center my-3">
                 <strong>
-                  <span className="text-dark">Puppy Kindergarten Class</span>{" "}
+                  <span className="Head-puppy text-dark">Puppy Kindergarten Class</span>{" "}
                   Schedule Admin Dashboard
                 </strong>
               </p>
-              <Link to="/mainadmin" className="fs-5 mb-4 d-block">
+
+              <Link to="/mainadmin" className="back-arrow fs-5 mb-4 d-block">
                 <FontAwesomeIcon icon={faArrowAltCircleLeft}></FontAwesomeIcon>
                 Back
               </Link>
