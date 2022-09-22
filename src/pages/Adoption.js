@@ -93,7 +93,7 @@ const Adoption = () => {
       </button> */}
       <br></br>
       <br></br>
-      <h2 className="mb-5">Help care these rescued animals with your donation.<br></br>
+      <h2 className="gcash mb-5">Help care these rescued animals with your donation.<br></br>
       You can donate through GCASH Number:<span className="phone"> 0912-345-7689 </span>
       donate.</h2>
       <br></br>

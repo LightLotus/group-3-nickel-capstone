@@ -1,5 +1,7 @@
 .hero-container {
   gap: 2rem;
+  margin-top: 5.5rem;
+  
 }
 
 h1 {
@@ -9,8 +11,9 @@ h1 {
 }
 
 .hero-text-p {
-  text-align: left;
+  text-align: center;
   margin-top: -2rem;
+  font-size: larger;
 }
 
 .subtitle {
@@ -66,6 +69,8 @@ h1 {
   height: 75vh;
   gap: 2rem;
   margin: 0 auto;
+  margin-top: 5rem!important;
+
 }
 
 .feature-services-container-description {
@@ -96,6 +101,7 @@ h1 {
 }
 
 .adoption-details-wrapper {
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;

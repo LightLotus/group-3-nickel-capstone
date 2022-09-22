@@ -28,7 +28,7 @@ const Homepage = () => {
   return (
     <>
       <Container>
-        <div className="hero-container mt-5">
+        <div className="hero-container">
           <div className="hero-text-container">
             <h1 id="welcome" className="text-dark" data-aos="fade-right">
               Welcome to <span className="span-color">Charming Pets</span>
@@ -52,7 +52,7 @@ const Homepage = () => {
         </div>
 
         <h3 className="subtitle d-block w-100" id="whatcan">
-          What Can <span className="span-color">We Do</span>
+          What we <span className="span-color">can do</span>
         </h3>
         <p className="feature-services-container-description">
           Charming Pets offers two major services - Training Classes and Pet
