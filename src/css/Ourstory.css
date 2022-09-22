@@ -52,6 +52,7 @@ h1 {
 .kevin-image {
   border-radius: 5px;
   object-fit: cover;
+  width: 1200px!important;
 }
 .card2 {
   margin-top: 5rem;

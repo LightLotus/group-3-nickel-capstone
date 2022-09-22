@@ -38,9 +38,9 @@ const PrivateLessons = () => {
     <p><b>Asked a trainer</b></p>
     <p className="ask">If you’re not sure what best for your pet, you can contact us to further assist you. Please contact us through email or by phone call and we’ll be happy to help you.</p>
 
-    <Link className="button-link-style" to="/contact">
+    <Link className="button-link-style" id="btn-private-contact" to="/contact">
              Contact Us!
-            </Link>
+    </Link>
   </Container>
   
   </>

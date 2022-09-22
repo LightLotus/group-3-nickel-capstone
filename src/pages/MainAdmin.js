@@ -20,8 +20,8 @@ const MainAdmin = () => {
 
   return (
     <Container>
-      <h1>
-        <span className="text-dark">Admin </span>Dashboard Menu
+      <h1 className="main-admin-text">
+        <span className=" text-dark">Admin </span>Dashboard Menu
       </h1>
       <div className="admin-container">
         <div className="admin-category">
