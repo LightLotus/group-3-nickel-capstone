@@ -228,7 +228,7 @@ margin-bottom: 2 rem;
 
 #welcome{
   margin-top: -3rem;
-  font-size:1.9rem;
+  font-size:1.8rem;
   
   
 }
@@ -236,13 +236,19 @@ margin-bottom: 2 rem;
 .hero-text-p{
  margin-top: -2.8rem;
  text-align: center;
- line-height:2rem;
+ line-height:1.8rem;
+ font-size: 1rem;
 
 }
 #enroll{
   margin-top: -2rem;
-  margin-left: 7rem!important;
-
+  margin-left: 8rem!important;
+  font-size: 0.8rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  text-align: center;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 .trainer-name, .trainer-position{
   text-align: center;
